@@ -1,0 +1,1248 @@
+[
+  {
+    "id": "C_1",
+    "name": "Tasmad Coffee",
+    "type": "cafe",
+    "lat": -6.913592,
+    "lon": 112.089637
+  },
+  {
+    "id": "C_2",
+    "name": "kedai kopi ireng",
+    "type": "cafe",
+    "lat": -6.830297,
+    "lon": 111.997508
+  },
+  {
+    "id": "C_3",
+    "name": "Warung Makan Hindun",
+    "type": "restaurant",
+    "lat": -6.829465,
+    "lon": 111.994974
+  },
+  {
+    "id": "C_4",
+    "name": "RM. Rasa Utama",
+    "type": "restaurant",
+    "lat": -6.830392,
+    "lon": 111.997984
+  },
+  {
+    "id": "C_5",
+    "name": "Cafe Numani",
+    "type": "cafe",
+    "lat": -6.900412,
+    "lon": 112.069426
+  },
+  {
+    "id": "C_6",
+    "name": "Rumah Makan Sunset",
+    "type": "restaurant",
+    "lat": -6.902435,
+    "lon": 112.130316
+  },
+  {
+    "id": "C_7",
+    "name": "Bakso Gajah",
+    "type": "restaurant",
+    "lat": -7.027745,
+    "lon": 112.098216
+  },
+  {
+    "id": "C_8",
+    "name": "Kopi Lain Hati",
+    "type": "cafe",
+    "lat": -6.89925,
+    "lon": 112.061605
+  },
+  {
+    "id": "C_9",
+    "name": "Casta Copye",
+    "type": "cafe",
+    "lat": -6.898814,
+    "lon": 112.058109
+  },
+  {
+    "id": "C_10",
+    "name": "Warkop Masga",
+    "type": "cafe",
+    "lat": -6.900487,
+    "lon": 112.063164
+  },
+  {
+    "id": "C_11",
+    "name": "Tahu Campur Lamongan",
+    "type": "restaurant",
+    "lat": -6.896053,
+    "lon": 112.0514
+  },
+  {
+    "id": "C_12",
+    "name": "Gado-Gado Kuncoro",
+    "type": "restaurant",
+    "lat": -6.896081,
+    "lon": 112.051016
+  },
+  {
+    "id": "C_13",
+    "name": "Kedai Pitikku Spesial",
+    "type": "restaurant",
+    "lat": -6.906561,
+    "lon": 112.063564
+  },
+  {
+    "id": "C_14",
+    "name": "Warung Manise",
+    "type": "cafe",
+    "lat": -6.906593,
+    "lon": 112.06363
+  },
+  {
+    "id": "C_15",
+    "name": "Bangkok Thai Tea",
+    "type": "cafe",
+    "lat": -6.892408,
+    "lon": 112.041781
+  },
+  {
+    "id": "C_16",
+    "name": "Point Cafe",
+    "type": "cafe",
+    "lat": -6.883556,
+    "lon": 112.048456
+  },
+  {
+    "id": "C_17",
+    "name": "Warung Bunda Fida",
+    "type": "cafe",
+    "lat": -6.898932,
+    "lon": 112.029701
+  },
+  {
+    "id": "C_18",
+    "name": "Point Cafe",
+    "type": "cafe",
+    "lat": -6.894785,
+    "lon": 112.049152
+  },
+  {
+    "id": "C_19",
+    "name": "Ayam Panggang Tirtomoyo",
+    "type": "restaurant",
+    "lat": -6.906138,
+    "lon": 112.072898
+  },
+  {
+    "id": "C_20",
+    "name": "Warung Sambelan Gerdu Papak",
+    "type": "restaurant",
+    "lat": -6.900209,
+    "lon": 112.064446
+  },
+  {
+    "id": "C_21",
+    "name": "Hoops Coffee",
+    "type": "cafe",
+    "lat": -6.883928,
+    "lon": 112.013223
+  },
+  {
+    "id": "C_22",
+    "name": "Warkop Bu Rasi",
+    "type": "cafe",
+    "lat": -7.074237,
+    "lon": 112.108639
+  },
+  {
+    "id": "C_23",
+    "name": "Dapur Dewa",
+    "type": "restaurant",
+    "lat": -6.965674,
+    "lon": 111.715119
+  },
+  {
+    "id": "C_24",
+    "name": "Bakso Gondrong",
+    "type": "restaurant",
+    "lat": -6.965584,
+    "lon": 111.715118
+  },
+  {
+    "id": "C_25",
+    "name": "Warung Bakso Lestari",
+    "type": "restaurant",
+    "lat": -6.965144,
+    "lon": 111.715118
+  },
+  {
+    "id": "C_26",
+    "name": "Warung Angkringan",
+    "type": "cafe",
+    "lat": -6.965201,
+    "lon": 111.715116
+  },
+  {
+    "id": "C_27",
+    "name": "Depot Kinanti",
+    "type": "restaurant",
+    "lat": -6.965379,
+    "lon": 111.714935
+  },
+  {
+    "id": "C_28",
+    "name": "Pondok Bakso Surya Jaya",
+    "type": "restaurant",
+    "lat": -6.966651,
+    "lon": 111.715147
+  },
+  {
+    "id": "C_29",
+    "name": "Kare Sapi Wong Tuban",
+    "type": "restaurant",
+    "lat": -6.966698,
+    "lon": 111.71515
+  },
+  {
+    "id": "C_30",
+    "name": "Bakso Rusuk",
+    "type": "restaurant",
+    "lat": -6.966975,
+    "lon": 111.715161
+  },
+  {
+    "id": "C_31",
+    "name": "Aneka Bakaran Cak Mad",
+    "type": "restaurant",
+    "lat": -6.967641,
+    "lon": 111.715195
+  },
+  {
+    "id": "C_32",
+    "name": "Warung Pojok",
+    "type": "restaurant",
+    "lat": -6.969224,
+    "lon": 111.715255
+  },
+  {
+    "id": "C_33",
+    "name": "Rumah Makan Padang Sari Raso",
+    "type": "restaurant",
+    "lat": -6.970818,
+    "lon": 111.715258
+  },
+  {
+    "id": "C_34",
+    "name": "Warung Lestari",
+    "type": "restaurant",
+    "lat": -7.10341,
+    "lon": 111.956013
+  },
+  {
+    "id": "C_35",
+    "name": "Warkop Mbah Siswo",
+    "type": "cafe",
+    "lat": -6.901819,
+    "lon": 112.053932
+  },
+  {
+    "id": "C_36",
+    "name": "Warung Garang Asem Kepala Manyung Pak Joko",
+    "type": "restaurant",
+    "lat": -6.86216,
+    "lon": 112.027994
+  },
+  {
+    "id": "C_37",
+    "name": "BARUDAK JAWI",
+    "type": "restaurant",
+    "lat": -6.897399,
+    "lon": 112.040692
+  },
+  {
+    "id": "C_38",
+    "name": "Lesehan Bajak Laut",
+    "type": "restaurant",
+    "lat": -6.849021,
+    "lon": 112.019285
+  },
+  {
+    "id": "C_39",
+    "name": "D'Sultan Cafe",
+    "type": "cafe",
+    "lat": -6.894497,
+    "lon": 112.048935
+  },
+  {
+    "id": "C_40",
+    "name": "Cafe Aidjo",
+    "type": "cafe",
+    "lat": -6.900916,
+    "lon": 112.053445
+  },
+  {
+    "id": "C_41",
+    "name": "Pedasto Fried Chicken",
+    "type": "restaurant",
+    "lat": -6.902256,
+    "lon": 112.044117
+  },
+  {
+    "id": "C_42",
+    "name": "Restoran Kayu Manis",
+    "type": "restaurant",
+    "lat": -6.897021,
+    "lon": 112.051236
+  },
+  {
+    "id": "C_43",
+    "name": "Rumah Makan Lumintu",
+    "type": "restaurant",
+    "lat": -6.901954,
+    "lon": 112.062636
+  },
+  {
+    "id": "C_44",
+    "name": "Warkop Garuda",
+    "type": "cafe",
+    "lat": -6.901115,
+    "lon": 112.06781
+  },
+  {
+    "id": "C_45",
+    "name": "Pecel Juara",
+    "type": "restaurant",
+    "lat": -6.900395,
+    "lon": 112.065901
+  },
+  {
+    "id": "C_46",
+    "name": "Warung Mak Tie",
+    "type": "restaurant",
+    "lat": -6.901085,
+    "lon": 112.066416
+  },
+  {
+    "id": "C_47",
+    "name": "sejuk.id Tuban",
+    "type": "cafe",
+    "lat": -6.900764,
+    "lon": 112.06545
+  },
+  {
+    "id": "C_48",
+    "name": "Warung Sate Gerdu Papak \"Pak Yusuf\"",
+    "type": "restaurant",
+    "lat": -6.900217,
+    "lon": 112.064663
+  },
+  {
+    "id": "C_49",
+    "name": "Mie Gacoan Tuban",
+    "type": "restaurant",
+    "lat": -6.900142,
+    "lon": 112.062251
+  },
+  {
+    "id": "C_50",
+    "name": "Kopi Janji Jiwa Jilid 796 Tuban",
+    "type": "cafe",
+    "lat": -6.89982,
+    "lon": 112.062277
+  },
+  {
+    "id": "C_51",
+    "name": "Basra Club",
+    "type": "restaurant",
+    "lat": -6.89913,
+    "lon": 112.06085
+  },
+  {
+    "id": "C_52",
+    "name": "Mie Ayam Pangsit Cak Saipul",
+    "type": "restaurant",
+    "lat": -6.898926,
+    "lon": 112.059968
+  },
+  {
+    "id": "C_53",
+    "name": "Warung Pondok Jambu",
+    "type": "restaurant",
+    "lat": -6.896648,
+    "lon": 112.065544
+  },
+  {
+    "id": "C_54",
+    "name": "Warung Kejawan",
+    "type": "restaurant",
+    "lat": -6.898351,
+    "lon": 112.058075
+  },
+  {
+    "id": "C_55",
+    "name": "Warung Pak Latif",
+    "type": "restaurant",
+    "lat": -6.898753,
+    "lon": 112.058343
+  },
+  {
+    "id": "C_56",
+    "name": "Warung Bu Dar",
+    "type": "restaurant",
+    "lat": -6.897088,
+    "lon": 112.053619
+  },
+  {
+    "id": "C_57",
+    "name": "Kafe / Restoran",
+    "type": "cafe",
+    "lat": -6.896606,
+    "lon": 112.052487
+  },
+  {
+    "id": "C_58",
+    "name": "Warung Makan Bu Gem",
+    "type": "restaurant",
+    "lat": -6.896521,
+    "lon": 112.051792
+  },
+  {
+    "id": "C_59",
+    "name": "Nasi Pecel Mbak Sih",
+    "type": "restaurant",
+    "lat": -6.896075,
+    "lon": 112.0515
+  },
+  {
+    "id": "C_60",
+    "name": "Fremilt Thai Tea Tuban",
+    "type": "cafe",
+    "lat": -6.896285,
+    "lon": 112.051445
+  },
+  {
+    "id": "C_61",
+    "name": "Depot Bim's",
+    "type": "restaurant",
+    "lat": -6.895968,
+    "lon": 112.050824
+  },
+  {
+    "id": "C_62",
+    "name": "Kedai Cafe Oyaoyo",
+    "type": "cafe",
+    "lat": -6.895608,
+    "lon": 112.050106
+  },
+  {
+    "id": "C_63",
+    "name": "Warung Ishakuiki",
+    "type": "restaurant",
+    "lat": -6.895625,
+    "lon": 112.050144
+  },
+  {
+    "id": "C_64",
+    "name": "Bara Bistro",
+    "type": "restaurant",
+    "lat": -6.888578,
+    "lon": 112.042181
+  },
+  {
+    "id": "C_65",
+    "name": "Resto Grand Javanilla",
+    "type": "restaurant",
+    "lat": -6.90458,
+    "lon": 112.067708
+  },
+  {
+    "id": "C_66",
+    "name": "Restaurant & Bar",
+    "type": "restaurant",
+    "lat": -6.885069,
+    "lon": 112.045269
+  },
+  {
+    "id": "C_67",
+    "name": "Ayam Geprek Sa'i Tuban 2",
+    "type": "restaurant",
+    "lat": -6.907303,
+    "lon": 112.064864
+  },
+  {
+    "id": "C_68",
+    "name": "Warkop Pak Didik",
+    "type": "cafe",
+    "lat": -6.901099,
+    "lon": 112.0685
+  },
+  {
+    "id": "C_69",
+    "name": "Ruji Kayu",
+    "type": "restaurant",
+    "lat": -6.900957,
+    "lon": 112.068705
+  },
+  {
+    "id": "C_70",
+    "name": "Rumah Makan Pangestune",
+    "type": "restaurant",
+    "lat": -6.881399,
+    "lon": 112.045869
+  },
+  {
+    "id": "C_71",
+    "name": "Sate Kambing Pak Ran",
+    "type": "restaurant",
+    "lat": -6.881917,
+    "lon": 112.046637
+  },
+  {
+    "id": "C_72",
+    "name": "Mang Ndut Cafe & Eatery",
+    "type": "cafe",
+    "lat": -6.887815,
+    "lon": 112.051753
+  },
+  {
+    "id": "C_73",
+    "name": "Lesehan Ikan Bakar Nurhamidah",
+    "type": "restaurant",
+    "lat": -6.856022,
+    "lon": 112.024614
+  },
+  {
+    "id": "C_74",
+    "name": "D'Cemara Resto Cafe",
+    "type": "cafe",
+    "lat": -6.846656,
+    "lon": 112.018339
+  },
+  {
+    "id": "C_75",
+    "name": "Warung Sedep Umaya",
+    "type": "restaurant",
+    "lat": -6.902842,
+    "lon": 112.07998
+  },
+  {
+    "id": "C_76",
+    "name": "Warung Leny",
+    "type": "cafe",
+    "lat": -6.87872,
+    "lon": 112.03974
+  },
+  {
+    "id": "C_77",
+    "name": "Warkop HK3",
+    "type": "cafe",
+    "lat": -6.89821,
+    "lon": 112.029815
+  },
+  {
+    "id": "C_78",
+    "name": "Warung Bu Siti",
+    "type": "restaurant",
+    "lat": -6.898791,
+    "lon": 112.112723
+  },
+  {
+    "id": "C_79",
+    "name": "Cafe Suraloka",
+    "type": "cafe",
+    "lat": -6.9294,
+    "lon": 112.072339
+  },
+  {
+    "id": "C_80",
+    "name": "Seafood Trubus",
+    "type": "restaurant",
+    "lat": -6.912844,
+    "lon": 112.054469
+  },
+  {
+    "id": "C_81",
+    "name": "D'Saerah",
+    "type": "cafe",
+    "lat": -6.929393,
+    "lon": 112.060164
+  },
+  {
+    "id": "C_82",
+    "name": "Warung Podomoro",
+    "type": "cafe",
+    "lat": -6.877595,
+    "lon": 112.040952
+  },
+  {
+    "id": "C_83",
+    "name": "Warung Mbak Nuk",
+    "type": "restaurant",
+    "lat": -6.900024,
+    "lon": 112.064982
+  },
+  {
+    "id": "C_84",
+    "name": "Warung Makan Bu Endang - Nanin",
+    "type": "restaurant",
+    "lat": -6.899774,
+    "lon": 112.063562
+  },
+  {
+    "id": "C_85",
+    "name": "Kafe / Restoran",
+    "type": "restaurant",
+    "lat": -6.896923,
+    "lon": 112.081204
+  },
+  {
+    "id": "C_86",
+    "name": "Warkop Imam",
+    "type": "cafe",
+    "lat": -6.903074,
+    "lon": 112.009976
+  },
+  {
+    "id": "C_87",
+    "name": "Warung Flamboyan",
+    "type": "restaurant",
+    "lat": -6.882903,
+    "lon": 112.008611
+  },
+  {
+    "id": "C_88",
+    "name": "Sate Sapi Khas Semarang Pak Muhiyi",
+    "type": "restaurant",
+    "lat": -6.882878,
+    "lon": 112.008521
+  },
+  {
+    "id": "C_89",
+    "name": "Warung Flamboyan 2 \"Restu Ibu\"",
+    "type": "restaurant",
+    "lat": -6.883019,
+    "lon": 112.008955
+  },
+  {
+    "id": "C_90",
+    "name": "D'Mantan Cafe",
+    "type": "cafe",
+    "lat": -6.897933,
+    "lon": 112.039315
+  },
+  {
+    "id": "C_91",
+    "name": "Kafe / Restoran",
+    "type": "cafe",
+    "lat": -6.883554,
+    "lon": 112.011883
+  },
+  {
+    "id": "C_92",
+    "name": "Lesehan Pak Haji",
+    "type": "restaurant",
+    "lat": -6.883047,
+    "lon": 112.009225
+  },
+  {
+    "id": "C_93",
+    "name": "Alas Coffee",
+    "type": "cafe",
+    "lat": -6.883205,
+    "lon": 112.009658
+  },
+  {
+    "id": "C_94",
+    "name": "Serba Sambal Tuban",
+    "type": "restaurant",
+    "lat": -6.883469,
+    "lon": 112.011112
+  },
+  {
+    "id": "C_95",
+    "name": "Rumah Makan Minang Saiyo",
+    "type": "restaurant",
+    "lat": -6.883954,
+    "lon": 112.014694
+  },
+  {
+    "id": "C_96",
+    "name": "Racha Cha Oyek Coffee",
+    "type": "cafe",
+    "lat": -6.883932,
+    "lon": 112.014854
+  },
+  {
+    "id": "C_97",
+    "name": "Warung Bogorejo",
+    "type": "restaurant",
+    "lat": -6.883989,
+    "lon": 112.01537
+  },
+  {
+    "id": "C_98",
+    "name": "Warkop GM57",
+    "type": "cafe",
+    "lat": -6.884497,
+    "lon": 112.015431
+  },
+  {
+    "id": "C_99",
+    "name": "Kafe / Restoran",
+    "type": "restaurant",
+    "lat": -6.884086,
+    "lon": 112.015509
+  },
+  {
+    "id": "C_100",
+    "name": "Warkop Sekar Jagad",
+    "type": "cafe",
+    "lat": -6.884167,
+    "lon": 112.016211
+  },
+  {
+    "id": "C_101",
+    "name": "Depot Restu Ibu Wibosono",
+    "type": "restaurant",
+    "lat": -6.884195,
+    "lon": 112.016263
+  },
+  {
+    "id": "C_102",
+    "name": "Rumah Makan Ranah Minang",
+    "type": "restaurant",
+    "lat": -6.884209,
+    "lon": 112.016497
+  },
+  {
+    "id": "C_103",
+    "name": "Juragan Sambel",
+    "type": "restaurant",
+    "lat": -6.884344,
+    "lon": 112.016948
+  },
+  {
+    "id": "C_104",
+    "name": "Warmindo Giras 99",
+    "type": "cafe",
+    "lat": -6.884354,
+    "lon": 112.017213
+  },
+  {
+    "id": "C_105",
+    "name": "Warung Makan Bu Jum",
+    "type": "restaurant",
+    "lat": -6.884376,
+    "lon": 112.017392
+  },
+  {
+    "id": "C_106",
+    "name": "Ikan Bakar Pantura",
+    "type": "restaurant",
+    "lat": -6.884158,
+    "lon": 112.01409
+  },
+  {
+    "id": "C_107",
+    "name": "WARKOP MAJU 58",
+    "type": "cafe",
+    "lat": -7.12428,
+    "lon": 111.936338
+  },
+  {
+    "id": "C_108",
+    "name": "Warung Mbak Hetik",
+    "type": "restaurant",
+    "lat": -7.061333,
+    "lon": 112.012156
+  },
+  {
+    "id": "C_109",
+    "name": "Ayam Geprek Sa'i",
+    "type": "restaurant",
+    "lat": -7.059408,
+    "lon": 112.009889
+  },
+  {
+    "id": "C_110",
+    "name": "Ratu Meet Point",
+    "type": "restaurant",
+    "lat": -7.061003,
+    "lon": 112.007645
+  },
+  {
+    "id": "C_111",
+    "name": "Bolo Lawas Cafe (BLC)",
+    "type": "cafe",
+    "lat": -7.061569,
+    "lon": 112.005107
+  },
+  {
+    "id": "C_112",
+    "name": "Warkop cikal dumadi",
+    "type": "cafe",
+    "lat": -7.099143,
+    "lon": 111.968972
+  },
+  {
+    "id": "C_113",
+    "name": "Warung Kopi Kang Gonang",
+    "type": "cafe",
+    "lat": -7.092756,
+    "lon": 111.963858
+  },
+  {
+    "id": "C_114",
+    "name": "Toto 87 Game Rental PS 3",
+    "type": "cafe",
+    "lat": -7.082499,
+    "lon": 111.975169
+  },
+  {
+    "id": "C_115",
+    "name": "UD Kerupuk Wadiran",
+    "type": "restaurant",
+    "lat": -7.085103,
+    "lon": 111.962224
+  },
+  {
+    "id": "C_116",
+    "name": "Mie Ayam Mas Yon",
+    "type": "cafe",
+    "lat": -7.06132,
+    "lon": 112.003848
+  },
+  {
+    "id": "C_117",
+    "name": "Pinarak Coffee",
+    "type": "cafe",
+    "lat": -6.901346,
+    "lon": 112.170182
+  },
+  {
+    "id": "C_118",
+    "name": "Depot Bakso & Mie Ayam Maju Lancar Pak Mul",
+    "type": "restaurant",
+    "lat": -6.903029,
+    "lon": 112.170541
+  },
+  {
+    "id": "C_119",
+    "name": "Kafe / Restoran",
+    "type": "cafe",
+    "lat": -6.902946,
+    "lon": 112.170555
+  },
+  {
+    "id": "C_120",
+    "name": "Warkop Okey",
+    "type": "cafe",
+    "lat": -6.864202,
+    "lon": 111.656558
+  },
+  {
+    "id": "C_121",
+    "name": "Warkop Sambi",
+    "type": "cafe",
+    "lat": -6.861115,
+    "lon": 111.655289
+  },
+  {
+    "id": "C_122",
+    "name": "Warung Widoro Kandang",
+    "type": "restaurant",
+    "lat": -7.072605,
+    "lon": 112.181403
+  },
+  {
+    "id": "C_123",
+    "name": "Kafe / Restoran",
+    "type": "restaurant",
+    "lat": -6.783512,
+    "lon": 111.781794
+  },
+  {
+    "id": "C_124",
+    "name": "Warung Depan Kecamatan",
+    "type": "restaurant",
+    "lat": -6.782255,
+    "lon": 111.775153
+  },
+  {
+    "id": "C_125",
+    "name": "Warung Cahaya",
+    "type": "restaurant",
+    "lat": -6.781475,
+    "lon": 111.773021
+  },
+  {
+    "id": "C_126",
+    "name": "Warung Srihuning",
+    "type": "restaurant",
+    "lat": -6.781525,
+    "lon": 111.773148
+  },
+  {
+    "id": "C_127",
+    "name": "Warung Kawis",
+    "type": "restaurant",
+    "lat": -6.782184,
+    "lon": 111.776323
+  },
+  {
+    "id": "C_128",
+    "name": "Warung Barokah",
+    "type": "restaurant",
+    "lat": -6.784606,
+    "lon": 111.784157
+  },
+  {
+    "id": "C_129",
+    "name": "Rumah Makan Pelangi",
+    "type": "restaurant",
+    "lat": -6.787349,
+    "lon": 111.791202
+  },
+  {
+    "id": "C_130",
+    "name": "Warung Sego Pecel",
+    "type": "restaurant",
+    "lat": -7.084223,
+    "lon": 112.113477
+  },
+  {
+    "id": "C_131",
+    "name": "Raja Coffe Sambal Korax",
+    "type": "restaurant",
+    "lat": -7.075306,
+    "lon": 112.11307
+  },
+  {
+    "id": "C_132",
+    "name": "Kafe / Restoran",
+    "type": "restaurant",
+    "lat": -7.074837,
+    "lon": 112.1112
+  },
+  {
+    "id": "C_133",
+    "name": "Warkop Mbak Juwita",
+    "type": "cafe",
+    "lat": -7.075202,
+    "lon": 112.111916
+  },
+  {
+    "id": "C_134",
+    "name": "Warung Sate Kuda Anisah",
+    "type": "restaurant",
+    "lat": -7.075189,
+    "lon": 112.112708
+  },
+  {
+    "id": "C_135",
+    "name": "Bakso Beranak Perempatan Banget",
+    "type": "restaurant",
+    "lat": -7.07403,
+    "lon": 112.108645
+  },
+  {
+    "id": "C_136",
+    "name": "Evi Cafe",
+    "type": "cafe",
+    "lat": -7.074552,
+    "lon": 112.109075
+  },
+  {
+    "id": "C_137",
+    "name": "Warung Bu Murtini",
+    "type": "cafe",
+    "lat": -7.080659,
+    "lon": 112.108627
+  },
+  {
+    "id": "C_138",
+    "name": "Rumah Makan Padang Kenangan Jaya",
+    "type": "restaurant",
+    "lat": -6.965982,
+    "lon": 111.714921
+  },
+  {
+    "id": "C_139",
+    "name": "Dood Coffee",
+    "type": "cafe",
+    "lat": -6.963949,
+    "lon": 111.714321
+  },
+  {
+    "id": "C_140",
+    "name": "Kafe / Restoran",
+    "type": "restaurant",
+    "lat": -6.968296,
+    "lon": 111.715194
+  },
+  {
+    "id": "C_141",
+    "name": "Kedai Makan Malindo",
+    "type": "restaurant",
+    "lat": -6.968826,
+    "lon": 111.715212
+  },
+  {
+    "id": "C_142",
+    "name": "Nayya Bangkit Bakso",
+    "type": "restaurant",
+    "lat": -6.969003,
+    "lon": 111.715221
+  },
+  {
+    "id": "C_143",
+    "name": "Mie Julit",
+    "type": "restaurant",
+    "lat": -6.969508,
+    "lon": 111.715239
+  },
+  {
+    "id": "C_144",
+    "name": "Playon Cafe Bioskop",
+    "type": "cafe",
+    "lat": -6.969632,
+    "lon": 111.715009
+  },
+  {
+    "id": "C_145",
+    "name": "Griyo Lesehan MM",
+    "type": "restaurant",
+    "lat": -6.966552,
+    "lon": 111.713858
+  },
+  {
+    "id": "C_146",
+    "name": "Lailina Kukuruyuk Cafe",
+    "type": "restaurant",
+    "lat": -6.967893,
+    "lon": 111.714344
+  },
+  {
+    "id": "C_147",
+    "name": "Warung Bakso Yahmi Rekul",
+    "type": "restaurant",
+    "lat": -7.107424,
+    "lon": 111.9524
+  },
+  {
+    "id": "C_148",
+    "name": "AMS Coffee 1",
+    "type": "cafe",
+    "lat": -7.105637,
+    "lon": 111.953902
+  },
+  {
+    "id": "C_149",
+    "name": "Warung Mbah Ronggeng",
+    "type": "restaurant",
+    "lat": -7.105517,
+    "lon": 111.954267
+  },
+  {
+    "id": "C_150",
+    "name": "Warung Makan Mbak Win",
+    "type": "restaurant",
+    "lat": -7.10487,
+    "lon": 111.954853
+  },
+  {
+    "id": "C_151",
+    "name": "BW Coffee",
+    "type": "cafe",
+    "lat": -6.900234,
+    "lon": 112.053985
+  },
+  {
+    "id": "C_152",
+    "name": "Good Area Ice Cream, Food & Drinks",
+    "type": "cafe",
+    "lat": -6.899668,
+    "lon": 112.054187
+  },
+  {
+    "id": "C_153",
+    "name": "Depot Pak Ali",
+    "type": "restaurant",
+    "lat": -6.898738,
+    "lon": 112.054289
+  },
+  {
+    "id": "C_154",
+    "name": "Warung Soto Karang Pucang",
+    "type": "restaurant",
+    "lat": -6.898078,
+    "lon": 112.054448
+  },
+  {
+    "id": "C_155",
+    "name": "Distrik Coffee",
+    "type": "cafe",
+    "lat": -6.898027,
+    "lon": 112.054641
+  },
+  {
+    "id": "C_156",
+    "name": "Rumah Makan Ridho Minang",
+    "type": "restaurant",
+    "lat": -6.897631,
+    "lon": 112.054562
+  },
+  {
+    "id": "C_157",
+    "name": "Frona Coffee",
+    "type": "cafe",
+    "lat": -6.897598,
+    "lon": 112.054209
+  },
+  {
+    "id": "C_158",
+    "name": "Depot Intan Jaya",
+    "type": "restaurant",
+    "lat": -6.897222,
+    "lon": 112.05335
+  },
+  {
+    "id": "C_159",
+    "name": "Castle Cabin Indonesia",
+    "type": "cafe",
+    "lat": -6.899267,
+    "lon": 112.052316
+  },
+  {
+    "id": "C_160",
+    "name": "Pandemic Coffee",
+    "type": "cafe",
+    "lat": -6.899329,
+    "lon": 112.053142
+  },
+  {
+    "id": "C_161",
+    "name": "Variz Cafe",
+    "type": "cafe",
+    "lat": -6.898893,
+    "lon": 112.052779
+  },
+  {
+    "id": "C_162",
+    "name": "Warung Lucky",
+    "type": "cafe",
+    "lat": -6.899974,
+    "lon": 112.051732
+  },
+  {
+    "id": "C_163",
+    "name": "Bakso'ne Cak Khan",
+    "type": "restaurant",
+    "lat": -6.901397,
+    "lon": 112.054629
+  },
+  {
+    "id": "C_164",
+    "name": "Warkopmu",
+    "type": "cafe",
+    "lat": -6.901464,
+    "lon": 112.054601
+  },
+  {
+    "id": "C_165",
+    "name": "Benteng Kopi",
+    "type": "cafe",
+    "lat": -6.898248,
+    "lon": 112.05545
+  },
+  {
+    "id": "C_166",
+    "name": "Ngariung Coffee",
+    "type": "cafe",
+    "lat": -6.901647,
+    "lon": 112.051078
+  },
+  {
+    "id": "C_167",
+    "name": "Kedai Me",
+    "type": "cafe",
+    "lat": -6.900193,
+    "lon": 112.051364
+  },
+  {
+    "id": "C_168",
+    "name": "Bakso & Mie Ayam Pak Kumis",
+    "type": "restaurant",
+    "lat": -6.900843,
+    "lon": 112.049547
+  },
+  {
+    "id": "C_169",
+    "name": "Cafe Kasju",
+    "type": "cafe",
+    "lat": -6.901383,
+    "lon": 112.049541
+  },
+  {
+    "id": "C_170",
+    "name": "Bakso Kikil & Es Degan",
+    "type": "restaurant",
+    "lat": -6.901129,
+    "lon": 112.049163
+  },
+  {
+    "id": "C_171",
+    "name": "Seblak Prasmanan Omah Abu",
+    "type": "restaurant",
+    "lat": -6.89936,
+    "lon": 112.049843
+  },
+  {
+    "id": "C_172",
+    "name": "Warung Kopi Mak Ning",
+    "type": "cafe",
+    "lat": -6.897754,
+    "lon": 112.047548
+  },
+  {
+    "id": "C_173",
+    "name": "Warung Makan & Warkop Gayeng",
+    "type": "restaurant",
+    "lat": -6.89926,
+    "lon": 112.050141
+  },
+  {
+    "id": "C_174",
+    "name": "Kafe / Restoran",
+    "type": "cafe",
+    "lat": -6.882224,
+    "lon": 112.033892
+  },
+  {
+    "id": "C_175",
+    "name": "Batas Rindu Cafe & Eatery",
+    "type": "cafe",
+    "lat": -6.898728,
+    "lon": 112.0356
+  },
+  {
+    "id": "C_176",
+    "name": "Cafe Inclusi & Pijat Refleksi",
+    "type": "cafe",
+    "lat": -6.893059,
+    "lon": 112.066104
+  },
+  {
+    "id": "C_177",
+    "name": "Warkop Babe Coffee",
+    "type": "cafe",
+    "lat": -6.876449,
+    "lon": 112.027304
+  },
+  {
+    "id": "C_178",
+    "name": "D'Taka Cafe",
+    "type": "cafe",
+    "lat": -6.876516,
+    "lon": 112.023957
+  }
+]

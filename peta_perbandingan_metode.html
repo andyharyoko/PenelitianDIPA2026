@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4486ecf84795ec666ccf884c7c31626f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4486ecf84795ec666ccf884c7c31626f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4486ecf84795ec666ccf884c7c31626f = L.map(
+                "map_4486ecf84795ec666ccf884c7c31626f",
+                {
+                    center: [-6.900212292359554, 112.0503707291833],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a699a26215cb751beb0728a1fbfca0e5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a699a26215cb751beb0728a1fbfca0e5.addTo(map_4486ecf84795ec666ccf884c7c31626f);
+        
+    
+            var marker_f2e33d50950075a5091e623832fa8b64 = L.marker(
+                [-6.900212292359554, 112.0503707291833],
+                {
+}
+            ).addTo(map_4486ecf84795ec666ccf884c7c31626f);
+        
+    
+            var icon_c77d5b670dee4cf2b955cf0eb1c66cd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_356325255a81656b5430111c49069d8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcf0908ecf0179a0cdbcab0b12ccf176 = $(`<div id="html_fcf0908ecf0179a0cdbcab0b12ccf176" style="width: 100.0%; height: 100.0%;"><b>Juara SAW & TOPSIS (K042)</b><br>Skor TOPSIS: 0.7035</div>`)[0];
+                popup_356325255a81656b5430111c49069d8a.setContent(html_fcf0908ecf0179a0cdbcab0b12ccf176);
+            
+        
+
+        marker_f2e33d50950075a5091e623832fa8b64.bindPopup(popup_356325255a81656b5430111c49069d8a)
+        ;
+
+        
+    
+    
+            marker_f2e33d50950075a5091e623832fa8b64.bindTooltip(
+                `<div>
+                     Juara SAW & TOPSIS (K042)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f2e33d50950075a5091e623832fa8b64.setIcon(icon_c77d5b670dee4cf2b955cf0eb1c66cd3);
+            
+    
+            var marker_8c8717a98c9100df7171910acb4a152b = L.marker(
+                [-6.901179179903891, 112.0497982839536],
+                {
+}
+            ).addTo(map_4486ecf84795ec666ccf884c7c31626f);
+        
+    
+            var icon_432a889fe4ac8ecd1fb2b0bfdbdd6c37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76018feedbe6f119e1d4d8274293a6b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5191e6543ed9852a0270f729a3eef5a = $(`<div id="html_e5191e6543ed9852a0270f729a3eef5a" style="width: 100.0%; height: 100.0%;"><b>Juara TOPSIS saja (K072)</b><br>Skor TOPSIS: 0.6750</div>`)[0];
+                popup_76018feedbe6f119e1d4d8274293a6b6.setContent(html_e5191e6543ed9852a0270f729a3eef5a);
+            
+        
+
+        marker_8c8717a98c9100df7171910acb4a152b.bindPopup(popup_76018feedbe6f119e1d4d8274293a6b6)
+        ;
+
+        
+    
+    
+            marker_8c8717a98c9100df7171910acb4a152b.bindTooltip(
+                `<div>
+                     Juara TOPSIS saja (K072)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8c8717a98c9100df7171910acb4a152b.setIcon(icon_432a889fe4ac8ecd1fb2b0bfdbdd6c37);
+            
+    
+            var marker_a16ba8ef17a686d64cf3ff089a64a700 = L.marker(
+                [-6.899831023042311, 112.05420837167652],
+                {
+}
+            ).addTo(map_4486ecf84795ec666ccf884c7c31626f);
+        
+    
+            var icon_3ac0d3d21b0adcb5d065ef10b1173560 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_883615943290af3f734d18d0000557e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c4e0f8fba592917d26bbd32890c28d2 = $(`<div id="html_8c4e0f8fba592917d26bbd32890c28d2" style="width: 100.0%; height: 100.0%;"><b>Juara SAW & TOPSIS (K077)</b><br>Skor TOPSIS: 0.6715</div>`)[0];
+                popup_883615943290af3f734d18d0000557e0.setContent(html_8c4e0f8fba592917d26bbd32890c28d2);
+            
+        
+
+        marker_a16ba8ef17a686d64cf3ff089a64a700.bindPopup(popup_883615943290af3f734d18d0000557e0)
+        ;
+
+        
+    
+    
+            marker_a16ba8ef17a686d64cf3ff089a64a700.bindTooltip(
+                `<div>
+                     Juara SAW & TOPSIS (K077)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a16ba8ef17a686d64cf3ff089a64a700.setIcon(icon_3ac0d3d21b0adcb5d065ef10b1173560);
+            
+    
+            var marker_908c3453750f27ed10d02cb737faae85 = L.marker(
+                [-6.89570537977882, 112.04952744274956],
+                {
+}
+            ).addTo(map_4486ecf84795ec666ccf884c7c31626f);
+        
+    
+            var icon_39b21b0950060414bd51efce4a764403 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_607d7e5b72027653104a8cf8a3aa9551 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2db12021eaf0ee89b2c4aace9be109e6 = $(`<div id="html_2db12021eaf0ee89b2c4aace9be109e6" style="width: 100.0%; height: 100.0%;"><b>Juara SAW & TOPSIS (K029)</b><br>Skor TOPSIS: 0.6634</div>`)[0];
+                popup_607d7e5b72027653104a8cf8a3aa9551.setContent(html_2db12021eaf0ee89b2c4aace9be109e6);
+            
+        
+
+        marker_908c3453750f27ed10d02cb737faae85.bindPopup(popup_607d7e5b72027653104a8cf8a3aa9551)
+        ;
+
+        
+    
+    
+            marker_908c3453750f27ed10d02cb737faae85.bindTooltip(
+                `<div>
+                     Juara SAW & TOPSIS (K029)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_908c3453750f27ed10d02cb737faae85.setIcon(icon_39b21b0950060414bd51efce4a764403);
+            
+    
+            var marker_1848bdaf35faa40df084fdea9a3fed85 = L.marker(
+                [-6.902965039224359, 112.05574844123376],
+                {
+}
+            ).addTo(map_4486ecf84795ec666ccf884c7c31626f);
+        
+    
+            var icon_485a6f8b69efea831e6a9c93c0d4fb8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a22359eb3b6630031de30a27d21c7e31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b8978ff44549f7448ec46b866e02c23 = $(`<div id="html_7b8978ff44549f7448ec46b866e02c23" style="width: 100.0%; height: 100.0%;"><b>Juara SAW & TOPSIS (K100)</b><br>Skor TOPSIS: 0.6614</div>`)[0];
+                popup_a22359eb3b6630031de30a27d21c7e31.setContent(html_7b8978ff44549f7448ec46b866e02c23);
+            
+        
+
+        marker_1848bdaf35faa40df084fdea9a3fed85.bindPopup(popup_a22359eb3b6630031de30a27d21c7e31)
+        ;
+
+        
+    
+    
+            marker_1848bdaf35faa40df084fdea9a3fed85.bindTooltip(
+                `<div>
+                     Juara SAW & TOPSIS (K100)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1848bdaf35faa40df084fdea9a3fed85.setIcon(icon_485a6f8b69efea831e6a9c93c0d4fb8a);
+            
+    
+            var marker_7fbd25ef261a227fd1a31a6c8d8af517 = L.marker(
+                [-6.898353980768188, 112.05324049353544],
+                {
+}
+            ).addTo(map_4486ecf84795ec666ccf884c7c31626f);
+        
+    
+            var icon_8887d3a7663e0325e9b9013fbbc4b6ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daf38f89f9ca55cea17136e1bee50173 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5984b27842d18018dfbd1f1ab7969d08 = $(`<div id="html_5984b27842d18018dfbd1f1ab7969d08" style="width: 100.0%; height: 100.0%;"><b>Juara SAW saja (K085)</b><br>Skor TOPSIS: 0.6481</div>`)[0];
+                popup_daf38f89f9ca55cea17136e1bee50173.setContent(html_5984b27842d18018dfbd1f1ab7969d08);
+            
+        
+
+        marker_7fbd25ef261a227fd1a31a6c8d8af517.bindPopup(popup_daf38f89f9ca55cea17136e1bee50173)
+        ;
+
+        
+    
+    
+            marker_7fbd25ef261a227fd1a31a6c8d8af517.bindTooltip(
+                `<div>
+                     Juara SAW saja (K085)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7fbd25ef261a227fd1a31a6c8d8af517.setIcon(icon_8887d3a7663e0325e9b9013fbbc4b6ee);
+            
+</script>
+</html>

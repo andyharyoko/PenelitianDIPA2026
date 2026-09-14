@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4d8bf86d736cc4f130c552d70ac9c76b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4d8bf86d736cc4f130c552d70ac9c76b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4d8bf86d736cc4f130c552d70ac9c76b = L.map(
+                "map_4d8bf86d736cc4f130c552d70ac9c76b",
+                {
+                    center: [-6.900212292359554, 112.0503707291833],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d49b102cf6e1843d36a2799a83e75c61 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d49b102cf6e1843d36a2799a83e75c61.addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            var marker_982fb6944e0211936bbaaa0e2b1137d9 = L.marker(
+                [-6.900212292359554, 112.0503707291833],
+                {
+}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            var icon_77ef5324ee6d9024c35c5f44346b1e89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24fdeda61d6c089594fcdcd79b7b9d59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95fe55800472011150e1932148972544 = $(`<div id="html_95fe55800472011150e1932148972544" style="width: 100.0%; height: 100.0%;"><b>🏆 Peringkat 1</b><br>Nama: Kandidat 42<br>Skor Akhir: 0.6939<br>Sewa: 16 Jt<br>POI (C7): 88.0</div>`)[0];
+                popup_24fdeda61d6c089594fcdcd79b7b9d59.setContent(html_95fe55800472011150e1932148972544);
+            
+        
+
+        marker_982fb6944e0211936bbaaa0e2b1137d9.bindPopup(popup_24fdeda61d6c089594fcdcd79b7b9d59)
+        ;
+
+        
+    
+    
+            marker_982fb6944e0211936bbaaa0e2b1137d9.bindTooltip(
+                `<div>
+                     Juara 1 - K042
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_982fb6944e0211936bbaaa0e2b1137d9.setIcon(icon_77ef5324ee6d9024c35c5f44346b1e89);
+            
+    
+            var marker_40d4008e151a3ed1a5a5355ac8e885b7 = L.marker(
+                [-6.902965039224359, 112.05574844123376],
+                {
+}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            var icon_207adf00e291ff7372267ae188ac4ef3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d87ccda19e0775949f23c316e1ed5edf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61ab82b5281104b1723b954b09dcb5ac = $(`<div id="html_61ab82b5281104b1723b954b09dcb5ac" style="width: 100.0%; height: 100.0%;"><b>🏆 Peringkat 2</b><br>Nama: Kandidat 100<br>Skor Akhir: 0.6746<br>Sewa: 13 Jt<br>POI (C7): 80.0</div>`)[0];
+                popup_d87ccda19e0775949f23c316e1ed5edf.setContent(html_61ab82b5281104b1723b954b09dcb5ac);
+            
+        
+
+        marker_40d4008e151a3ed1a5a5355ac8e885b7.bindPopup(popup_d87ccda19e0775949f23c316e1ed5edf)
+        ;
+
+        
+    
+    
+            marker_40d4008e151a3ed1a5a5355ac8e885b7.bindTooltip(
+                `<div>
+                     Juara 2 - K100
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_40d4008e151a3ed1a5a5355ac8e885b7.setIcon(icon_207adf00e291ff7372267ae188ac4ef3);
+            
+    
+            var marker_7cce2b83a3a520446e4edf05f56ad569 = L.marker(
+                [-6.899831023042311, 112.05420837167652],
+                {
+}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            var icon_daba3d4855e92d8e70ec906f48fb97db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_273d0e401ed16266657f89bae2807339 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b22217e72f3b4d8b7485636a1c0a5fe = $(`<div id="html_6b22217e72f3b4d8b7485636a1c0a5fe" style="width: 100.0%; height: 100.0%;"><b>🏆 Peringkat 3</b><br>Nama: Kandidat 77<br>Skor Akhir: 0.6591<br>Sewa: 16 Jt<br>POI (C7): 91.0</div>`)[0];
+                popup_273d0e401ed16266657f89bae2807339.setContent(html_6b22217e72f3b4d8b7485636a1c0a5fe);
+            
+        
+
+        marker_7cce2b83a3a520446e4edf05f56ad569.bindPopup(popup_273d0e401ed16266657f89bae2807339)
+        ;
+
+        
+    
+    
+            marker_7cce2b83a3a520446e4edf05f56ad569.bindTooltip(
+                `<div>
+                     Juara 3 - K077
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cce2b83a3a520446e4edf05f56ad569.setIcon(icon_daba3d4855e92d8e70ec906f48fb97db);
+            
+    
+            var marker_f20ac69d4c94bb6cb4c140a742634ee4 = L.marker(
+                [-6.89570537977882, 112.04952744274956],
+                {
+}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            var icon_21ea1731e6accf5b13e90c639aafad22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3aaf6b0251034c0e0ed5bbe6ea6d8296 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4cec53a8ac77024d58edc4bc7aec22b = $(`<div id="html_d4cec53a8ac77024d58edc4bc7aec22b" style="width: 100.0%; height: 100.0%;"><b>🏆 Peringkat 4</b><br>Nama: Kandidat 29<br>Skor Akhir: 0.6585<br>Sewa: 29 Jt<br>POI (C7): 92.0</div>`)[0];
+                popup_3aaf6b0251034c0e0ed5bbe6ea6d8296.setContent(html_d4cec53a8ac77024d58edc4bc7aec22b);
+            
+        
+
+        marker_f20ac69d4c94bb6cb4c140a742634ee4.bindPopup(popup_3aaf6b0251034c0e0ed5bbe6ea6d8296)
+        ;
+
+        
+    
+    
+            marker_f20ac69d4c94bb6cb4c140a742634ee4.bindTooltip(
+                `<div>
+                     Juara 4 - K029
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f20ac69d4c94bb6cb4c140a742634ee4.setIcon(icon_21ea1731e6accf5b13e90c639aafad22);
+            
+    
+            var marker_566861f49ef4a9374caee315e10c31ef = L.marker(
+                [-6.898353980768188, 112.05324049353544],
+                {
+}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            var icon_2825b2e006a9e37c07e8ea5146d76d00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a4fffcf06da2c66a276af8536315fdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef12ad08c03d5fc5d82b62fe673d0352 = $(`<div id="html_ef12ad08c03d5fc5d82b62fe673d0352" style="width: 100.0%; height: 100.0%;"><b>🏆 Peringkat 5</b><br>Nama: Kandidat 85<br>Skor Akhir: 0.6290<br>Sewa: 11 Jt<br>POI (C7): 88.0</div>`)[0];
+                popup_7a4fffcf06da2c66a276af8536315fdd.setContent(html_ef12ad08c03d5fc5d82b62fe673d0352);
+            
+        
+
+        marker_566861f49ef4a9374caee315e10c31ef.bindPopup(popup_7a4fffcf06da2c66a276af8536315fdd)
+        ;
+
+        
+    
+    
+            marker_566861f49ef4a9374caee315e10c31ef.bindTooltip(
+                `<div>
+                     Juara 5 - K085
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_566861f49ef4a9374caee315e10c31ef.setIcon(icon_2825b2e006a9e37c07e8ea5146d76d00);
+            
+    
+            var circle_marker_8549d1f48b4e324e0683b140d8a352d5 = L.circleMarker(
+                [-7.123885666665531, 111.93637179964368],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_8549d1f48b4e324e0683b140d8a352d5.bindTooltip(
+                `<div>
+                     Peringkat 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f12def13721817a1ce7eadd124f28e8 = L.circleMarker(
+                [-6.901179179903891, 112.0497982839536],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_3f12def13721817a1ce7eadd124f28e8.bindTooltip(
+                `<div>
+                     Peringkat 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0d9ffe5c4c2d5045841c1485ebb212d = L.circleMarker(
+                [-6.900869974484735, 112.05932924222256],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_c0d9ffe5c4c2d5045841c1485ebb212d.bindTooltip(
+                `<div>
+                     Peringkat 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6ae3137715755cd46a7c265284bc335 = L.circleMarker(
+                [-6.903294928425355, 112.0561772847474],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_e6ae3137715755cd46a7c265284bc335.bindTooltip(
+                `<div>
+                     Peringkat 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6ec72806e41650fb9f2962ce7a98354 = L.circleMarker(
+                [-6.89758445749269, 112.05290179408496],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_b6ec72806e41650fb9f2962ce7a98354.bindTooltip(
+                `<div>
+                     Peringkat 10
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f59183dac31a1c73912738161fe6f8c1 = L.circleMarker(
+                [-6.900052417498103, 112.05623834443686],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_f59183dac31a1c73912738161fe6f8c1.bindTooltip(
+                `<div>
+                     Peringkat 11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4db5b41773d021e5831054310e057aa = L.circleMarker(
+                [-6.895634774071407, 112.04959291428872],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_a4db5b41773d021e5831054310e057aa.bindTooltip(
+                `<div>
+                     Peringkat 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3994f407c8981a618a0570e6f88fd95e = L.circleMarker(
+                [-6.900025640773267, 112.06851980237089],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_3994f407c8981a618a0570e6f88fd95e.bindTooltip(
+                `<div>
+                     Peringkat 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd35f56331054f7e6fae74af8ef3bfa5 = L.circleMarker(
+                [-6.902162801327994, 112.05551401168933],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_fd35f56331054f7e6fae74af8ef3bfa5.bindTooltip(
+                `<div>
+                     Peringkat 14
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_859f61a53db5464e66740a8939ac3e4c = L.circleMarker(
+                [-6.898179835740189, 112.059416453853],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_859f61a53db5464e66740a8939ac3e4c.bindTooltip(
+                `<div>
+                     Peringkat 15
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9118aa6e8ac9e85070e3f35545e10527 = L.circleMarker(
+                [-6.89689003435026, 112.06011447170218],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_9118aa6e8ac9e85070e3f35545e10527.bindTooltip(
+                `<div>
+                     Peringkat 16
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c70843a881f4939c800aea2c1926eaef = L.circleMarker(
+                [-6.902943373919286, 112.04920552578608],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_c70843a881f4939c800aea2c1926eaef.bindTooltip(
+                `<div>
+                     Peringkat 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d04dd7fd40b369e4862851f23a595bee = L.circleMarker(
+                [-6.898057179379058, 112.05350783790485],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_d04dd7fd40b369e4862851f23a595bee.bindTooltip(
+                `<div>
+                     Peringkat 18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4222b51ece77352aa15629a37ef7404d = L.circleMarker(
+                [-6.896647445915539, 112.04914069402356],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_4222b51ece77352aa15629a37ef7404d.bindTooltip(
+                `<div>
+                     Peringkat 19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f754d7233487b8d97c2a67663646769f = L.circleMarker(
+                [-6.90026574084124, 112.06174808253084],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_f754d7233487b8d97c2a67663646769f.bindTooltip(
+                `<div>
+                     Peringkat 20
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_16562218ed675e28efde3773af71a32e = L.circleMarker(
+                [-6.8931070667118925, 112.04242083618416],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_16562218ed675e28efde3773af71a32e.bindTooltip(
+                `<div>
+                     Peringkat 21
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af4ed4fc2fe17da18fd3f1fae8bd36f9 = L.circleMarker(
+                [-6.900739492400651, 112.06166185658884],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_af4ed4fc2fe17da18fd3f1fae8bd36f9.bindTooltip(
+                `<div>
+                     Peringkat 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5b315f3094b999d9a63fdc8565917ab = L.circleMarker(
+                [-6.897746095868259, 112.0375209471905],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_c5b315f3094b999d9a63fdc8565917ab.bindTooltip(
+                `<div>
+                     Peringkat 23
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98292c01a53df612b15c4aaed1cc9f93 = L.circleMarker(
+                [-6.904002116598856, 112.04562655741351],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_98292c01a53df612b15c4aaed1cc9f93.bindTooltip(
+                `<div>
+                     Peringkat 24
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b471c0765808b07575589ba7e1a88ce = L.circleMarker(
+                [-6.89873332791529, 112.05811951609292],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_5b471c0765808b07575589ba7e1a88ce.bindTooltip(
+                `<div>
+                     Peringkat 25
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15b2b706fa79b26f54078e7b6853ce8b = L.circleMarker(
+                [-6.904029697785407, 112.06792876807891],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_15b2b706fa79b26f54078e7b6853ce8b.bindTooltip(
+                `<div>
+                     Peringkat 26
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b8e119440846f4ec98b363321b7e37c = L.circleMarker(
+                [-6.929301998760192, 112.06106825161368],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_3b8e119440846f4ec98b363321b7e37c.bindTooltip(
+                `<div>
+                     Peringkat 27
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6fd9a564e2a107dad5699db1b2fa937 = L.circleMarker(
+                [-6.899427452626825, 112.05121935769812],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_d6fd9a564e2a107dad5699db1b2fa937.bindTooltip(
+                `<div>
+                     Peringkat 28
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f4b45df3213976837fa0af90afe8a4c9 = L.circleMarker(
+                [-7.07114045098239, 112.18242522906874],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_f4b45df3213976837fa0af90afe8a4c9.bindTooltip(
+                `<div>
+                     Peringkat 29
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db66a58a97bd870fc6321fb6903d5013 = L.circleMarker(
+                [-6.963973967614541, 111.71371783829844],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_db66a58a97bd870fc6321fb6903d5013.bindTooltip(
+                `<div>
+                     Peringkat 30
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c748a45d371ed5c7fc9969e306b09ec = L.circleMarker(
+                [-6.887344629004972, 112.0414742259355],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_9c748a45d371ed5c7fc9969e306b09ec.bindTooltip(
+                `<div>
+                     Peringkat 31
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cdd9033dd1cf319984abca2e4c2163fa = L.circleMarker(
+                [-6.894541631280184, 112.0494998191642],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_cdd9033dd1cf319984abca2e4c2163fa.bindTooltip(
+                `<div>
+                     Peringkat 32
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd8e0f69b00b5908d0699ff50f5ce502 = L.circleMarker(
+                [-6.896696603724033, 112.05070417607271],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_bd8e0f69b00b5908d0699ff50f5ce502.bindTooltip(
+                `<div>
+                     Peringkat 33
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_48d97c7fa742a7ccac0ca5bbabd6e72d = L.circleMarker(
+                [-6.900818593557286, 112.05541983151826],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_48d97c7fa742a7ccac0ca5bbabd6e72d.bindTooltip(
+                `<div>
+                     Peringkat 34
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fbc2e799c1211cded2d3d3a900c76520 = L.circleMarker(
+                [-6.9032635620228175, 112.16934125581164],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_fbc2e799c1211cded2d3d3a900c76520.bindTooltip(
+                `<div>
+                     Peringkat 35
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90363c8dca0ad2caa96812b930940e22 = L.circleMarker(
+                [-6.900085465885413, 112.0636943238752],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_90363c8dca0ad2caa96812b930940e22.bindTooltip(
+                `<div>
+                     Peringkat 36
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bb21c90d508ddbd189cb86f2dd75eaa = L.circleMarker(
+                [-6.884220246420004, 112.01022693660782],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_5bb21c90d508ddbd189cb86f2dd75eaa.bindTooltip(
+                `<div>
+                     Peringkat 37
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15be7388d13b9e410bf60ce580504396 = L.circleMarker(
+                [-6.899389227342138, 112.06524373918958],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_15be7388d13b9e410bf60ce580504396.bindTooltip(
+                `<div>
+                     Peringkat 38
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac67bf30a30ca25e74ebaba34db4aab3 = L.circleMarker(
+                [-6.886111623949861, 112.01658915541594],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_ac67bf30a30ca25e74ebaba34db4aab3.bindTooltip(
+                `<div>
+                     Peringkat 39
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8bff3b669fc3c216204fdc52a7fd363d = L.circleMarker(
+                [-6.897562503059908, 112.06057342108603],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_8bff3b669fc3c216204fdc52a7fd363d.bindTooltip(
+                `<div>
+                     Peringkat 40
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c57a3b06636d2db6a2f6b40a398d73ce = L.circleMarker(
+                [-6.879298437217096, 112.04049929595148],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_c57a3b06636d2db6a2f6b40a398d73ce.bindTooltip(
+                `<div>
+                     Peringkat 41
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3b70fe334f3e27a8632030bc11701854 = L.circleMarker(
+                [-6.882691975752463, 112.01360021035406],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_3b70fe334f3e27a8632030bc11701854.bindTooltip(
+                `<div>
+                     Peringkat 42
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18d1aa275c1ca326424ffe1dbfb22e05 = L.circleMarker(
+                [-6.900335223016247, 112.05648121107124],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_18d1aa275c1ca326424ffe1dbfb22e05.bindTooltip(
+                `<div>
+                     Peringkat 43
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04c5683f6dc355c07b26ada0fe30b195 = L.circleMarker(
+                [-6.897908210831055, 112.06465819886674],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_04c5683f6dc355c07b26ada0fe30b195.bindTooltip(
+                `<div>
+                     Peringkat 44
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a91cb37e9aab4a3e418cfddcee45fcf2 = L.circleMarker(
+                [-7.073292573030105, 112.1080994933926],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_a91cb37e9aab4a3e418cfddcee45fcf2.bindTooltip(
+                `<div>
+                     Peringkat 45
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5cfd4fa99d1742bc663d4c49bc165151 = L.circleMarker(
+                [-6.891977620592394, 112.0414505440126],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_5cfd4fa99d1742bc663d4c49bc165151.bindTooltip(
+                `<div>
+                     Peringkat 46
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c6470399a3b1601a80f7bac538a1b850 = L.circleMarker(
+                [-6.883150376361696, 112.0100907583634],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_c6470399a3b1601a80f7bac538a1b850.bindTooltip(
+                `<div>
+                     Peringkat 47
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_80afd24c0440aabcaaf8d51f82c01594 = L.circleMarker(
+                [-7.074306559723144, 112.10960723418604],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_80afd24c0440aabcaaf8d51f82c01594.bindTooltip(
+                `<div>
+                     Peringkat 48
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd09e2e5030ca6a660a75708050f899b = L.circleMarker(
+                [-6.900373547347924, 112.036289011994],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_fd09e2e5030ca6a660a75708050f899b.bindTooltip(
+                `<div>
+                     Peringkat 49
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_844711c98d6607001bec1c482b10360f = L.circleMarker(
+                [-6.898673072747008, 112.06252011778544],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_844711c98d6607001bec1c482b10360f.bindTooltip(
+                `<div>
+                     Peringkat 50
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99facfbc4c1affb7f7939a346b9a6680 = L.circleMarker(
+                [-6.898184152415056, 112.06409369678636],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_99facfbc4c1affb7f7939a346b9a6680.bindTooltip(
+                `<div>
+                     Peringkat 51
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd00309ac22cd39c95eb2d913165525e = L.circleMarker(
+                [-6.89736259984847, 112.04949068502314],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_dd00309ac22cd39c95eb2d913165525e.bindTooltip(
+                `<div>
+                     Peringkat 52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5695a9255fd9ad08b603508ddefd9c36 = L.circleMarker(
+                [-7.073521855426105, 112.1117344501994],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_5695a9255fd9ad08b603508ddefd9c36.bindTooltip(
+                `<div>
+                     Peringkat 53
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3bfbbd11be8f096ddd18ffef1a4d042d = L.circleMarker(
+                [-6.903034768550323, 112.05497797846132],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_3bfbbd11be8f096ddd18ffef1a4d042d.bindTooltip(
+                `<div>
+                     Peringkat 54
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1bd2c7ffe49489aa6ecd606d50bd44d = L.circleMarker(
+                [-6.900045420861382, 112.03448890104625],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_b1bd2c7ffe49489aa6ecd606d50bd44d.bindTooltip(
+                `<div>
+                     Peringkat 55
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86428fad143bc386fa7e389b78da4d9d = L.circleMarker(
+                [-6.88302424003512, 112.0189314130654],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_86428fad143bc386fa7e389b78da4d9d.bindTooltip(
+                `<div>
+                     Peringkat 56
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_46c25f9fc42d796e4236d44e9be852e4 = L.circleMarker(
+                [-6.78630626616274, 111.79280351554718],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_46c25f9fc42d796e4236d44e9be852e4.bindTooltip(
+                `<div>
+                     Peringkat 57
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15902f7d938f01dbfa4319febfdc475f = L.circleMarker(
+                [-6.891491771327836, 112.04047836571604],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_15902f7d938f01dbfa4319febfdc475f.bindTooltip(
+                `<div>
+                     Peringkat 58
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7c16bebd41a1e0f79ff384a2df54732 = L.circleMarker(
+                [-6.88919047543823, 112.05338326589568],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_c7c16bebd41a1e0f79ff384a2df54732.bindTooltip(
+                `<div>
+                     Peringkat 59
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dcfe58d455c90b803024270116ebe9fa = L.circleMarker(
+                [-6.897430659681318, 112.0667583013174],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_dcfe58d455c90b803024270116ebe9fa.bindTooltip(
+                `<div>
+                     Peringkat 60
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b89fb7948b4ff2a061dda702487be980 = L.circleMarker(
+                [-7.062135193948634, 112.00685367238626],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_b89fb7948b4ff2a061dda702487be980.bindTooltip(
+                `<div>
+                     Peringkat 61
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1cf8c4abbd31a63cfbd1ea552ca11d23 = L.circleMarker(
+                [-6.965945302253597, 111.71470802177276],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_1cf8c4abbd31a63cfbd1ea552ca11d23.bindTooltip(
+                `<div>
+                     Peringkat 62
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7025c870dbaba6b1573ca6b6c720aa8 = L.circleMarker(
+                [-6.902437673933333, 112.07889531117588],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_c7025c870dbaba6b1573ca6b6c720aa8.bindTooltip(
+                `<div>
+                     Peringkat 63
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_16e90a46fe6858d94a82ca7258851f7e = L.circleMarker(
+                [-6.830197474273471, 111.99625458023556],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_16e90a46fe6858d94a82ca7258851f7e.bindTooltip(
+                `<div>
+                     Peringkat 64
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_308fe68184c4fe0730b9fbb11eb4ebb7 = L.circleMarker(
+                [-6.8839838216222375, 112.00809423952164],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_308fe68184c4fe0730b9fbb11eb4ebb7.bindTooltip(
+                `<div>
+                     Peringkat 65
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52b9742bc9260ec8462e757d8e4d2f82 = L.circleMarker(
+                [-6.829183112076985, 111.9967303740416],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_52b9742bc9260ec8462e757d8e4d2f82.bindTooltip(
+                `<div>
+                     Peringkat 66
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5fc7aae6d796b1203d96f3c2e9210f6a = L.circleMarker(
+                [-6.931212020922078, 112.05911497907418],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_5fc7aae6d796b1203d96f3c2e9210f6a.bindTooltip(
+                `<div>
+                     Peringkat 67
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7845e3e0e4668b01a6b97b8adb939857 = L.circleMarker(
+                [-7.073096096154428, 112.10834703115452],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_7845e3e0e4668b01a6b97b8adb939857.bindTooltip(
+                `<div>
+                     Peringkat 68
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e57671456f5a344045ac114a5bceab6 = L.circleMarker(
+                [-7.059537907850986, 112.0115060106856],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_6e57671456f5a344045ac114a5bceab6.bindTooltip(
+                `<div>
+                     Peringkat 69
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42f772009a21d70a4d8bb09b9f894acc = L.circleMarker(
+                [-7.082344426928227, 112.11510978677347],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_42f772009a21d70a4d8bb09b9f894acc.bindTooltip(
+                `<div>
+                     Peringkat 70
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1bccbca815234612ff850e6416e2ae69 = L.circleMarker(
+                [-6.857533420824699, 112.02646385388208],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_1bccbca815234612ff850e6416e2ae69.bindTooltip(
+                `<div>
+                     Peringkat 71
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd9d465484a716d470032adc55cf611a = L.circleMarker(
+                [-6.884167090025041, 112.01510972833088],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_dd9d465484a716d470032adc55cf611a.bindTooltip(
+                `<div>
+                     Peringkat 72
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_751256c8d3055281bf027cbb07112f56 = L.circleMarker(
+                [-6.899476375286648, 112.0671697888008],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_751256c8d3055281bf027cbb07112f56.bindTooltip(
+                `<div>
+                     Peringkat 73
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_459aad5750cf9b576ae6f174fdcf0fab = L.circleMarker(
+                [-6.88140204277436, 112.01020359164504],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_459aad5750cf9b576ae6f174fdcf0fab.bindTooltip(
+                `<div>
+                     Peringkat 74
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02df34ee8711c034360e83bcd6629aec = L.circleMarker(
+                [-6.908571011531506, 112.0636782722332],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_02df34ee8711c034360e83bcd6629aec.bindTooltip(
+                `<div>
+                     Peringkat 75
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c59445c17346c13ddde211a47c7050b = L.circleMarker(
+                [-7.0599897474611, 112.00506456347242],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_1c59445c17346c13ddde211a47c7050b.bindTooltip(
+                `<div>
+                     Peringkat 76
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9e14f5a08f3b79a2b99e43fbe052fe0 = L.circleMarker(
+                [-6.907346255695643, 112.06406815733592],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_d9e14f5a08f3b79a2b99e43fbe052fe0.bindTooltip(
+                `<div>
+                     Peringkat 77
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b8dd6b2b9270f95955be6eae0d23fcf = L.circleMarker(
+                [-6.881288704233745, 112.00780492948836],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_2b8dd6b2b9270f95955be6eae0d23fcf.bindTooltip(
+                `<div>
+                     Peringkat 78
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20d77de98382e89711b3cb8e5350fd03 = L.circleMarker(
+                [-7.0856647899966765, 112.1150610884293],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_20d77de98382e89711b3cb8e5350fd03.bindTooltip(
+                `<div>
+                     Peringkat 79
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3755f235e8e4216298096bb3bec32b2 = L.circleMarker(
+                [-6.882028140299352, 112.0456043591636],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_a3755f235e8e4216298096bb3bec32b2.bindTooltip(
+                `<div>
+                     Peringkat 80
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_115320fe5daa2ba03d6232ba14066e04 = L.circleMarker(
+                [-6.885594187090424, 112.01337285257982],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_115320fe5daa2ba03d6232ba14066e04.bindTooltip(
+                `<div>
+                     Peringkat 81
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c73e6af50c23fe46aac75e6b1574ff10 = L.circleMarker(
+                [-6.884845797923145, 112.01507334046654],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_c73e6af50c23fe46aac75e6b1574ff10.bindTooltip(
+                `<div>
+                     Peringkat 82
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8542f31b0fea3201b404f9efe1aa45c3 = L.circleMarker(
+                [-6.882025177287373, 112.01010938540124],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_8542f31b0fea3201b404f9efe1aa45c3.bindTooltip(
+                `<div>
+                     Peringkat 83
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_620f3ddb8c880b3fef7127e886a92e24 = L.circleMarker(
+                [-7.076087862835971, 112.1131447765859],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_620f3ddb8c880b3fef7127e886a92e24.bindTooltip(
+                `<div>
+                     Peringkat 84
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5d6e034099bb3015321115e6066d1da = L.circleMarker(
+                [-7.074841504439988, 112.11066326939677],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_e5d6e034099bb3015321115e6066d1da.bindTooltip(
+                `<div>
+                     Peringkat 85
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b5fa7db604529ee089927ec7bacf85d7 = L.circleMarker(
+                [-7.073199523854397, 112.11040384459562],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_b5fa7db604529ee089927ec7bacf85d7.bindTooltip(
+                `<div>
+                     Peringkat 86
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70e7e6f26811b853dd711e675abf93dc = L.circleMarker(
+                [-6.884759121405859, 112.01249461389988],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_70e7e6f26811b853dd711e675abf93dc.bindTooltip(
+                `<div>
+                     Peringkat 87
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e48db2bc5cf26617798b6beaff75841 = L.circleMarker(
+                [-6.881470090578333, 112.00907347985756],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_8e48db2bc5cf26617798b6beaff75841.bindTooltip(
+                `<div>
+                     Peringkat 88
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_faed1bfc2fbd4614ad0d913067fa417c = L.circleMarker(
+                [-6.848573184546099, 112.02051522493662],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_faed1bfc2fbd4614ad0d913067fa417c.bindTooltip(
+                `<div>
+                     Peringkat 89
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_725258f424dd90b51b131d68baa863af = L.circleMarker(
+                [-7.106136862230224, 111.95633875344022],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_725258f424dd90b51b131d68baa863af.bindTooltip(
+                `<div>
+                     Peringkat 90
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d734b3da366eea43c2c1fc02a2504d3f = L.circleMarker(
+                [-7.076065248642941, 112.11106939669251],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_d734b3da366eea43c2c1fc02a2504d3f.bindTooltip(
+                `<div>
+                     Peringkat 91
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_395ca3925ac78a8ef5c9013e4f2fe437 = L.circleMarker(
+                [-6.830869486693226, 111.99765139873632],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_395ca3925ac78a8ef5c9013e4f2fe437.bindTooltip(
+                `<div>
+                     Peringkat 92
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbd4861eb9ed256ff63796a59f4aca22 = L.circleMarker(
+                [-7.076579018043836, 112.11360322912496],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_bbd4861eb9ed256ff63796a59f4aca22.bindTooltip(
+                `<div>
+                     Peringkat 93
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20fec7a3ca8a192568aadce804bf07ec = L.circleMarker(
+                [-6.882045866125081, 112.00682844200874],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_20fec7a3ca8a192568aadce804bf07ec.bindTooltip(
+                `<div>
+                     Peringkat 94
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eba8d209fd2fa808abfa30d8a58a7c2d = L.circleMarker(
+                [-6.885268614471226, 112.0177418457784],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_eba8d209fd2fa808abfa30d8a58a7c2d.bindTooltip(
+                `<div>
+                     Peringkat 95
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea7eead85411f2e6bb3619f41a247bdd = L.circleMarker(
+                [-6.891479824232754, 112.04103832392433],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_ea7eead85411f2e6bb3619f41a247bdd.bindTooltip(
+                `<div>
+                     Peringkat 96
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d07359e961d032d4a24215c62f26c7e4 = L.circleMarker(
+                [-6.885303721918655, 112.0122197689166],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_d07359e961d032d4a24215c62f26c7e4.bindTooltip(
+                `<div>
+                     Peringkat 97
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1bfb38e56cf5c4ec2c168a7a0a08a5a3 = L.circleMarker(
+                [-6.782931225734078, 111.77685174166996],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_1bfb38e56cf5c4ec2c168a7a0a08a5a3.bindTooltip(
+                `<div>
+                     Peringkat 98
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d8e8da2f60e507ac5eae5188e223ff0 = L.circleMarker(
+                [-6.964131386296498, 111.7144817654042],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_7d8e8da2f60e507ac5eae5188e223ff0.bindTooltip(
+                `<div>
+                     Peringkat 99
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b9f930f6049c06ca68d40f62231d150 = L.circleMarker(
+                [-6.882287760591353, 112.014855385149],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4d8bf86d736cc4f130c552d70ac9c76b);
+        
+    
+            circle_marker_6b9f930f6049c06ca68d40f62231d150.bindTooltip(
+                `<div>
+                     Peringkat 100
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

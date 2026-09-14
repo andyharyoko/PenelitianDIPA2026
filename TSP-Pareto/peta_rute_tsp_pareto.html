@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ec8a8e7cca90914ef285ca4991cebdfe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ec8a8e7cca90914ef285ca4991cebdfe" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ec8a8e7cca90914ef285ca4991cebdfe = L.map(
+                "map_ec8a8e7cca90914ef285ca4991cebdfe",
+                {
+                    center: [-6.92493429137009, 112.03716576305682],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_be7c4f92dcaf28ad3464425a011e22b7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_be7c4f92dcaf28ad3464425a011e22b7.addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+            var marker_e60e1d015b3e07e880c281ea33eb00c8 = L.marker(
+                [-6.884845797923145, 112.01507334046654],
+                {
+}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+            var icon_5366d417d9dfe30d449f8ea96dc2a021 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c52dec9b24cedf46c8486de801bca35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f493b40a0b8e226f67cfacd5d9464d7c = $(`<div id="html_f493b40a0b8e226f67cfacd5d9464d7c" style="width: 100.0%; height: 100.0%;">START/END: Kandidat 1</div>`)[0];
+                popup_4c52dec9b24cedf46c8486de801bca35.setContent(html_f493b40a0b8e226f67cfacd5d9464d7c);
+            
+        
+
+        marker_e60e1d015b3e07e880c281ea33eb00c8.bindPopup(popup_4c52dec9b24cedf46c8486de801bca35)
+        ;
+
+        
+    
+    
+                marker_e60e1d015b3e07e880c281ea33eb00c8.setIcon(icon_5366d417d9dfe30d449f8ea96dc2a021);
+            
+    
+            var circle_marker_2f60a901776f4358b896cb434d3ec5b8 = L.circleMarker(
+                [-6.879298437217096, 112.04049929595148],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_5d2281835ce62c9ee7a262984ed52090 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d25d4d2f1314990852910ed8baf4a6a = $(`<div id="html_0d25d4d2f1314990852910ed8baf4a6a" style="width: 100.0%; height: 100.0%;">Ke-1: Kandidat 78</div>`)[0];
+                popup_5d2281835ce62c9ee7a262984ed52090.setContent(html_0d25d4d2f1314990852910ed8baf4a6a);
+            
+        
+
+        circle_marker_2f60a901776f4358b896cb434d3ec5b8.bindPopup(popup_5d2281835ce62c9ee7a262984ed52090)
+        ;
+
+        
+    
+    
+            var circle_marker_846e7bc4a0d9e703aa114ca3dcab37dd = L.circleMarker(
+                [-6.882028140299352, 112.0456043591636],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_e96179fd86d10181282523f66f0cbdee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96201297fcd28eba06abebebe3ed3ead = $(`<div id="html_96201297fcd28eba06abebebe3ed3ead" style="width: 100.0%; height: 100.0%;">Ke-2: Kandidat 90</div>`)[0];
+                popup_e96179fd86d10181282523f66f0cbdee.setContent(html_96201297fcd28eba06abebebe3ed3ead);
+            
+        
+
+        circle_marker_846e7bc4a0d9e703aa114ca3dcab37dd.bindPopup(popup_e96179fd86d10181282523f66f0cbdee)
+        ;
+
+        
+    
+    
+            var circle_marker_51b692bdbb20c64e1eb6362019baf0c3 = L.circleMarker(
+                [-6.887344629004972, 112.0414742259355],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_2924590d83a83142b6243c8025b6ecd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_633324c5d26e37cf42d7910019055742 = $(`<div id="html_633324c5d26e37cf42d7910019055742" style="width: 100.0%; height: 100.0%;">Ke-3: Kandidat 36</div>`)[0];
+                popup_2924590d83a83142b6243c8025b6ecd3.setContent(html_633324c5d26e37cf42d7910019055742);
+            
+        
+
+        circle_marker_51b692bdbb20c64e1eb6362019baf0c3.bindPopup(popup_2924590d83a83142b6243c8025b6ecd3)
+        ;
+
+        
+    
+    
+            var circle_marker_c52e253fb253371929e4141e24c888b5 = L.circleMarker(
+                [-6.891491771327836, 112.04047836571604],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_535a265ccf9639126efb221eaceab08b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_288ee0127548afbc2780b86735a9c8d2 = $(`<div id="html_288ee0127548afbc2780b86735a9c8d2" style="width: 100.0%; height: 100.0%;">Ke-4: Kandidat 76</div>`)[0];
+                popup_535a265ccf9639126efb221eaceab08b.setContent(html_288ee0127548afbc2780b86735a9c8d2);
+            
+        
+
+        circle_marker_c52e253fb253371929e4141e24c888b5.bindPopup(popup_535a265ccf9639126efb221eaceab08b)
+        ;
+
+        
+    
+    
+            var circle_marker_d6856d0bd012b27d59934aba9f561acd = L.circleMarker(
+                [-6.891977620592394, 112.0414505440126],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_2a40b1a071070433367df36e5430dfb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f06dfabe9b347a786dc63373f37f46ce = $(`<div id="html_f06dfabe9b347a786dc63373f37f46ce" style="width: 100.0%; height: 100.0%;">Ke-5: Kandidat 31</div>`)[0];
+                popup_2a40b1a071070433367df36e5430dfb4.setContent(html_f06dfabe9b347a786dc63373f37f46ce);
+            
+        
+
+        circle_marker_d6856d0bd012b27d59934aba9f561acd.bindPopup(popup_2a40b1a071070433367df36e5430dfb4)
+        ;
+
+        
+    
+    
+            var circle_marker_5959bc3a6f418b4923d8054ae3ca696a = L.circleMarker(
+                [-6.8931070667118925, 112.04242083618416],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_ee7860b39a5ca9d2e18f0f49b6fe4bc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f88bad9a57db0fcdedd856bfffcf95fd = $(`<div id="html_f88bad9a57db0fcdedd856bfffcf95fd" style="width: 100.0%; height: 100.0%;">Ke-6: Kandidat 86</div>`)[0];
+                popup_ee7860b39a5ca9d2e18f0f49b6fe4bc4.setContent(html_f88bad9a57db0fcdedd856bfffcf95fd);
+            
+        
+
+        circle_marker_5959bc3a6f418b4923d8054ae3ca696a.bindPopup(popup_ee7860b39a5ca9d2e18f0f49b6fe4bc4)
+        ;
+
+        
+    
+    
+            var circle_marker_e11ea496bdfd7232d1928f7054f9cd4f = L.circleMarker(
+                [-6.900045420861382, 112.03448890104625],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_5ae2ad54941fd2b7535219665d3a291f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7161aba5aaee8426e622a2343249318 = $(`<div id="html_b7161aba5aaee8426e622a2343249318" style="width: 100.0%; height: 100.0%;">Ke-7: Kandidat 32</div>`)[0];
+                popup_5ae2ad54941fd2b7535219665d3a291f.setContent(html_b7161aba5aaee8426e622a2343249318);
+            
+        
+
+        circle_marker_e11ea496bdfd7232d1928f7054f9cd4f.bindPopup(popup_5ae2ad54941fd2b7535219665d3a291f)
+        ;
+
+        
+    
+    
+            var circle_marker_47cfa9332beed5614363e7acaacb285d = L.circleMarker(
+                [-6.900373547347924, 112.036289011994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_1022ef82c837108e4556d94cbf23e58b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c38e1c5ddb5a31685a482f6b54e5c64 = $(`<div id="html_6c38e1c5ddb5a31685a482f6b54e5c64" style="width: 100.0%; height: 100.0%;">Ke-8: Kandidat 57</div>`)[0];
+                popup_1022ef82c837108e4556d94cbf23e58b.setContent(html_6c38e1c5ddb5a31685a482f6b54e5c64);
+            
+        
+
+        circle_marker_47cfa9332beed5614363e7acaacb285d.bindPopup(popup_1022ef82c837108e4556d94cbf23e58b)
+        ;
+
+        
+    
+    
+            var circle_marker_b3d17a69c62ac83f0fed87970a607a0a = L.circleMarker(
+                [-6.897746095868259, 112.0375209471905],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_c1a7733ad6b46c572d862bc58d216e70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d12461b68ae72068ffd84856c4c28a86 = $(`<div id="html_d12461b68ae72068ffd84856c4c28a86" style="width: 100.0%; height: 100.0%;">Ke-9: Kandidat 49</div>`)[0];
+                popup_c1a7733ad6b46c572d862bc58d216e70.setContent(html_d12461b68ae72068ffd84856c4c28a86);
+            
+        
+
+        circle_marker_b3d17a69c62ac83f0fed87970a607a0a.bindPopup(popup_c1a7733ad6b46c572d862bc58d216e70)
+        ;
+
+        
+    
+    
+            var circle_marker_02d3ab414f1a2e02738f3748879cc794 = L.circleMarker(
+                [-6.894541631280184, 112.0494998191642],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_7579115eb28d4c9ac1be04214894d690 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3158600c5d5c65f6bf812c44ea48ef33 = $(`<div id="html_3158600c5d5c65f6bf812c44ea48ef33" style="width: 100.0%; height: 100.0%;">Ke-10: Kandidat 95</div>`)[0];
+                popup_7579115eb28d4c9ac1be04214894d690.setContent(html_3158600c5d5c65f6bf812c44ea48ef33);
+            
+        
+
+        circle_marker_02d3ab414f1a2e02738f3748879cc794.bindPopup(popup_7579115eb28d4c9ac1be04214894d690)
+        ;
+
+        
+    
+    
+            var circle_marker_2c6772d87b3dd7231a9ba21c8818281c = L.circleMarker(
+                [-6.88919047543823, 112.05338326589568],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_657b1f1bba2600d08102ac6cda5db007 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e51923f0a85a55a4bd06d3cc9e1e4a5 = $(`<div id="html_7e51923f0a85a55a4bd06d3cc9e1e4a5" style="width: 100.0%; height: 100.0%;">Ke-11: Kandidat 5</div>`)[0];
+                popup_657b1f1bba2600d08102ac6cda5db007.setContent(html_7e51923f0a85a55a4bd06d3cc9e1e4a5);
+            
+        
+
+        circle_marker_2c6772d87b3dd7231a9ba21c8818281c.bindPopup(popup_657b1f1bba2600d08102ac6cda5db007)
+        ;
+
+        
+    
+    
+            var circle_marker_e6c2dab04312d5a188e6a9ce03f5e255 = L.circleMarker(
+                [-6.895634774071407, 112.04959291428872],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_4a0228c70247d5b43aa174e945ca1ef6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0a195ba1c7da17f311fba7edd452026 = $(`<div id="html_c0a195ba1c7da17f311fba7edd452026" style="width: 100.0%; height: 100.0%;">Ke-12: Kandidat 46</div>`)[0];
+                popup_4a0228c70247d5b43aa174e945ca1ef6.setContent(html_c0a195ba1c7da17f311fba7edd452026);
+            
+        
+
+        circle_marker_e6c2dab04312d5a188e6a9ce03f5e255.bindPopup(popup_4a0228c70247d5b43aa174e945ca1ef6)
+        ;
+
+        
+    
+    
+            var circle_marker_e546c1a5f8524c0fb53d6c71d15cb2e1 = L.circleMarker(
+                [-6.896647445915539, 112.04914069402356],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_afa3a830c849b68983c43c58e260c114 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d2faf1cd0a14071e6ea51b43d622dac = $(`<div id="html_6d2faf1cd0a14071e6ea51b43d622dac" style="width: 100.0%; height: 100.0%;">Ke-13: Kandidat 43</div>`)[0];
+                popup_afa3a830c849b68983c43c58e260c114.setContent(html_6d2faf1cd0a14071e6ea51b43d622dac);
+            
+        
+
+        circle_marker_e546c1a5f8524c0fb53d6c71d15cb2e1.bindPopup(popup_afa3a830c849b68983c43c58e260c114)
+        ;
+
+        
+    
+    
+            var circle_marker_d10d3fc0c41ccc191c728f9c24e700eb = L.circleMarker(
+                [-6.89570537977882, 112.04952744274956],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_5fae9eacf5cfeee78c917cd255bf27df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6b3ab40f94c55110989689333370fc8 = $(`<div id="html_b6b3ab40f94c55110989689333370fc8" style="width: 100.0%; height: 100.0%;">Ke-14: Kandidat 29</div>`)[0];
+                popup_5fae9eacf5cfeee78c917cd255bf27df.setContent(html_b6b3ab40f94c55110989689333370fc8);
+            
+        
+
+        circle_marker_d10d3fc0c41ccc191c728f9c24e700eb.bindPopup(popup_5fae9eacf5cfeee78c917cd255bf27df)
+        ;
+
+        
+    
+    
+            var circle_marker_44d2102f7f5ca25fa403a1c33b57a504 = L.circleMarker(
+                [-6.896696603724033, 112.05070417607271],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_3c606192caad0f8df35c36a5f683594c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97a5249b1a805a78f6cbc8589bb93f8f = $(`<div id="html_97a5249b1a805a78f6cbc8589bb93f8f" style="width: 100.0%; height: 100.0%;">Ke-15: Kandidat 25</div>`)[0];
+                popup_3c606192caad0f8df35c36a5f683594c.setContent(html_97a5249b1a805a78f6cbc8589bb93f8f);
+            
+        
+
+        circle_marker_44d2102f7f5ca25fa403a1c33b57a504.bindPopup(popup_3c606192caad0f8df35c36a5f683594c)
+        ;
+
+        
+    
+    
+            var circle_marker_de1637cd0444bd7d896c357712109e35 = L.circleMarker(
+                [-6.899427452626825, 112.05121935769812],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_a414a609c312448afaa4c27588c5aabe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40efe4217f27c478abaabe0fc8893983 = $(`<div id="html_40efe4217f27c478abaabe0fc8893983" style="width: 100.0%; height: 100.0%;">Ke-16: Kandidat 24</div>`)[0];
+                popup_a414a609c312448afaa4c27588c5aabe.setContent(html_40efe4217f27c478abaabe0fc8893983);
+            
+        
+
+        circle_marker_de1637cd0444bd7d896c357712109e35.bindPopup(popup_a414a609c312448afaa4c27588c5aabe)
+        ;
+
+        
+    
+    
+            var circle_marker_d09ce68d725fb431abc24ac59454bdbb = L.circleMarker(
+                [-6.904002116598856, 112.04562655741351],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_b7d8a0e1b1140457fef81f63a844fcc0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44313a15ed1c28e24e176f9c15fed98b = $(`<div id="html_44313a15ed1c28e24e176f9c15fed98b" style="width: 100.0%; height: 100.0%;">Ke-17: Kandidat 84</div>`)[0];
+                popup_b7d8a0e1b1140457fef81f63a844fcc0.setContent(html_44313a15ed1c28e24e176f9c15fed98b);
+            
+        
+
+        circle_marker_d09ce68d725fb431abc24ac59454bdbb.bindPopup(popup_b7d8a0e1b1140457fef81f63a844fcc0)
+        ;
+
+        
+    
+    
+            var circle_marker_cda4e80fce65ed45a3297dab0e7dea0a = L.circleMarker(
+                [-6.902943373919286, 112.04920552578608],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_6f06574843fc14d3566b1770f8985c24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd9f8aa6be89662fc32055dbd30c0764 = $(`<div id="html_bd9f8aa6be89662fc32055dbd30c0764" style="width: 100.0%; height: 100.0%;">Ke-18: Kandidat 30</div>`)[0];
+                popup_6f06574843fc14d3566b1770f8985c24.setContent(html_bd9f8aa6be89662fc32055dbd30c0764);
+            
+        
+
+        circle_marker_cda4e80fce65ed45a3297dab0e7dea0a.bindPopup(popup_6f06574843fc14d3566b1770f8985c24)
+        ;
+
+        
+    
+    
+            var circle_marker_4ac4e82faabcc905fa8c144a8bf1f1f4 = L.circleMarker(
+                [-6.901179179903891, 112.0497982839536],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_b873c9bd7c7f7c8b2d69696d0bc13c75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c7bc6332947c5cd0182e607698ee7d9 = $(`<div id="html_5c7bc6332947c5cd0182e607698ee7d9" style="width: 100.0%; height: 100.0%;">Ke-19: Kandidat 72</div>`)[0];
+                popup_b873c9bd7c7f7c8b2d69696d0bc13c75.setContent(html_5c7bc6332947c5cd0182e607698ee7d9);
+            
+        
+
+        circle_marker_4ac4e82faabcc905fa8c144a8bf1f1f4.bindPopup(popup_b873c9bd7c7f7c8b2d69696d0bc13c75)
+        ;
+
+        
+    
+    
+            var circle_marker_7e50ae8f62facab4c7598622bce55067 = L.circleMarker(
+                [-6.900212292359554, 112.0503707291833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_250d615c79ef03a92ed315370321fd74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_376f0410312750762b4adda6bfab3749 = $(`<div id="html_376f0410312750762b4adda6bfab3749" style="width: 100.0%; height: 100.0%;">Ke-20: Kandidat 42</div>`)[0];
+                popup_250d615c79ef03a92ed315370321fd74.setContent(html_376f0410312750762b4adda6bfab3749);
+            
+        
+
+        circle_marker_7e50ae8f62facab4c7598622bce55067.bindPopup(popup_250d615c79ef03a92ed315370321fd74)
+        ;
+
+        
+    
+    
+            var circle_marker_4f7658356affdc28420c557c6eebe16d = L.circleMarker(
+                [-6.898353980768188, 112.05324049353544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_59982eb058769ab7b0b802f5629c9081 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a05d9c997ab30b6aebf91f5227ffe40c = $(`<div id="html_a05d9c997ab30b6aebf91f5227ffe40c" style="width: 100.0%; height: 100.0%;">Ke-21: Kandidat 85</div>`)[0];
+                popup_59982eb058769ab7b0b802f5629c9081.setContent(html_a05d9c997ab30b6aebf91f5227ffe40c);
+            
+        
+
+        circle_marker_4f7658356affdc28420c557c6eebe16d.bindPopup(popup_59982eb058769ab7b0b802f5629c9081)
+        ;
+
+        
+    
+    
+            var circle_marker_1c824bb5b1610d2bfc7df7ca2dc3a418 = L.circleMarker(
+                [-6.899831023042311, 112.05420837167652],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_29e690bd29ec23efd8aefa6cadedfaaa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0789f98e45acb617141a319756c6cb6 = $(`<div id="html_f0789f98e45acb617141a319756c6cb6" style="width: 100.0%; height: 100.0%;">Ke-22: Kandidat 77</div>`)[0];
+                popup_29e690bd29ec23efd8aefa6cadedfaaa.setContent(html_f0789f98e45acb617141a319756c6cb6);
+            
+        
+
+        circle_marker_1c824bb5b1610d2bfc7df7ca2dc3a418.bindPopup(popup_29e690bd29ec23efd8aefa6cadedfaaa)
+        ;
+
+        
+    
+    
+            var circle_marker_8a783ecf7ba4f52c4895286d0427ec41 = L.circleMarker(
+                [-6.900818593557286, 112.05541983151826],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_1fc29f898817635dd1dcf26f00fcd03e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5110a1f903f98c2e69fd3c73ac10682d = $(`<div id="html_5110a1f903f98c2e69fd3c73ac10682d" style="width: 100.0%; height: 100.0%;">Ke-23: Kandidat 14</div>`)[0];
+                popup_1fc29f898817635dd1dcf26f00fcd03e.setContent(html_5110a1f903f98c2e69fd3c73ac10682d);
+            
+        
+
+        circle_marker_8a783ecf7ba4f52c4895286d0427ec41.bindPopup(popup_1fc29f898817635dd1dcf26f00fcd03e)
+        ;
+
+        
+    
+    
+            var circle_marker_aee7a8779f03b11b0d99bdfb007480c9 = L.circleMarker(
+                [-6.903294928425355, 112.0561772847474],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_99144642c5aa447b5fd5a0982463407d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_225a623c6483ef91c964584fa7a99087 = $(`<div id="html_225a623c6483ef91c964584fa7a99087" style="width: 100.0%; height: 100.0%;">Ke-24: Kandidat 99</div>`)[0];
+                popup_99144642c5aa447b5fd5a0982463407d.setContent(html_225a623c6483ef91c964584fa7a99087);
+            
+        
+
+        circle_marker_aee7a8779f03b11b0d99bdfb007480c9.bindPopup(popup_99144642c5aa447b5fd5a0982463407d)
+        ;
+
+        
+    
+    
+            var circle_marker_ba4e56abe0d0dc62c7cbf8a0a6e97abe = L.circleMarker(
+                [-6.902965039224359, 112.05574844123376],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_df5d4ca396cdc147a66007daa267b527 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1c2bcabae346922f13931588ebecff3 = $(`<div id="html_f1c2bcabae346922f13931588ebecff3" style="width: 100.0%; height: 100.0%;">Ke-25: Kandidat 100</div>`)[0];
+                popup_df5d4ca396cdc147a66007daa267b527.setContent(html_f1c2bcabae346922f13931588ebecff3);
+            
+        
+
+        circle_marker_ba4e56abe0d0dc62c7cbf8a0a6e97abe.bindPopup(popup_df5d4ca396cdc147a66007daa267b527)
+        ;
+
+        
+    
+    
+            var circle_marker_e6717f5f85ce323538c1962e5321d1d0 = L.circleMarker(
+                [-6.902162801327994, 112.05551401168933],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_4eb0cc7825779bd841bdf8cec828073d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bc9694c5c81c3e1047773be1c84b26b = $(`<div id="html_4bc9694c5c81c3e1047773be1c84b26b" style="width: 100.0%; height: 100.0%;">Ke-26: Kandidat 60</div>`)[0];
+                popup_4eb0cc7825779bd841bdf8cec828073d.setContent(html_4bc9694c5c81c3e1047773be1c84b26b);
+            
+        
+
+        circle_marker_e6717f5f85ce323538c1962e5321d1d0.bindPopup(popup_4eb0cc7825779bd841bdf8cec828073d)
+        ;
+
+        
+    
+    
+            var circle_marker_52c0d4306c5ccae0809eb4a8904fe485 = L.circleMarker(
+                [-6.900052417498103, 112.05623834443686],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_19fde4350edd19fd2069e13c78434bf1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_486e339fc8b2039c1676f113dd02f20a = $(`<div id="html_486e339fc8b2039c1676f113dd02f20a" style="width: 100.0%; height: 100.0%;">Ke-27: Kandidat 69</div>`)[0];
+                popup_19fde4350edd19fd2069e13c78434bf1.setContent(html_486e339fc8b2039c1676f113dd02f20a);
+            
+        
+
+        circle_marker_52c0d4306c5ccae0809eb4a8904fe485.bindPopup(popup_19fde4350edd19fd2069e13c78434bf1)
+        ;
+
+        
+    
+    
+            var circle_marker_72c6b31dfe18cc3a5030325a4cd16b77 = L.circleMarker(
+                [-6.89873332791529, 112.05811951609292],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_e599478121f1171d87e4caa0c1053509 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f84bcc778c0d6fcc1de56e8ec726e18d = $(`<div id="html_f84bcc778c0d6fcc1de56e8ec726e18d" style="width: 100.0%; height: 100.0%;">Ke-28: Kandidat 48</div>`)[0];
+                popup_e599478121f1171d87e4caa0c1053509.setContent(html_f84bcc778c0d6fcc1de56e8ec726e18d);
+            
+        
+
+        circle_marker_72c6b31dfe18cc3a5030325a4cd16b77.bindPopup(popup_e599478121f1171d87e4caa0c1053509)
+        ;
+
+        
+    
+    
+            var circle_marker_fb6d91c0bbc4adb17249c977c3e0d822 = L.circleMarker(
+                [-6.900869974484735, 112.05932924222256],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_b980f18d0e5b391aabb0bea8b42ac14d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f11d07b4fff070c5b22077f29485652 = $(`<div id="html_0f11d07b4fff070c5b22077f29485652" style="width: 100.0%; height: 100.0%;">Ke-29: Kandidat 33</div>`)[0];
+                popup_b980f18d0e5b391aabb0bea8b42ac14d.setContent(html_0f11d07b4fff070c5b22077f29485652);
+            
+        
+
+        circle_marker_fb6d91c0bbc4adb17249c977c3e0d822.bindPopup(popup_b980f18d0e5b391aabb0bea8b42ac14d)
+        ;
+
+        
+    
+    
+            var circle_marker_fc4f8e725da1624cd752bbdb4e8c5c5a = L.circleMarker(
+                [-6.900739492400651, 112.06166185658884],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_99c09194296b96abc918006f7f6397db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02ae4fd20faab40408acd335dde5da3a = $(`<div id="html_02ae4fd20faab40408acd335dde5da3a" style="width: 100.0%; height: 100.0%;">Ke-30: Kandidat 38</div>`)[0];
+                popup_99c09194296b96abc918006f7f6397db.setContent(html_02ae4fd20faab40408acd335dde5da3a);
+            
+        
+
+        circle_marker_fc4f8e725da1624cd752bbdb4e8c5c5a.bindPopup(popup_99c09194296b96abc918006f7f6397db)
+        ;
+
+        
+    
+    
+            var circle_marker_3d81e83560c6636fbf1a0b8a15cc07fc = L.circleMarker(
+                [-6.900085465885413, 112.0636943238752],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_74f5a0c9fa6514c982ac81627b93a5e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4521da00e7ec7234a945e3bb95ea6855 = $(`<div id="html_4521da00e7ec7234a945e3bb95ea6855" style="width: 100.0%; height: 100.0%;">Ke-31: Kandidat 28</div>`)[0];
+                popup_74f5a0c9fa6514c982ac81627b93a5e0.setContent(html_4521da00e7ec7234a945e3bb95ea6855);
+            
+        
+
+        circle_marker_3d81e83560c6636fbf1a0b8a15cc07fc.bindPopup(popup_74f5a0c9fa6514c982ac81627b93a5e0)
+        ;
+
+        
+    
+    
+            var circle_marker_9cd0e6cb20b0b514956ae6fe7a0259b8 = L.circleMarker(
+                [-6.899389227342138, 112.06524373918958],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_bf2901523cc8b519760e07e387594720 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d457796a91de5bc973f65cf5780b29a1 = $(`<div id="html_d457796a91de5bc973f65cf5780b29a1" style="width: 100.0%; height: 100.0%;">Ke-32: Kandidat 75</div>`)[0];
+                popup_bf2901523cc8b519760e07e387594720.setContent(html_d457796a91de5bc973f65cf5780b29a1);
+            
+        
+
+        circle_marker_9cd0e6cb20b0b514956ae6fe7a0259b8.bindPopup(popup_bf2901523cc8b519760e07e387594720)
+        ;
+
+        
+    
+    
+            var circle_marker_8417b0a3e70e8b33b0aa307056c172ef = L.circleMarker(
+                [-6.89689003435026, 112.06011447170218],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_53d4ddac0a17bed4c08fe23bfea27544 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69c55ee08fed6a1dd34bd8c93a9888dc = $(`<div id="html_69c55ee08fed6a1dd34bd8c93a9888dc" style="width: 100.0%; height: 100.0%;">Ke-33: Kandidat 35</div>`)[0];
+                popup_53d4ddac0a17bed4c08fe23bfea27544.setContent(html_69c55ee08fed6a1dd34bd8c93a9888dc);
+            
+        
+
+        circle_marker_8417b0a3e70e8b33b0aa307056c172ef.bindPopup(popup_53d4ddac0a17bed4c08fe23bfea27544)
+        ;
+
+        
+    
+    
+            var circle_marker_319a7869577aa66c737c6866d9b887b5 = L.circleMarker(
+                [-6.897562503059908, 112.06057342108603],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_f65af3bff4471c46a76863a8c402f080 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f982064039c2ff59bbd75eaee1ee8908 = $(`<div id="html_f982064039c2ff59bbd75eaee1ee8908" style="width: 100.0%; height: 100.0%;">Ke-34: Kandidat 56</div>`)[0];
+                popup_f65af3bff4471c46a76863a8c402f080.setContent(html_f982064039c2ff59bbd75eaee1ee8908);
+            
+        
+
+        circle_marker_319a7869577aa66c737c6866d9b887b5.bindPopup(popup_f65af3bff4471c46a76863a8c402f080)
+        ;
+
+        
+    
+    
+            var circle_marker_d2e800026e90e83f092d16582afc1283 = L.circleMarker(
+                [-6.898673072747008, 112.06252011778544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_f833d97b031cf55c8847d0c0610b7571 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cff47202a10f036a2d8da5e39f1cf6f9 = $(`<div id="html_cff47202a10f036a2d8da5e39f1cf6f9" style="width: 100.0%; height: 100.0%;">Ke-35: Kandidat 52</div>`)[0];
+                popup_f833d97b031cf55c8847d0c0610b7571.setContent(html_cff47202a10f036a2d8da5e39f1cf6f9);
+            
+        
+
+        circle_marker_d2e800026e90e83f092d16582afc1283.bindPopup(popup_f833d97b031cf55c8847d0c0610b7571)
+        ;
+
+        
+    
+    
+            var circle_marker_6a0086e7607ca349e1ebb92a09a8f765 = L.circleMarker(
+                [-6.898184152415056, 112.06409369678636],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_4edbd8180bd8675843ba0ac8ee070ac7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00d8a4805fd940dded9ec2e4528d0aba = $(`<div id="html_00d8a4805fd940dded9ec2e4528d0aba" style="width: 100.0%; height: 100.0%;">Ke-36: Kandidat 80</div>`)[0];
+                popup_4edbd8180bd8675843ba0ac8ee070ac7.setContent(html_00d8a4805fd940dded9ec2e4528d0aba);
+            
+        
+
+        circle_marker_6a0086e7607ca349e1ebb92a09a8f765.bindPopup(popup_4edbd8180bd8675843ba0ac8ee070ac7)
+        ;
+
+        
+    
+    
+            var circle_marker_30279ae8e5921a8777afe7caf9a2050d = L.circleMarker(
+                [-6.897908210831055, 112.06465819886674],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_7401509bbc27d64376c87dea1a2142e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf0b3ddb852554b1354ae049e8e5d08f = $(`<div id="html_cf0b3ddb852554b1354ae049e8e5d08f" style="width: 100.0%; height: 100.0%;">Ke-37: Kandidat 50</div>`)[0];
+                popup_7401509bbc27d64376c87dea1a2142e6.setContent(html_cf0b3ddb852554b1354ae049e8e5d08f);
+            
+        
+
+        circle_marker_30279ae8e5921a8777afe7caf9a2050d.bindPopup(popup_7401509bbc27d64376c87dea1a2142e6)
+        ;
+
+        
+    
+    
+            var circle_marker_af145c752420db4e7965e2dbf635ab3f = L.circleMarker(
+                [-6.899476375286648, 112.0671697888008],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_18db1b544ba43134be7323a03de5bc5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13ab0dc09006322a2679edd0f086066b = $(`<div id="html_13ab0dc09006322a2679edd0f086066b" style="width: 100.0%; height: 100.0%;">Ke-38: Kandidat 87</div>`)[0];
+                popup_18db1b544ba43134be7323a03de5bc5f.setContent(html_13ab0dc09006322a2679edd0f086066b);
+            
+        
+
+        circle_marker_af145c752420db4e7965e2dbf635ab3f.bindPopup(popup_18db1b544ba43134be7323a03de5bc5f)
+        ;
+
+        
+    
+    
+            var circle_marker_c29bf37c4438696419300506e979f255 = L.circleMarker(
+                [-6.897430659681318, 112.0667583013174],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_d0eb803310c5c229bbe4fef58a3e5a74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0dc575938a3538201593bca8b280070 = $(`<div id="html_a0dc575938a3538201593bca8b280070" style="width: 100.0%; height: 100.0%;">Ke-39: Kandidat 17</div>`)[0];
+                popup_d0eb803310c5c229bbe4fef58a3e5a74.setContent(html_a0dc575938a3538201593bca8b280070);
+            
+        
+
+        circle_marker_c29bf37c4438696419300506e979f255.bindPopup(popup_d0eb803310c5c229bbe4fef58a3e5a74)
+        ;
+
+        
+    
+    
+            var circle_marker_d7e7614063a46031442bc5a530837fb8 = L.circleMarker(
+                [-6.900025640773267, 112.06851980237089],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_856eef6f3e8ff20e48a9ef95d9a5ec3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_708b3ac2e1e0e0f993ee5552e9eef1e6 = $(`<div id="html_708b3ac2e1e0e0f993ee5552e9eef1e6" style="width: 100.0%; height: 100.0%;">Ke-40: Kandidat 71</div>`)[0];
+                popup_856eef6f3e8ff20e48a9ef95d9a5ec3b.setContent(html_708b3ac2e1e0e0f993ee5552e9eef1e6);
+            
+        
+
+        circle_marker_d7e7614063a46031442bc5a530837fb8.bindPopup(popup_856eef6f3e8ff20e48a9ef95d9a5ec3b)
+        ;
+
+        
+    
+    
+            var circle_marker_7dadaad876b7a6e57307ce88a2e5a345 = L.circleMarker(
+                [-6.9032635620228175, 112.16934125581164],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_704be7537d141c72c5c6d4257cea7ebd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48886cbd24bd6857b9cc4f592426376f = $(`<div id="html_48886cbd24bd6857b9cc4f592426376f" style="width: 100.0%; height: 100.0%;">Ke-41: Kandidat 11</div>`)[0];
+                popup_704be7537d141c72c5c6d4257cea7ebd.setContent(html_48886cbd24bd6857b9cc4f592426376f);
+            
+        
+
+        circle_marker_7dadaad876b7a6e57307ce88a2e5a345.bindPopup(popup_704be7537d141c72c5c6d4257cea7ebd)
+        ;
+
+        
+    
+    
+            var circle_marker_d079431e2c23db63244836027c8c589b = L.circleMarker(
+                [-6.902437673933333, 112.07889531117588],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_1becb8f0e5a1722fe2c5f22896cbe1db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8e009192c46b1ed95cf9cf1a87791b6 = $(`<div id="html_f8e009192c46b1ed95cf9cf1a87791b6" style="width: 100.0%; height: 100.0%;">Ke-42: Kandidat 9</div>`)[0];
+                popup_1becb8f0e5a1722fe2c5f22896cbe1db.setContent(html_f8e009192c46b1ed95cf9cf1a87791b6);
+            
+        
+
+        circle_marker_d079431e2c23db63244836027c8c589b.bindPopup(popup_1becb8f0e5a1722fe2c5f22896cbe1db)
+        ;
+
+        
+    
+    
+            var circle_marker_6a376baee32333444ec5473ecec03971 = L.circleMarker(
+                [-6.904029697785407, 112.06792876807891],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_535e76ebdc860d1ff3bbeac5e8b0fee3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e85d38c6a5bde4063192e2aa180a23b = $(`<div id="html_0e85d38c6a5bde4063192e2aa180a23b" style="width: 100.0%; height: 100.0%;">Ke-43: Kandidat 88</div>`)[0];
+                popup_535e76ebdc860d1ff3bbeac5e8b0fee3.setContent(html_0e85d38c6a5bde4063192e2aa180a23b);
+            
+        
+
+        circle_marker_6a376baee32333444ec5473ecec03971.bindPopup(popup_535e76ebdc860d1ff3bbeac5e8b0fee3)
+        ;
+
+        
+    
+    
+            var circle_marker_167a3f39ff0798111d9ad43f98129808 = L.circleMarker(
+                [-6.907346255695643, 112.06406815733592],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_c31243d7678ee45914cfeef0c3be2523 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d321f973b18db6eea34e478e0e0fd23 = $(`<div id="html_7d321f973b18db6eea34e478e0e0fd23" style="width: 100.0%; height: 100.0%;">Ke-44: Kandidat 47</div>`)[0];
+                popup_c31243d7678ee45914cfeef0c3be2523.setContent(html_7d321f973b18db6eea34e478e0e0fd23);
+            
+        
+
+        circle_marker_167a3f39ff0798111d9ad43f98129808.bindPopup(popup_c31243d7678ee45914cfeef0c3be2523)
+        ;
+
+        
+    
+    
+            var circle_marker_cef64a05cbc2d846602cec6c6d5a39ef = L.circleMarker(
+                [-6.929301998760192, 112.06106825161368],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_2c2e5de7db5ce1ae54b57765e1c89e4f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b4f25220c089d48700b7ab52ae21aa7 = $(`<div id="html_6b4f25220c089d48700b7ab52ae21aa7" style="width: 100.0%; height: 100.0%;">Ke-45: Kandidat 97</div>`)[0];
+                popup_2c2e5de7db5ce1ae54b57765e1c89e4f.setContent(html_6b4f25220c089d48700b7ab52ae21aa7);
+            
+        
+
+        circle_marker_cef64a05cbc2d846602cec6c6d5a39ef.bindPopup(popup_2c2e5de7db5ce1ae54b57765e1c89e4f)
+        ;
+
+        
+    
+    
+            var circle_marker_89c61ba436eaa50a9ae6c74768001e37 = L.circleMarker(
+                [-6.931212020922078, 112.05911497907418],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_335811b4d6068aeb9a374a38e3fac7ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82dae6b5aaeacf989c7f4f4beccd8537 = $(`<div id="html_82dae6b5aaeacf989c7f4f4beccd8537" style="width: 100.0%; height: 100.0%;">Ke-46: Kandidat 59</div>`)[0];
+                popup_335811b4d6068aeb9a374a38e3fac7ca.setContent(html_82dae6b5aaeacf989c7f4f4beccd8537);
+            
+        
+
+        circle_marker_89c61ba436eaa50a9ae6c74768001e37.bindPopup(popup_335811b4d6068aeb9a374a38e3fac7ca)
+        ;
+
+        
+    
+    
+            var circle_marker_415ccfa34f9397506b9cb7300baf5b44 = L.circleMarker(
+                [-7.059537907850986, 112.0115060106856],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_30fe516ba56d99d28771e56e83e44030 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_705debfa7cbc5ca4656aedf97478066d = $(`<div id="html_705debfa7cbc5ca4656aedf97478066d" style="width: 100.0%; height: 100.0%;">Ke-47: Kandidat 34</div>`)[0];
+                popup_30fe516ba56d99d28771e56e83e44030.setContent(html_705debfa7cbc5ca4656aedf97478066d);
+            
+        
+
+        circle_marker_415ccfa34f9397506b9cb7300baf5b44.bindPopup(popup_30fe516ba56d99d28771e56e83e44030)
+        ;
+
+        
+    
+    
+            var circle_marker_a58618262ee623a5bcd99cf34c5cdaec = L.circleMarker(
+                [-7.074841504439988, 112.11066326939677],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_44f47bb21923dd5c0ca2c97ec794ebbd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b720aa6967f7aca9c217d92ff45c2bc3 = $(`<div id="html_b720aa6967f7aca9c217d92ff45c2bc3" style="width: 100.0%; height: 100.0%;">Ke-48: Kandidat 98</div>`)[0];
+                popup_44f47bb21923dd5c0ca2c97ec794ebbd.setContent(html_b720aa6967f7aca9c217d92ff45c2bc3);
+            
+        
+
+        circle_marker_a58618262ee623a5bcd99cf34c5cdaec.bindPopup(popup_44f47bb21923dd5c0ca2c97ec794ebbd)
+        ;
+
+        
+    
+    
+            var circle_marker_f4613594989d1cdf908fe53b3ff62467 = L.circleMarker(
+                [-7.073521855426105, 112.1117344501994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_3de22f9434532267c227532f915e913f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e376e8d212a3fad03041dc2794032ae = $(`<div id="html_4e376e8d212a3fad03041dc2794032ae" style="width: 100.0%; height: 100.0%;">Ke-49: Kandidat 63</div>`)[0];
+                popup_3de22f9434532267c227532f915e913f.setContent(html_4e376e8d212a3fad03041dc2794032ae);
+            
+        
+
+        circle_marker_f4613594989d1cdf908fe53b3ff62467.bindPopup(popup_3de22f9434532267c227532f915e913f)
+        ;
+
+        
+    
+    
+            var circle_marker_40857c5bbb23fcc6a3c43923af99f2a6 = L.circleMarker(
+                [-7.07114045098239, 112.18242522906874],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_07b36c8487aaa35f74a05df45351a2bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbd959bd7e363f0e8e47b881194dce90 = $(`<div id="html_dbd959bd7e363f0e8e47b881194dce90" style="width: 100.0%; height: 100.0%;">Ke-50: Kandidat 8</div>`)[0];
+                popup_07b36c8487aaa35f74a05df45351a2bc.setContent(html_dbd959bd7e363f0e8e47b881194dce90);
+            
+        
+
+        circle_marker_40857c5bbb23fcc6a3c43923af99f2a6.bindPopup(popup_07b36c8487aaa35f74a05df45351a2bc)
+        ;
+
+        
+    
+    
+            var circle_marker_042ce4083b22fdb07f0d270be44740c5 = L.circleMarker(
+                [-7.082344426928227, 112.11510978677347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_03c6b74ffa9cc76dd9152fbb0ea2e636 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc3a8ea3d33e319da5b088d2b71467b6 = $(`<div id="html_cc3a8ea3d33e319da5b088d2b71467b6" style="width: 100.0%; height: 100.0%;">Ke-51: Kandidat 51</div>`)[0];
+                popup_03c6b74ffa9cc76dd9152fbb0ea2e636.setContent(html_cc3a8ea3d33e319da5b088d2b71467b6);
+            
+        
+
+        circle_marker_042ce4083b22fdb07f0d270be44740c5.bindPopup(popup_03c6b74ffa9cc76dd9152fbb0ea2e636)
+        ;
+
+        
+    
+    
+            var circle_marker_c01fc8dfec4ac6092db8c0dff59fbd28 = L.circleMarker(
+                [-7.0856647899966765, 112.1150610884293],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_7db43b45ad6cabcce77950b7d8939601 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9774529b9425123b1386c7e5506741d2 = $(`<div id="html_9774529b9425123b1386c7e5506741d2" style="width: 100.0%; height: 100.0%;">Ke-52: Kandidat 22</div>`)[0];
+                popup_7db43b45ad6cabcce77950b7d8939601.setContent(html_9774529b9425123b1386c7e5506741d2);
+            
+        
+
+        circle_marker_c01fc8dfec4ac6092db8c0dff59fbd28.bindPopup(popup_7db43b45ad6cabcce77950b7d8939601)
+        ;
+
+        
+    
+    
+            var circle_marker_f2fbc0db494ed370492c769878454286 = L.circleMarker(
+                [-7.076579018043836, 112.11360322912496],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_7838b93a7849e6b9790419d5272d7961 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf2781586bd372c42986deac16627355 = $(`<div id="html_bf2781586bd372c42986deac16627355" style="width: 100.0%; height: 100.0%;">Ke-53: Kandidat 15</div>`)[0];
+                popup_7838b93a7849e6b9790419d5272d7961.setContent(html_bf2781586bd372c42986deac16627355);
+            
+        
+
+        circle_marker_f2fbc0db494ed370492c769878454286.bindPopup(popup_7838b93a7849e6b9790419d5272d7961)
+        ;
+
+        
+    
+    
+            var circle_marker_28d05e422cb36a6cbc15ece4c8357031 = L.circleMarker(
+                [-7.076087862835971, 112.1131447765859],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_f9fd25c6ad888bd61f7e2de64abdadba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1dbcca2f114ae2003c4b6d4e91734e4d = $(`<div id="html_1dbcca2f114ae2003c4b6d4e91734e4d" style="width: 100.0%; height: 100.0%;">Ke-54: Kandidat 37</div>`)[0];
+                popup_f9fd25c6ad888bd61f7e2de64abdadba.setContent(html_1dbcca2f114ae2003c4b6d4e91734e4d);
+            
+        
+
+        circle_marker_28d05e422cb36a6cbc15ece4c8357031.bindPopup(popup_f9fd25c6ad888bd61f7e2de64abdadba)
+        ;
+
+        
+    
+    
+            var circle_marker_02ee5fbb7311e92c25b12a073668f598 = L.circleMarker(
+                [-7.076065248642941, 112.11106939669251],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_ef56065a516d49da5f71ee0cb3bf087a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba75f83cac822b77214d3f948baa4cf6 = $(`<div id="html_ba75f83cac822b77214d3f948baa4cf6" style="width: 100.0%; height: 100.0%;">Ke-55: Kandidat 65</div>`)[0];
+                popup_ef56065a516d49da5f71ee0cb3bf087a.setContent(html_ba75f83cac822b77214d3f948baa4cf6);
+            
+        
+
+        circle_marker_02ee5fbb7311e92c25b12a073668f598.bindPopup(popup_ef56065a516d49da5f71ee0cb3bf087a)
+        ;
+
+        
+    
+    
+            var circle_marker_ba0db863ba05c29ce271a5ce84d20038 = L.circleMarker(
+                [-7.074306559723144, 112.10960723418604],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_aad5c1e86a4a8329723599587d9fed9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39bfff54bf9588910804ee5cad986ddc = $(`<div id="html_39bfff54bf9588910804ee5cad986ddc" style="width: 100.0%; height: 100.0%;">Ke-56: Kandidat 94</div>`)[0];
+                popup_aad5c1e86a4a8329723599587d9fed9c.setContent(html_39bfff54bf9588910804ee5cad986ddc);
+            
+        
+
+        circle_marker_ba0db863ba05c29ce271a5ce84d20038.bindPopup(popup_aad5c1e86a4a8329723599587d9fed9c)
+        ;
+
+        
+    
+    
+            var circle_marker_c46cb599cd260cf4d4b014da63376451 = L.circleMarker(
+                [-7.073096096154428, 112.10834703115452],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_a9322932073006d269b21e629056ca9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8240a92b09aadac63581201e59fa5fde = $(`<div id="html_8240a92b09aadac63581201e59fa5fde" style="width: 100.0%; height: 100.0%;">Ke-57: Kandidat 26</div>`)[0];
+                popup_a9322932073006d269b21e629056ca9c.setContent(html_8240a92b09aadac63581201e59fa5fde);
+            
+        
+
+        circle_marker_c46cb599cd260cf4d4b014da63376451.bindPopup(popup_a9322932073006d269b21e629056ca9c)
+        ;
+
+        
+    
+    
+            var circle_marker_37c431a5dbfa5f67be531f18c693a53a = L.circleMarker(
+                [-7.073292573030105, 112.1080994933926],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_814b28fe7b44704322a508adb8969200 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e8f9238a8d38495cd3189b61d0209b0 = $(`<div id="html_9e8f9238a8d38495cd3189b61d0209b0" style="width: 100.0%; height: 100.0%;">Ke-58: Kandidat 39</div>`)[0];
+                popup_814b28fe7b44704322a508adb8969200.setContent(html_9e8f9238a8d38495cd3189b61d0209b0);
+            
+        
+
+        circle_marker_37c431a5dbfa5f67be531f18c693a53a.bindPopup(popup_814b28fe7b44704322a508adb8969200)
+        ;
+
+        
+    
+    
+            var circle_marker_254d92ee1536db5bc8bd00cfd0ef0699 = L.circleMarker(
+                [-7.062135193948634, 112.00685367238626],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_f5320ad61e7bf3900a42fccb0bda6741 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03b9535c204bea8df399fe4132b4e7c2 = $(`<div id="html_03b9535c204bea8df399fe4132b4e7c2" style="width: 100.0%; height: 100.0%;">Ke-59: Kandidat 79</div>`)[0];
+                popup_f5320ad61e7bf3900a42fccb0bda6741.setContent(html_03b9535c204bea8df399fe4132b4e7c2);
+            
+        
+
+        circle_marker_254d92ee1536db5bc8bd00cfd0ef0699.bindPopup(popup_f5320ad61e7bf3900a42fccb0bda6741)
+        ;
+
+        
+    
+    
+            var circle_marker_c73f53729fb8e596a7b645512c925ff7 = L.circleMarker(
+                [-7.0599897474611, 112.00506456347242],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_5cd22e1769c8bc7491be72c09d3d8e23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a52d738b69dee2a0dac6fa4f8a87cb1b = $(`<div id="html_a52d738b69dee2a0dac6fa4f8a87cb1b" style="width: 100.0%; height: 100.0%;">Ke-60: Kandidat 54</div>`)[0];
+                popup_5cd22e1769c8bc7491be72c09d3d8e23.setContent(html_a52d738b69dee2a0dac6fa4f8a87cb1b);
+            
+        
+
+        circle_marker_c73f53729fb8e596a7b645512c925ff7.bindPopup(popup_5cd22e1769c8bc7491be72c09d3d8e23)
+        ;
+
+        
+    
+    
+            var circle_marker_7115fc27f4047be000770300b62f6c1c = L.circleMarker(
+                [-7.123885666665531, 111.93637179964368],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_1462837721eab4def5eb2fc3fe23aa58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a8d7c7de2e909f4ffbb1e60efc438a2 = $(`<div id="html_7a8d7c7de2e909f4ffbb1e60efc438a2" style="width: 100.0%; height: 100.0%;">Ke-61: Kandidat 4</div>`)[0];
+                popup_1462837721eab4def5eb2fc3fe23aa58.setContent(html_7a8d7c7de2e909f4ffbb1e60efc438a2);
+            
+        
+
+        circle_marker_7115fc27f4047be000770300b62f6c1c.bindPopup(popup_1462837721eab4def5eb2fc3fe23aa58)
+        ;
+
+        
+    
+    
+            var circle_marker_e1c980d43770c4dfc5adf9853a8da34f = L.circleMarker(
+                [-6.965945302253597, 111.71470802177276],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_50f6b4561f65774d354285df40874ea6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fe3144a5e202b27a94565e66a632795 = $(`<div id="html_3fe3144a5e202b27a94565e66a632795" style="width: 100.0%; height: 100.0%;">Ke-62: Kandidat 70</div>`)[0];
+                popup_50f6b4561f65774d354285df40874ea6.setContent(html_3fe3144a5e202b27a94565e66a632795);
+            
+        
+
+        circle_marker_e1c980d43770c4dfc5adf9853a8da34f.bindPopup(popup_50f6b4561f65774d354285df40874ea6)
+        ;
+
+        
+    
+    
+            var circle_marker_db44da7c2468dbf544b848f277b5e55c = L.circleMarker(
+                [-6.963973967614541, 111.71371783829844],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_e655028756f52b8f75d41e23612fdb96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf68ada90b62326500c7a4ce1dc065aa = $(`<div id="html_bf68ada90b62326500c7a4ce1dc065aa" style="width: 100.0%; height: 100.0%;">Ke-63: Kandidat 96</div>`)[0];
+                popup_e655028756f52b8f75d41e23612fdb96.setContent(html_bf68ada90b62326500c7a4ce1dc065aa);
+            
+        
+
+        circle_marker_db44da7c2468dbf544b848f277b5e55c.bindPopup(popup_e655028756f52b8f75d41e23612fdb96)
+        ;
+
+        
+    
+    
+            var circle_marker_e7ff2fb8fbc3e2c43f9d1c0bfa021bf1 = L.circleMarker(
+                [-6.782931225734078, 111.77685174166996],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_db54fb68238211d23d7a08ebce3b6481 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9798ba32ffe4db225f4db8f954e45264 = $(`<div id="html_9798ba32ffe4db225f4db8f954e45264" style="width: 100.0%; height: 100.0%;">Ke-64: Kandidat 83</div>`)[0];
+                popup_db54fb68238211d23d7a08ebce3b6481.setContent(html_9798ba32ffe4db225f4db8f954e45264);
+            
+        
+
+        circle_marker_e7ff2fb8fbc3e2c43f9d1c0bfa021bf1.bindPopup(popup_db54fb68238211d23d7a08ebce3b6481)
+        ;
+
+        
+    
+    
+            var circle_marker_41d4242e99ef4e962cd309f409294e01 = L.circleMarker(
+                [-6.78630626616274, 111.79280351554718],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_66b8866a9e6f312f3920aa919ffe536d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86c30ea6389823a5ac7de4b8b74af9a2 = $(`<div id="html_86c30ea6389823a5ac7de4b8b74af9a2" style="width: 100.0%; height: 100.0%;">Ke-65: Kandidat 93</div>`)[0];
+                popup_66b8866a9e6f312f3920aa919ffe536d.setContent(html_86c30ea6389823a5ac7de4b8b74af9a2);
+            
+        
+
+        circle_marker_41d4242e99ef4e962cd309f409294e01.bindPopup(popup_66b8866a9e6f312f3920aa919ffe536d)
+        ;
+
+        
+    
+    
+            var circle_marker_0b1c5d8150ef830d2c053e5d4d8a83b3 = L.circleMarker(
+                [-6.830197474273471, 111.99625458023556],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_145e49570d260c73e866d36b542aba60 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fe9a5e3dfbc171b65da8062b03a795a = $(`<div id="html_9fe9a5e3dfbc171b65da8062b03a795a" style="width: 100.0%; height: 100.0%;">Ke-66: Kandidat 18</div>`)[0];
+                popup_145e49570d260c73e866d36b542aba60.setContent(html_9fe9a5e3dfbc171b65da8062b03a795a);
+            
+        
+
+        circle_marker_0b1c5d8150ef830d2c053e5d4d8a83b3.bindPopup(popup_145e49570d260c73e866d36b542aba60)
+        ;
+
+        
+    
+    
+            var circle_marker_cf27a9148d61a6a75e5356c68cde898a = L.circleMarker(
+                [-6.829183112076985, 111.9967303740416],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_0729d0dbc144e2e9f7d8f804528d9cf4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66737d73b1f68d7e86d0812dd95f1489 = $(`<div id="html_66737d73b1f68d7e86d0812dd95f1489" style="width: 100.0%; height: 100.0%;">Ke-67: Kandidat 68</div>`)[0];
+                popup_0729d0dbc144e2e9f7d8f804528d9cf4.setContent(html_66737d73b1f68d7e86d0812dd95f1489);
+            
+        
+
+        circle_marker_cf27a9148d61a6a75e5356c68cde898a.bindPopup(popup_0729d0dbc144e2e9f7d8f804528d9cf4)
+        ;
+
+        
+    
+    
+            var circle_marker_a3fc3c8685171a6718cb1eb3b49a85ec = L.circleMarker(
+                [-6.830869486693226, 111.99765139873632],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_edaf638c0288559ee654c37d06c4e03d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dacb50006d2f9a4025b693f8463894cf = $(`<div id="html_dacb50006d2f9a4025b693f8463894cf" style="width: 100.0%; height: 100.0%;">Ke-68: Kandidat 64</div>`)[0];
+                popup_edaf638c0288559ee654c37d06c4e03d.setContent(html_dacb50006d2f9a4025b693f8463894cf);
+            
+        
+
+        circle_marker_a3fc3c8685171a6718cb1eb3b49a85ec.bindPopup(popup_edaf638c0288559ee654c37d06c4e03d)
+        ;
+
+        
+    
+    
+            var circle_marker_19156f16dd5f3f85164d7c2694f968b1 = L.circleMarker(
+                [-6.857533420824699, 112.02646385388208],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_9b5bf87aca57187a2e0fa89bd3962f74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1959454432f7abf6af5c47fa4beadc71 = $(`<div id="html_1959454432f7abf6af5c47fa4beadc71" style="width: 100.0%; height: 100.0%;">Ke-69: Kandidat 41</div>`)[0];
+                popup_9b5bf87aca57187a2e0fa89bd3962f74.setContent(html_1959454432f7abf6af5c47fa4beadc71);
+            
+        
+
+        circle_marker_19156f16dd5f3f85164d7c2694f968b1.bindPopup(popup_9b5bf87aca57187a2e0fa89bd3962f74)
+        ;
+
+        
+    
+    
+            var circle_marker_2eaf667f2b48a7db2c3eaffa753d852d = L.circleMarker(
+                [-6.88302424003512, 112.0189314130654],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_c81c2e1c45226ee8ea29ff67b8aede34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb7fa2d83998ff47462d10c0a452a3f9 = $(`<div id="html_bb7fa2d83998ff47462d10c0a452a3f9" style="width: 100.0%; height: 100.0%;">Ke-70: Kandidat 13</div>`)[0];
+                popup_c81c2e1c45226ee8ea29ff67b8aede34.setContent(html_bb7fa2d83998ff47462d10c0a452a3f9);
+            
+        
+
+        circle_marker_2eaf667f2b48a7db2c3eaffa753d852d.bindPopup(popup_c81c2e1c45226ee8ea29ff67b8aede34)
+        ;
+
+        
+    
+    
+            var circle_marker_185a48811ba69fc58bdafb0abcca8ae2 = L.circleMarker(
+                [-6.886111623949861, 112.01658915541594],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_3ce6ea81b8b93198de08d8c5bc6ff193 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_183d136a75e6ec14aa215b5776f50358 = $(`<div id="html_183d136a75e6ec14aa215b5776f50358" style="width: 100.0%; height: 100.0%;">Ke-71: Kandidat 7</div>`)[0];
+                popup_3ce6ea81b8b93198de08d8c5bc6ff193.setContent(html_183d136a75e6ec14aa215b5776f50358);
+            
+        
+
+        circle_marker_185a48811ba69fc58bdafb0abcca8ae2.bindPopup(popup_3ce6ea81b8b93198de08d8c5bc6ff193)
+        ;
+
+        
+    
+    
+            var circle_marker_1a67f4223f2c00fe46db83cabe120642 = L.circleMarker(
+                [-6.885594187090424, 112.01337285257982],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_ef63e83161e67b46b5744e55e31e59bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e763c98da1796dc014886a6922031d9 = $(`<div id="html_4e763c98da1796dc014886a6922031d9" style="width: 100.0%; height: 100.0%;">Ke-72: Kandidat 67</div>`)[0];
+                popup_ef63e83161e67b46b5744e55e31e59bb.setContent(html_4e763c98da1796dc014886a6922031d9);
+            
+        
+
+        circle_marker_1a67f4223f2c00fe46db83cabe120642.bindPopup(popup_ef63e83161e67b46b5744e55e31e59bb)
+        ;
+
+        
+    
+    
+            var circle_marker_dd3eabac134eb017b53b9c1992ffc06a = L.circleMarker(
+                [-6.884220246420004, 112.01022693660782],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_a2bca5098cd778caa88f4526effe475c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87ed951cc109d7cfeb3486447f2b74da = $(`<div id="html_87ed951cc109d7cfeb3486447f2b74da" style="width: 100.0%; height: 100.0%;">Ke-73: Kandidat 27</div>`)[0];
+                popup_a2bca5098cd778caa88f4526effe475c.setContent(html_87ed951cc109d7cfeb3486447f2b74da);
+            
+        
+
+        circle_marker_dd3eabac134eb017b53b9c1992ffc06a.bindPopup(popup_a2bca5098cd778caa88f4526effe475c)
+        ;
+
+        
+    
+    
+            var circle_marker_134f3c5eaf774195d80796f397819393 = L.circleMarker(
+                [-6.883150376361696, 112.0100907583634],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_df24ea3986936aa706ccb16acf0836e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_318f455a07897f408e678aa3bd531dbc = $(`<div id="html_318f455a07897f408e678aa3bd531dbc" style="width: 100.0%; height: 100.0%;">Ke-74: Kandidat 19</div>`)[0];
+                popup_df24ea3986936aa706ccb16acf0836e5.setContent(html_318f455a07897f408e678aa3bd531dbc);
+            
+        
+
+        circle_marker_134f3c5eaf774195d80796f397819393.bindPopup(popup_df24ea3986936aa706ccb16acf0836e5)
+        ;
+
+        
+    
+    
+            var circle_marker_0ad51edab21f4b07afa1f01a5b7c4366 = L.circleMarker(
+                [-6.882025177287373, 112.01010938540124],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_540c65c6cec099de8530dd9c849ead01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a03de4e0a77ca93860bcfcbb19ae456c = $(`<div id="html_a03de4e0a77ca93860bcfcbb19ae456c" style="width: 100.0%; height: 100.0%;">Ke-75: Kandidat 92</div>`)[0];
+                popup_540c65c6cec099de8530dd9c849ead01.setContent(html_a03de4e0a77ca93860bcfcbb19ae456c);
+            
+        
+
+        circle_marker_0ad51edab21f4b07afa1f01a5b7c4366.bindPopup(popup_540c65c6cec099de8530dd9c849ead01)
+        ;
+
+        
+    
+    
+            var circle_marker_b6a87839618344f3abcafd5fc96ad2a4 = L.circleMarker(
+                [-6.88140204277436, 112.01020359164504],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_92d7e08cc68c1ade3fe3995652532526 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a09b2197fccae8c8f8a2a5174405c2e = $(`<div id="html_9a09b2197fccae8c8f8a2a5174405c2e" style="width: 100.0%; height: 100.0%;">Ke-76: Kandidat 2</div>`)[0];
+                popup_92d7e08cc68c1ade3fe3995652532526.setContent(html_9a09b2197fccae8c8f8a2a5174405c2e);
+            
+        
+
+        circle_marker_b6a87839618344f3abcafd5fc96ad2a4.bindPopup(popup_92d7e08cc68c1ade3fe3995652532526)
+        ;
+
+        
+    
+    
+            var circle_marker_b6a4de10a1575940dbf467dbd57f12ef = L.circleMarker(
+                [-6.881288704233745, 112.00780492948836],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_790353baf04c39088d7952010bca62f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d6ddaf4cf7822ad3e7c956ae03f5a88 = $(`<div id="html_7d6ddaf4cf7822ad3e7c956ae03f5a88" style="width: 100.0%; height: 100.0%;">Ke-77: Kandidat 53</div>`)[0];
+                popup_790353baf04c39088d7952010bca62f0.setContent(html_7d6ddaf4cf7822ad3e7c956ae03f5a88);
+            
+        
+
+        circle_marker_b6a4de10a1575940dbf467dbd57f12ef.bindPopup(popup_790353baf04c39088d7952010bca62f0)
+        ;
+
+        
+    
+    
+            var circle_marker_1117e6dcdf62bd04e6d26252db57e960 = L.circleMarker(
+                [-6.882045866125081, 112.00682844200874],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_d902a7d3f380d15238a08481dfcbc1f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fd6ae8ad3220af1b35522cfa1e4faf9 = $(`<div id="html_8fd6ae8ad3220af1b35522cfa1e4faf9" style="width: 100.0%; height: 100.0%;">Ke-78: Kandidat 10</div>`)[0];
+                popup_d902a7d3f380d15238a08481dfcbc1f7.setContent(html_8fd6ae8ad3220af1b35522cfa1e4faf9);
+            
+        
+
+        circle_marker_1117e6dcdf62bd04e6d26252db57e960.bindPopup(popup_d902a7d3f380d15238a08481dfcbc1f7)
+        ;
+
+        
+    
+    
+            var circle_marker_d9d2b9d1e847c81f6a0adcce84387804 = L.circleMarker(
+                [-6.8839838216222375, 112.00809423952164],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_65b9f4ea622213317f57cd8a9fed9226 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2cb6952217a2d3f276a374c30220a1ba = $(`<div id="html_2cb6952217a2d3f276a374c30220a1ba" style="width: 100.0%; height: 100.0%;">Ke-79: Kandidat 45</div>`)[0];
+                popup_65b9f4ea622213317f57cd8a9fed9226.setContent(html_2cb6952217a2d3f276a374c30220a1ba);
+            
+        
+
+        circle_marker_d9d2b9d1e847c81f6a0adcce84387804.bindPopup(popup_65b9f4ea622213317f57cd8a9fed9226)
+        ;
+
+        
+    
+    
+            var circle_marker_d41fdd694fb52e3bb1ee84a0579e6569 = L.circleMarker(
+                [-6.882691975752463, 112.01360021035406],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_dd7b18cca380c43474bcfc04c950a222 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_391ee40ffdb3cf8e28cdebc6b62f5562 = $(`<div id="html_391ee40ffdb3cf8e28cdebc6b62f5562" style="width: 100.0%; height: 100.0%;">Ke-80: Kandidat 74</div>`)[0];
+                popup_dd7b18cca380c43474bcfc04c950a222.setContent(html_391ee40ffdb3cf8e28cdebc6b62f5562);
+            
+        
+
+        circle_marker_d41fdd694fb52e3bb1ee84a0579e6569.bindPopup(popup_dd7b18cca380c43474bcfc04c950a222)
+        ;
+
+        
+    
+    
+            var circle_marker_2e4340d8280b5088cc247092ac3e83ab = L.circleMarker(
+                [-6.884167090025041, 112.01510972833088],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+        var popup_965c4d03f1a95c95755e50a7b0b8230f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99120e84bc6a114f788c4c6d198440ad = $(`<div id="html_99120e84bc6a114f788c4c6d198440ad" style="width: 100.0%; height: 100.0%;">Ke-81: Kandidat 40</div>`)[0];
+                popup_965c4d03f1a95c95755e50a7b0b8230f.setContent(html_99120e84bc6a114f788c4c6d198440ad);
+            
+        
+
+        circle_marker_2e4340d8280b5088cc247092ac3e83ab.bindPopup(popup_965c4d03f1a95c95755e50a7b0b8230f)
+        ;
+
+        
+    
+    
+            var marker_669370629caa7ef9e697e24fcc6c7d2c = L.marker(
+                [-6.884845797923145, 112.01507334046654],
+                {
+}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+    
+            var icon_2aa030ed0196d7241afe1ff65ec8072f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "play",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71e9808ab3a644d1e1b12c0b4c18c013 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_095ffd4ffffe87850d8f1ada0afc92f5 = $(`<div id="html_095ffd4ffffe87850d8f1ada0afc92f5" style="width: 100.0%; height: 100.0%;">START/END: Kandidat 1</div>`)[0];
+                popup_71e9808ab3a644d1e1b12c0b4c18c013.setContent(html_095ffd4ffffe87850d8f1ada0afc92f5);
+            
+        
+
+        marker_669370629caa7ef9e697e24fcc6c7d2c.bindPopup(popup_71e9808ab3a644d1e1b12c0b4c18c013)
+        ;
+
+        
+    
+    
+                marker_669370629caa7ef9e697e24fcc6c7d2c.setIcon(icon_2aa030ed0196d7241afe1ff65ec8072f);
+            
+    
+            var poly_line_0759700740448fe17c143eb96db49211 = L.polyline(
+                [[-6.884845797923145, 112.01507334046654], [-6.879298437217096, 112.04049929595148], [-6.882028140299352, 112.0456043591636], [-6.887344629004972, 112.0414742259355], [-6.891491771327836, 112.04047836571604], [-6.891977620592394, 112.0414505440126], [-6.8931070667118925, 112.04242083618416], [-6.900045420861382, 112.03448890104625], [-6.900373547347924, 112.036289011994], [-6.897746095868259, 112.0375209471905], [-6.894541631280184, 112.0494998191642], [-6.88919047543823, 112.05338326589568], [-6.895634774071407, 112.04959291428872], [-6.896647445915539, 112.04914069402356], [-6.89570537977882, 112.04952744274956], [-6.896696603724033, 112.05070417607271], [-6.899427452626825, 112.05121935769812], [-6.904002116598856, 112.04562655741351], [-6.902943373919286, 112.04920552578608], [-6.901179179903891, 112.0497982839536], [-6.900212292359554, 112.0503707291833], [-6.898353980768188, 112.05324049353544], [-6.899831023042311, 112.05420837167652], [-6.900818593557286, 112.05541983151826], [-6.903294928425355, 112.0561772847474], [-6.902965039224359, 112.05574844123376], [-6.902162801327994, 112.05551401168933], [-6.900052417498103, 112.05623834443686], [-6.89873332791529, 112.05811951609292], [-6.900869974484735, 112.05932924222256], [-6.900739492400651, 112.06166185658884], [-6.900085465885413, 112.0636943238752], [-6.899389227342138, 112.06524373918958], [-6.89689003435026, 112.06011447170218], [-6.897562503059908, 112.06057342108603], [-6.898673072747008, 112.06252011778544], [-6.898184152415056, 112.06409369678636], [-6.897908210831055, 112.06465819886674], [-6.899476375286648, 112.0671697888008], [-6.897430659681318, 112.0667583013174], [-6.900025640773267, 112.06851980237089], [-6.9032635620228175, 112.16934125581164], [-6.902437673933333, 112.07889531117588], [-6.904029697785407, 112.06792876807891], [-6.907346255695643, 112.06406815733592], [-6.929301998760192, 112.06106825161368], [-6.931212020922078, 112.05911497907418], [-7.059537907850986, 112.0115060106856], [-7.074841504439988, 112.11066326939677], [-7.073521855426105, 112.1117344501994], [-7.07114045098239, 112.18242522906874], [-7.082344426928227, 112.11510978677347], [-7.0856647899966765, 112.1150610884293], [-7.076579018043836, 112.11360322912496], [-7.076087862835971, 112.1131447765859], [-7.076065248642941, 112.11106939669251], [-7.074306559723144, 112.10960723418604], [-7.073096096154428, 112.10834703115452], [-7.073292573030105, 112.1080994933926], [-7.062135193948634, 112.00685367238626], [-7.0599897474611, 112.00506456347242], [-7.123885666665531, 111.93637179964368], [-6.965945302253597, 111.71470802177276], [-6.963973967614541, 111.71371783829844], [-6.782931225734078, 111.77685174166996], [-6.78630626616274, 111.79280351554718], [-6.830197474273471, 111.99625458023556], [-6.829183112076985, 111.9967303740416], [-6.830869486693226, 111.99765139873632], [-6.857533420824699, 112.02646385388208], [-6.88302424003512, 112.0189314130654], [-6.886111623949861, 112.01658915541594], [-6.885594187090424, 112.01337285257982], [-6.884220246420004, 112.01022693660782], [-6.883150376361696, 112.0100907583634], [-6.882025177287373, 112.01010938540124], [-6.88140204277436, 112.01020359164504], [-6.881288704233745, 112.00780492948836], [-6.882045866125081, 112.00682844200874], [-6.8839838216222375, 112.00809423952164], [-6.882691975752463, 112.01360021035406], [-6.884167090025041, 112.01510972833088], [-6.884845797923145, 112.01507334046654]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ec8a8e7cca90914ef285ca4991cebdfe);
+        
+</script>
+</html>

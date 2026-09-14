@@ -1,0 +1,201 @@
+Kode_Lokasi,Nama_Lokasi,Area,Lat,Lon,C1_Aksesibilitas,C2_Kepadatan_Penduduk,C3_Infrastruktur,C4_Kompetitor,C5_Biaya_Sewa,C6_Demografi_Usia_Produktif,C7_Kedekatan_POI
+K001,Kandidat 1 (Jl. Basuki Rahmat #1),Jl. Basuki Rahmat,-6.886351,112.019504,6,12287,9,15,36,44,28
+K002,Kandidat 2 (Alun-Alun Tuban #1),Alun-Alun Tuban,-6.875993,112.002172,9,3895,10,1,33,43,2
+K003,Kandidat 3 (Jl. Veteran #1),Jl. Veteran,-6.888696,112.03569,7,13511,10,3,33,47,26
+K004,Kandidat 4 (Jl. Letda Sucipto #1),Jl. Letda Sucipto,-7.122702,111.943511,7,10766,8,1,35,67,6
+K005,Kandidat 5 (Jl. Panglima Sudirman #1),Jl. Panglima Sudirman,-6.893318,112.053669,10,4667,9,42,59,73,76
+K006,Kandidat 6 (Jl. Pahlawan #1),Jl. Pahlawan,-6.889432,112.004388,10,10041,8,6,19,66,6
+K007,Kandidat 7 (Kawasan Pantai Boom #1),Kawasan Pantai Boom,-6.891415,112.009774,9,7830,8,11,61,43,17
+K008,Kandidat 8 (Jl. KH. Agus Salim #1),Jl. KH. Agus Salim,-7.066746,112.184346,8,4453,8,1,52,38,1
+K009,Kandidat 9 (Jl. Dr. Wahidin Sudirohusodo #1),Jl. Dr. Wahidin Sudirohusodo,-6.901224,112.071071,7,4691,5,19,64,58,51
+K010,Kandidat 10 (Jl. Hayam Wuruk #1),Jl. Hayam Wuruk,-6.879549,112.002415,8,5040,8,5,52,50,6
+K011,Kandidat 11 (Kawasan Kampus Unirow #1),Kawasan Kampus Unirow,-6.909017,112.171059,8,13080,7,3,31,38,1
+K012,Kandidat 12 (Jl. Gajah Mada #1),Jl. Gajah Mada,-6.876649,112.019665,10,12847,7,13,45,50,8
+K013,Kandidat 13 (Kawasan GOR Rangga Jaya #1),Kawasan GOR Rangga Jaya,-6.879035,112.019948,9,8801,8,15,24,57,15
+K014,Kandidat 14 (Jl. RE Martadinata #1),Jl. RE Martadinata,-6.904271,112.049224,7,7768,5,37,42,51,76
+K015,Kandidat 15 (Jl. Diponegoro #1),Jl. Diponegoro,-7.080397,112.116889,6,12586,8,6,15,34,2
+K016,Kandidat 16 (Jl. Brawijaya #1),Jl. Brawijaya,-7.109936,111.950123,8,4004,7,5,63,56,5
+K017,Kandidat 17 (Jl. Sunan Kalijaga #1),Jl. Sunan Kalijaga,-6.89978,112.062401,9,8529,7,39,58,63,82
+K018,Kandidat 18 (Jl. Teuku Umar #1),Jl. Teuku Umar,-6.8299,112.001945,8,8410,9,3,35,42,2
+K019,Kandidat 19 (Kawasan Manunggal #1),Kawasan Manunggal,-6.883967,112.011214,10,12942,8,20,32,72,21
+K020,Kandidat 20 (Jl. Ronggolawe #1),Jl. Ronggolawe,-6.900562,112.059636,6,6986,10,46,17,47,83
+K021,Kandidat 21 (Jl. Basuki Rahmat #2),Jl. Basuki Rahmat,-6.847231,112.022122,8,10614,7,2,46,47,1
+K022,Kandidat 22 (Alun-Alun Tuban #2),Alun-Alun Tuban,-7.089991,112.114706,9,11075,8,1,22,59,1
+K023,Kandidat 23 (Jl. Veteran #2),Jl. Veteran,-6.887253,112.005909,8,7219,7,9,64,59,12
+K024,Kandidat 24 (Jl. Letda Sucipto #2),Jl. Letda Sucipto,-6.901031,112.050398,5,8335,10,42,31,40,86
+K025,Kandidat 25 (Jl. Panglima Sudirman #2),Jl. Panglima Sudirman,-6.897224,112.047566,7,11391,8,42,62,60,84
+K026,Kandidat 26 (Jl. Pahlawan #2),Jl. Pahlawan,-7.069674,112.10403,6,11214,9,4,32,36,1
+K027,Kandidat 27 (Kawasan Pantai Boom #2),Kawasan Pantai Boom,-6.887824,112.017469,8,3509,10,15,64,36,28
+K028,Kandidat 28 (Jl. KH. Agus Salim #2),Jl. KH. Agus Salim,-6.899915,112.060327,5,13516,9,46,32,63,86
+K029,Kandidat 29 (Jl. Dr. Wahidin Sudirohusodo #2),Jl. Dr. Wahidin Sudirohusodo,-6.894596,112.058556,10,10949,7,44,36,58,77
+K030,Kandidat 30 (Jl. Hayam Wuruk #2),Jl. Hayam Wuruk,-6.908386,112.051523,8,7500,7,12,49,32,37
+K031,Kandidat 31 (Kawasan Kampus Unirow #2),Kawasan Kampus Unirow,-6.890687,112.047088,5,5500,8,19,19,69,48
+K032,Kandidat 32 (Jl. Gajah Mada #2),Jl. Gajah Mada,-6.903999,112.035648,10,10690,9,6,51,41,29
+K033,Kandidat 33 (Kawasan GOR Rangga Jaya #2),Kawasan GOR Rangga Jaya,-6.906089,112.062234,9,10745,6,26,15,44,60
+K034,Kandidat 34 (Jl. RE Martadinata #2),Jl. RE Martadinata,-7.054151,112.012021,6,8044,8,3,46,65,22
+K035,Kandidat 35 (Jl. Diponegoro #2),Jl. Diponegoro,-6.891302,112.052857,7,10739,5,33,48,34,49
+K036,Kandidat 36 (Jl. Brawijaya #2),Jl. Brawijaya,-6.883644,112.046186,8,7863,9,8,58,36,22
+K037,Kandidat 37 (Jl. Sunan Kalijaga #2),Jl. Sunan Kalijaga,-7.078432,112.109124,5,8358,7,9,62,54,3
+K038,Kandidat 38 (Jl. Teuku Umar #2),Jl. Teuku Umar,-6.905567,112.052287,9,10496,8,30,25,70,67
+K039,Kandidat 39 (Kawasan Manunggal #2),Kawasan Manunggal,-7.071082,112.111263,6,10381,7,7,48,49,2
+K040,Kandidat 40 (Jl. Ronggolawe #2),Jl. Ronggolawe,-6.884885,112.007411,7,10502,5,16,48,69,17
+K041,Kandidat 41 (Jl. Basuki Rahmat #3),Jl. Basuki Rahmat,-6.862069,112.032542,7,13050,7,1,56,48,4
+K042,Kandidat 42 (Alun-Alun Tuban #3),Alun-Alun Tuban,-6.90027,112.059534,10,10543,7,47,31,41,86
+K043,Kandidat 43 (Jl. Veteran #3),Jl. Veteran,-6.902235,112.056619,9,9471,7,50,48,37,82
+K044,Kandidat 44 (Jl. Letda Sucipto #3),Jl. Letda Sucipto,-7.068288,112.108863,7,7800,6,7,57,42,1
+K045,Kandidat 45 (Jl. Panglima Sudirman #3),Jl. Panglima Sudirman,-6.886878,112.000233,5,4260,7,1,30,62,4
+K046,Kandidat 46 (Jl. Pahlawan #3),Jl. Pahlawan,-6.893685,112.059155,7,9531,8,39,54,35,65
+K047,Kandidat 47 (Kawasan Pantai Boom #3),Kawasan Pantai Boom,-6.909606,112.062337,7,5387,7,6,43,63,29
+K048,Kandidat 48 (Jl. KH. Agus Salim #3),Jl. KH. Agus Salim,-6.898493,112.066509,6,10277,6,27,35,36,71
+K049,Kandidat 49 (Jl. Dr. Wahidin Sudirohusodo #3),Jl. Dr. Wahidin Sudirohusodo,-6.897186,112.04766,7,8277,6,42,35,37,83
+K050,Kandidat 50 (Jl. Hayam Wuruk #3),Jl. Hayam Wuruk,-6.90169,112.071898,6,9876,7,17,60,65,47
+K051,Kandidat 51 (Kawasan Kampus Unirow #3),Kawasan Kampus Unirow,-7.076709,112.109777,6,13445,8,9,23,57,3
+K052,Kandidat 52 (Jl. Gajah Mada #3),Jl. Gajah Mada,-6.895371,112.061494,9,8740,8,30,44,48,69
+K053,Kandidat 53 (Kawasan GOR Rangga Jaya #3),Kawasan GOR Rangga Jaya,-6.876015,112.015546,7,13747,8,16,29,53,6
+K054,Kandidat 54 (Jl. RE Martadinata #3),Jl. RE Martadinata,-7.055252,112.001811,6,11650,8,3,16,57,15
+K055,Kandidat 55 (Jl. Diponegoro #3),Jl. Diponegoro,-6.896188,112.041599,5,8626,8,13,37,49,63
+K056,Kandidat 56 (Jl. Brawijaya #3),Jl. Brawijaya,-6.8925,112.062628,7,10382,7,17,39,68,48
+K057,Kandidat 57 (Jl. Sunan Kalijaga #3),Jl. Sunan Kalijaga,-6.905312,112.043451,6,4562,7,10,53,53,51
+K058,Kandidat 58 (Jl. Teuku Umar #3),Jl. Teuku Umar,-6.906683,112.05746,7,8132,9,27,34,56,54
+K059,Kandidat 59 (Kawasan Manunggal #3),Kawasan Manunggal,-6.936669,112.061426,8,11758,8,1,32,67,4
+K060,Kandidat 60 (Jl. Ronggolawe #3),Jl. Ronggolawe,-6.904259,112.04735,8,11443,8,25,58,50,67
+K061,Kandidat 61 (Jl. Basuki Rahmat #4),Jl. Basuki Rahmat,-6.901602,112.064347,7,14352,7,27,40,65,74
+K062,Kandidat 62 (Alun-Alun Tuban #4),Alun-Alun Tuban,-6.888012,112.026034,6,14054,10,1,51,64,17
+K063,Kandidat 63 (Jl. Veteran #4),Jl. Veteran,-7.069577,112.104722,5,14016,6,4,62,35,1
+K064,Kandidat 64 (Jl. Letda Sucipto #4),Jl. Letda Sucipto,-6.832588,111.997838,9,7017,7,3,45,55,2
+K065,Kandidat 65 (Jl. Panglima Sudirman #4),Jl. Panglima Sudirman,-7.078694,112.119501,9,11934,5,4,51,67,1
+K066,Kandidat 66 (Jl. Pahlawan #4),Jl. Pahlawan,-6.897667,112.062409,10,3505,7,37,42,42,75
+K067,Kandidat 67 (Kawasan Pantai Boom #4),Kawasan Pantai Boom,-6.889903,112.017636,9,12337,10,14,44,69,29
+K068,Kandidat 68 (Jl. KH. Agus Salim #4),Jl. KH. Agus Salim,-6.825557,112.001629,8,9060,8,3,25,39,1
+K069,Kandidat 69 (Jl. Dr. Wahidin Sudirohusodo #4),Jl. Dr. Wahidin Sudirohusodo,-6.905158,112.055546,7,9816,9,38,20,57,69
+K070,Kandidat 70 (Jl. Hayam Wuruk #4),Jl. Hayam Wuruk,-6.960103,111.710629,7,13502,6,13,34,43,12
+K071,Kandidat 71 (Kawasan Kampus Unirow #4),Kawasan Kampus Unirow,-6.896759,112.073378,6,9733,9,12,52,68,35
+K072,Kandidat 72 (Jl. Gajah Mada #4),Jl. Gajah Mada,-6.904795,112.057314,8,10488,8,41,47,37,72
+K073,Kandidat 73 (Kawasan GOR Rangga Jaya #4),Kawasan GOR Rangga Jaya,-6.914505,112.070237,7,3509,8,2,24,33,8
+K074,Kandidat 74 (Jl. RE Martadinata #4),Jl. RE Martadinata,-6.878906,112.022133,7,5119,7,13,51,40,9
+K075,Kandidat 75 (Jl. Diponegoro #4),Jl. Diponegoro,-6.896907,112.064867,9,5494,7,24,52,66,66
+K076,Kandidat 76 (Jl. Brawijaya #4),Jl. Brawijaya,-6.888744,112.041808,7,11484,9,7,58,45,27
+K077,Kandidat 77 (Jl. Sunan Kalijaga #4),Jl. Sunan Kalijaga,-6.896576,112.058814,10,7030,10,48,26,66,84
+K078,Kandidat 78 (Jl. Teuku Umar #4),Jl. Teuku Umar,-6.88441,112.043652,5,8915,8,9,43,39,29
+K079,Kandidat 79 (Kawasan Manunggal #4),Kawasan Manunggal,-7.063834,112.008742,9,12944,6,5,44,66,39
+K080,Kandidat 80 (Jl. Ronggolawe #4),Jl. Ronggolawe,-6.902794,112.070868,6,6398,8,20,40,35,50
+K081,Kandidat 81 (Jl. Basuki Rahmat #5),Jl. Basuki Rahmat,-6.959774,111.722138,7,4565,7,3,54,39,3
+K082,Kandidat 82 (Alun-Alun Tuban #5),Alun-Alun Tuban,-6.896105,112.051532,7,10443,7,43,52,64,83
+K083,Kandidat 83 (Jl. Veteran #5),Jl. Veteran,-6.78496,111.772913,8,5690,8,5,31,64,12
+K084,Kandidat 84 (Jl. Letda Sucipto #5),Jl. Letda Sucipto,-6.909239,112.036809,7,7533,8,1,54,71,6
+K085,Kandidat 85 (Jl. Panglima Sudirman #5),Jl. Panglima Sudirman,-6.900622,112.055618,8,5470,7,49,17,38,89
+K086,Kandidat 86 (Jl. Pahlawan #5),Jl. Pahlawan,-6.895205,112.033428,8,9067,6,6,61,60,22
+K087,Kandidat 87 (Kawasan Pantai Boom #5),Kawasan Pantai Boom,-6.896721,112.065282,7,12169,9,24,50,60,68
+K088,Kandidat 88 (Jl. KH. Agus Salim #5),Jl. KH. Agus Salim,-6.902379,112.068476,6,4620,8,23,41,64,63
+K089,Kandidat 89 (Jl. Dr. Wahidin Sudirohusodo #5),Jl. Dr. Wahidin Sudirohusodo,-6.876824,112.005113,5,6145,8,6,19,41,4
+K090,Kandidat 90 (Jl. Hayam Wuruk #5),Jl. Hayam Wuruk,-6.882362,112.048272,7,9528,6,7,50,55,17
+K091,Kandidat 91 (Kawasan Kampus Unirow #5),Kawasan Kampus Unirow,-6.9049,112.049658,8,6728,8,35,43,35,75
+K092,Kandidat 92 (Jl. Gajah Mada #5),Jl. Gajah Mada,-6.879466,112.000193,8,7725,5,1,50,67,2
+K093,Kandidat 93 (Kawasan GOR Rangga Jaya #5),Kawasan GOR Rangga Jaya,-6.783177,111.797009,8,5616,9,1,24,71,5
+K094,Kandidat 94 (Jl. RE Martadinata #5),Jl. RE Martadinata,-7.073571,112.106558,8,9666,7,8,60,43,2
+K095,Kandidat 95 (Jl. Diponegoro #5),Jl. Diponegoro,-6.89129,112.043431,10,11283,8,13,39,64,46
+K096,Kandidat 96 (Jl. Brawijaya #5),Jl. Brawijaya,-6.964048,111.714721,5,4327,8,20,58,67,24
+K097,Kandidat 97 (Jl. Sunan Kalijaga #5),Jl. Sunan Kalijaga,-6.929029,112.065024,10,7376,8,2,56,59,4
+K098,Kandidat 98 (Jl. Teuku Umar #5),Jl. Teuku Umar,-7.075711,112.10396,7,9524,7,7,43,45,3
+K099,Kandidat 99 (Kawasan Manunggal #5),Kawasan Manunggal,-6.90899,112.056841,10,7297,10,8,15,68,27
+K100,Kandidat 100 (Jl. Ronggolawe #5),Jl. Ronggolawe,-6.90767,112.047165,10,5145,6,11,37,32,50
+K101,Kandidat 101 (Jl. Basuki Rahmat #6),Jl. Basuki Rahmat,-6.978315,111.707188,9,8162,6,1,29,52,3
+K102,Kandidat 102 (Alun-Alun Tuban #6),Alun-Alun Tuban,-6.78133,111.782359,7,13024,7,4,40,72,15
+K103,Kandidat 103 (Jl. Veteran #6),Jl. Veteran,-6.903383,112.070157,6,4036,9,21,52,33,52
+K104,Kandidat 104 (Jl. Letda Sucipto #6),Jl. Letda Sucipto,-6.902119,112.046591,7,12166,8,39,31,55,76
+K105,Kandidat 105 (Jl. Panglima Sudirman #6),Jl. Panglima Sudirman,-6.96013,111.719217,8,8799,7,12,38,64,13
+K106,Kandidat 106 (Jl. Pahlawan #6),Jl. Pahlawan,-7.078041,112.11721,7,8257,6,7,64,52,1
+K107,Kandidat 107 (Kawasan Pantai Boom #6),Kawasan Pantai Boom,-6.889248,112.052046,8,8444,10,19,63,51,32
+K108,Kandidat 108 (Jl. KH. Agus Salim #6),Jl. KH. Agus Salim,-6.891993,112.047829,7,8682,10,31,63,38,66
+K109,Kandidat 109 (Jl. Dr. Wahidin Sudirohusodo #6),Jl. Dr. Wahidin Sudirohusodo,-6.904313,112.057045,8,12681,8,44,33,63,73
+K110,Kandidat 110 (Jl. Hayam Wuruk #6),Jl. Hayam Wuruk,-6.977586,111.711132,7,8024,7,2,30,71,9
+K111,Kandidat 111 (Kawasan Kampus Unirow #6),Kawasan Kampus Unirow,-6.903581,112.063565,8,4268,9,26,61,33,68
+K112,Kandidat 112 (Jl. Gajah Mada #6),Jl. Gajah Mada,-6.905654,112.046397,8,8732,7,13,52,35,57
+K113,Kandidat 113 (Kawasan GOR Rangga Jaya #6),Kawasan GOR Rangga Jaya,-6.888733,112.041562,6,11538,9,7,24,41,27
+K114,Kandidat 114 (Jl. RE Martadinata #6),Jl. RE Martadinata,-6.892469,112.04902,9,9805,7,37,37,59,73
+K115,Kandidat 115 (Jl. Diponegoro #6),Jl. Diponegoro,-6.881951,112.021556,9,6962,8,15,15,34,21
+K116,Kandidat 116 (Jl. Brawijaya #6),Jl. Brawijaya,-6.891811,112.051076,6,14182,8,33,22,68,57
+K117,Kandidat 117 (Jl. Sunan Kalijaga #6),Jl. Sunan Kalijaga,-6.879495,112.015574,6,11276,8,21,22,65,17
+K118,Kandidat 118 (Jl. Teuku Umar #6),Jl. Teuku Umar,-6.906834,112.048051,9,8707,8,16,60,47,58
+K119,Kandidat 119 (Kawasan Manunggal #6),Kawasan Manunggal,-6.877914,112.010078,7,11856,6,17,28,62,13
+K120,Kandidat 120 (Jl. Ronggolawe #6),Jl. Ronggolawe,-6.898098,112.031105,7,9650,8,4,47,54,15
+K121,Kandidat 121 (Jl. Basuki Rahmat #7),Jl. Basuki Rahmat,-7.070387,112.113956,9,7195,6,7,50,60,1
+K122,Kandidat 122 (Alun-Alun Tuban #7),Alun-Alun Tuban,-6.907254,112.0935,7,12205,10,1,19,51,1
+K123,Kandidat 123 (Jl. Veteran #7),Jl. Veteran,-6.903324,112.072309,7,4909,7,14,26,51,36
+K124,Kandidat 124 (Jl. Letda Sucipto #7),Jl. Letda Sucipto,-6.975242,111.71126,8,4779,8,9,48,66,19
+K125,Kandidat 125 (Jl. Panglima Sudirman #7),Jl. Panglima Sudirman,-6.888697,112.025135,10,4887,6,2,24,61,18
+K126,Kandidat 126 (Jl. Pahlawan #7),Jl. Pahlawan,-6.966545,111.719217,7,11673,7,20,46,48,23
+K127,Kandidat 127 (Kawasan Pantai Boom #7),Kawasan Pantai Boom,-7.07557,112.109605,7,6073,8,8,16,56,3
+K128,Kandidat 128 (Jl. KH. Agus Salim #7),Jl. KH. Agus Salim,-6.886636,112.043792,7,9377,8,8,60,35,29
+K129,Kandidat 129 (Jl. Dr. Wahidin Sudirohusodo #7),Jl. Dr. Wahidin Sudirohusodo,-6.905822,112.037868,6,13768,6,4,37,68,26
+K130,Kandidat 130 (Jl. Hayam Wuruk #7),Jl. Hayam Wuruk,-6.896849,112.046696,5,13867,6,40,50,72,88
+K131,Kandidat 131 (Kawasan Kampus Unirow #7),Kawasan Kampus Unirow,-6.783576,111.77256,7,10684,7,4,52,43,11
+K132,Kandidat 132 (Jl. Gajah Mada #7),Jl. Gajah Mada,-6.900072,112.054785,6,11541,6,49,41,62,92
+K133,Kandidat 133 (Kawasan GOR Rangga Jaya #7),Kawasan GOR Rangga Jaya,-6.890014,112.006114,9,7763,7,7,59,38,11
+K134,Kandidat 134 (Jl. RE Martadinata #7),Jl. RE Martadinata,-6.901524,112.053057,8,6469,7,45,60,33,86
+K135,Kandidat 135 (Jl. Diponegoro #7),Jl. Diponegoro,-6.876846,112.006683,6,4886,6,7,50,57,4
+K136,Kandidat 136 (Jl. Brawijaya #7),Jl. Brawijaya,-7.077666,112.102933,5,7350,7,5,50,70,3
+K137,Kandidat 137 (Jl. Sunan Kalijaga #7),Jl. Sunan Kalijaga,-6.899933,112.060383,8,4833,7,46,61,55,86
+K138,Kandidat 138 (Jl. Teuku Umar #7),Jl. Teuku Umar,-6.96626,111.718905,10,9712,7,20,50,51,24
+K139,Kandidat 139 (Kawasan Manunggal #7),Kawasan Manunggal,-6.901542,112.049378,6,10601,10,39,57,65,82
+K140,Kandidat 140 (Jl. Ronggolawe #7),Jl. Ronggolawe,-6.95915,111.707911,8,11117,6,1,23,71,4
+K141,Kandidat 141 (Jl. Basuki Rahmat #8),Jl. Basuki Rahmat,-6.85476,112.027843,8,4740,8,2,54,73,4
+K142,Kandidat 142 (Alun-Alun Tuban #8),Alun-Alun Tuban,-6.910532,112.063086,7,11470,9,6,51,61,25
+K143,Kandidat 143 (Jl. Veteran #8),Jl. Veteran,-6.899373,112.047259,5,10167,7,42,58,48,83
+K144,Kandidat 144 (Jl. Letda Sucipto #8),Jl. Letda Sucipto,-6.885103,112.045446,10,11482,5,9,30,55,31
+K145,Kandidat 145 (Jl. Panglima Sudirman #8),Jl. Panglima Sudirman,-6.906516,112.008149,9,6208,9,1,51,47,6
+K146,Kandidat 146 (Jl. Pahlawan #8),Jl. Pahlawan,-6.974061,111.717232,9,10109,7,17,29,57,21
+K147,Kandidat 147 (Kawasan Pantai Boom #8),Kawasan Pantai Boom,-6.883316,112.0477,5,11738,5,7,30,38,21
+K148,Kandidat 148 (Jl. KH. Agus Salim #8),Jl. KH. Agus Salim,-6.901086,112.040978,10,9413,8,10,21,45,52
+K149,Kandidat 149 (Jl. Dr. Wahidin Sudirohusodo #8),Jl. Dr. Wahidin Sudirohusodo,-6.907571,112.063644,6,11186,7,20,62,39,48
+K150,Kandidat 150 (Jl. Hayam Wuruk #8),Jl. Hayam Wuruk,-6.89915,112.052372,10,5000,7,44,44,70,91
+K151,Kandidat 151 (Kawasan Kampus Unirow #8),Kawasan Kampus Unirow,-7.068657,112.112765,7,4966,9,7,31,45,1
+K152,Kandidat 152 (Jl. Gajah Mada #8),Jl. Gajah Mada,-6.970818,111.721564,8,10638,8,19,59,65,20
+K153,Kandidat 153 (Kawasan GOR Rangga Jaya #8),Kawasan GOR Rangga Jaya,-6.972333,111.718003,9,6483,7,19,37,70,21
+K154,Kandidat 154 (Jl. RE Martadinata #8),Jl. RE Martadinata,-7.061502,112.006088,7,10140,8,5,36,56,39
+K155,Kandidat 155 (Jl. Diponegoro #8),Jl. Diponegoro,-6.893344,112.06008,8,12184,8,28,16,66,59
+K156,Kandidat 156 (Jl. Brawijaya #8),Jl. Brawijaya,-6.903901,112.066125,9,14153,5,24,27,44,63
+K157,Kandidat 157 (Jl. Sunan Kalijaga #8),Jl. Sunan Kalijaga,-6.964221,111.706638,7,7310,5,12,60,60,10
+K158,Kandidat 158 (Jl. Teuku Umar #8),Jl. Teuku Umar,-6.898656,112.081524,9,11936,7,2,30,41,8
+K159,Kandidat 159 (Kawasan Manunggal #8),Kawasan Manunggal,-6.788804,111.792081,5,11690,7,2,19,32,7
+K160,Kandidat 160 (Jl. Ronggolawe #8),Jl. Ronggolawe,-6.879395,112.010584,6,5550,7,20,44,35,17
+K161,Kandidat 161 (Jl. Basuki Rahmat #9),Jl. Basuki Rahmat,-6.789465,111.789189,8,7888,5,2,15,46,7
+K162,Kandidat 162 (Alun-Alun Tuban #9),Alun-Alun Tuban,-6.858998,111.657869,7,11556,8,2,26,68,3
+K163,Kandidat 163 (Jl. Veteran #9),Jl. Veteran,-6.963242,111.714184,9,12630,8,20,53,55,23
+K164,Kandidat 164 (Jl. Letda Sucipto #9),Jl. Letda Sucipto,-6.860543,111.65611,7,5368,10,2,21,35,5
+K165,Kandidat 165 (Jl. Panglima Sudirman #9),Jl. Panglima Sudirman,-7.067876,112.011794,6,11327,9,3,59,41,26
+K166,Kandidat 166 (Jl. Pahlawan #9),Jl. Pahlawan,-6.8241,111.992924,5,4324,6,3,63,34,1
+K167,Kandidat 167 (Kawasan Pantai Boom #9),Kawasan Pantai Boom,-6.887211,112.025249,9,5296,8,3,37,40,15
+K168,Kandidat 168 (Jl. KH. Agus Salim #9),Jl. KH. Agus Salim,-6.903043,112.061937,10,5413,8,36,56,66,76
+K169,Kandidat 169 (Jl. Dr. Wahidin Sudirohusodo #9),Jl. Dr. Wahidin Sudirohusodo,-7.088006,112.103151,9,13801,10,1,17,63,1
+K170,Kandidat 170 (Jl. Hayam Wuruk #9),Jl. Hayam Wuruk,-6.894154,112.042355,7,8376,6,13,61,56,66
+K171,Kandidat 171 (Kawasan Kampus Unirow #9),Kawasan Kampus Unirow,-6.895407,112.048264,8,5433,9,42,25,72,91
+K172,Kandidat 172 (Jl. Gajah Mada #9),Jl. Gajah Mada,-6.906865,112.052178,7,14374,6,19,23,34,50
+K173,Kandidat 173 (Kawasan GOR Rangga Jaya #9),Kawasan GOR Rangga Jaya,-6.897561,112.040248,10,13047,5,6,29,71,55
+K174,Kandidat 174 (Jl. RE Martadinata #9),Jl. RE Martadinata,-6.904044,112.057481,10,13110,5,44,38,46,76
+K175,Kandidat 175 (Jl. Diponegoro #9),Jl. Diponegoro,-6.893752,112.043781,5,8870,8,20,40,49,70
+K176,Kandidat 176 (Jl. Brawijaya #9),Jl. Brawijaya,-6.908239,112.167282,5,13403,8,3,19,44,7
+K177,Kandidat 177 (Jl. Sunan Kalijaga #9),Jl. Sunan Kalijaga,-6.896274,112.059349,9,13016,7,46,43,34,82
+K178,Kandidat 178 (Jl. Teuku Umar #9),Jl. Teuku Umar,-6.885744,112.006273,7,9683,8,11,59,64,14
+K179,Kandidat 179 (Kawasan Manunggal #9),Kawasan Manunggal,-7.085768,111.969519,9,10814,9,3,42,64,7
+K180,Kandidat 180 (Jl. Ronggolawe #9),Jl. Ronggolawe,-6.901408,112.04618,6,5204,7,38,59,56,77
+K181,Kandidat 181 (Jl. Basuki Rahmat #10),Jl. Basuki Rahmat,-6.901469,112.053095,10,7786,8,45,21,36,87
+K182,Kandidat 182 (Alun-Alun Tuban #10),Alun-Alun Tuban,-6.902266,112.054557,9,12517,7,46,45,54,83
+K183,Kandidat 183 (Jl. Veteran #10),Jl. Veteran,-6.887702,112.051256,5,6219,7,16,44,70,29
+K184,Kandidat 184 (Jl. Letda Sucipto #10),Jl. Letda Sucipto,-7.078185,112.120271,6,5903,8,3,27,60,1
+K185,Kandidat 185 (Jl. Panglima Sudirman #10),Jl. Panglima Sudirman,-7.079179,112.117301,7,13677,7,6,60,58,1
+K186,Kandidat 186 (Jl. Pahlawan #10),Jl. Pahlawan,-7.090196,111.969321,10,5564,6,3,48,55,8
+K187,Kandidat 187 (Kawasan Pantai Boom #10),Kawasan Pantai Boom,-6.87912,112.012339,9,4507,6,20,44,38,18
+K188,Kandidat 188 (Jl. KH. Agus Salim #10),Jl. KH. Agus Salim,-7.091873,111.958052,8,12939,9,2,42,46,3
+K189,Kandidat 189 (Jl. Dr. Wahidin Sudirohusodo #10),Jl. Dr. Wahidin Sudirohusodo,-6.928919,112.064675,10,8584,9,2,34,63,4
+K190,Kandidat 190 (Jl. Hayam Wuruk #10),Jl. Hayam Wuruk,-7.096886,111.969381,9,10991,7,2,31,43,6
+K191,Kandidat 191 (Kawasan Kampus Unirow #10),Kawasan Kampus Unirow,-6.836807,112.006337,5,11573,7,1,36,57,5
+K192,Kandidat 192 (Jl. Gajah Mada #10),Jl. Gajah Mada,-7.077867,112.111904,5,9853,9,9,61,60,3
+K193,Kandidat 193 (Kawasan GOR Rangga Jaya #10),Kawasan GOR Rangga Jaya,-6.891944,112.055772,7,12454,6,32,26,38,47
+K194,Kandidat 194 (Jl. RE Martadinata #10),Jl. RE Martadinata,-6.880773,112.013586,5,11313,7,20,46,42,21
+K195,Kandidat 195 (Jl. Diponegoro #10),Jl. Diponegoro,-6.789925,111.788336,8,13145,7,2,18,48,8
+K196,Kandidat 196 (Jl. Brawijaya #10),Jl. Brawijaya,-7.109836,111.960154,6,3538,8,5,43,60,9
+K197,Kandidat 197 (Jl. Sunan Kalijaga #10),Jl. Sunan Kalijaga,-6.777909,111.7796,7,5323,5,6,28,51,14
+K198,Kandidat 198 (Jl. Teuku Umar #10),Jl. Teuku Umar,-7.077869,112.112199,8,9158,9,9,58,59,3
+K199,Kandidat 199 (Kawasan Manunggal #10),Kawasan Manunggal,-6.890454,112.070059,8,9946,7,2,34,37,26
+K200,Kandidat 200 (Jl. Ronggolawe #10),Jl. Ronggolawe,-6.893276,112.05213,9,9126,7,42,52,46,74
