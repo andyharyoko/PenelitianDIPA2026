@@ -1,5 +1,5 @@
 # Optimasi Pemilihan Lokasi Kafe Menggunakan Data Spasial OSM & Multi-Criteria Decision Making (MCDM)
-### Penelitian Hibah DIPA 2026 & Jurnal S2 Riemann : Pareto-TSP Decision Support Framework for Cafe Location Selection in Tuban Regency
+### Penelitian Hibah DIPA 2026 & Jurnal S2 Riemann : Pareto-TSP Decision Support Framework for Cafe Location Selection in Tuban Regency (https://journal.sanagustin.ac.id/index.php/reimann/article/view/210)
 
 🌐 **Aplikasi Web Live (GitHub Pages):** [https://andyharyoko.github.io/PenelitianDIPA2026/](https://andyharyoko.github.io/PenelitianDIPA2026/)
 
