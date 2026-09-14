@@ -1,14 +1,14 @@
 # Optimasi Pemilihan Lokasi Kafe Menggunakan Data Spasial OSM & Multi-Criteria Decision Making (MCDM)
-### Penelitian Hibah DIPA 2026 & Artikel Ilmiah JATI
+### Penelitian Hibah DIPA 2026 & Jurnal S2 Riemann : Pareto-TSP Decision Support Framework for Cafe Location Selection in Tuban Regency
 
 Repositori ini berisi kode sumber komputasi spasial, algoritma Sistem Pendukung Keputusan (SPK/DSS), pemodelan rute *Traveling Salesperson Problem* (TSP), serta aplikasi web interaktif (*WebGIS Decision Hub*) untuk optimasi penentuan lokasi strategis kafe di Kabupaten Tuban, Jawa Timur.
 
 ---
 
 ## 👥 Tim Peneliti
-- **Winda Agustina**
-- **Suprapto**
 - **Andy Haryoko** (*andyharyoko@gmail.com*)
+- **Suprapto**
+- **Gusti Uripno**
 
 **Program Studi Teknik Informatika, Fakultas Teknik, Universitas PGRI Ronggolawe (Unirow) Tuban**
 
