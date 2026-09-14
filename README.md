@@ -11,7 +11,7 @@ Repositori ini berisi kode sumber komputasi spasial, algoritma Sistem Pendukung 
 - **Gusti Uripno**
 
 **Program Studi Teknik Informatika, Fakultas Teknik, Universitas PGRI Ronggolawe (Unirow) Tuban**
-
+**Program Studi Pendidikan Matematika, Fakultas Keguruan dan Ilmu Pengetahuan, Universitas PGRI Ronggolawe (Unirow) Tuban**
 ---
 
 ## 🌟 Fitur Utama & Pipeline Metodologi
