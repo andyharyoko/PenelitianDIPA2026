@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPK Optimasi Lokasi Kafe Tuban - OSM, AHP, SAW, TOPSIS, WP</title>
+    
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Custom Application CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loading-overlay">
+        <div class="loading-box">
+            <div class="spinner"></div>
+            <h3 style="margin-bottom: 6px; font-weight: 700;">Memuat GeoSpatial Decision Hub...</h3>
+            <p class="text-muted" style="font-size: 0.85rem;">Menganalisis 200 kandidat lokasi OSM & komputasi SPK</p>
+        </div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-brand">
+            <div class="nav-brand-icon">
+                <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <div class="nav-brand-text">
+                <h1>Geo-SPK Lokasi Kafe</h1>
+                <span>Optimasi Spasial Multi-Kriteria (Kabupaten Tuban)</span>
+            </div>
+        </div>
+
+        <nav class="nav-tabs-bar" id="main-nav-tabs">
+            <button class="nav-tab active" data-tab="overview" id="nav-tab-overview">
+                <i class="fa-solid fa-table-list"></i> Dataset OSM (200)
+            </button>
+            <button class="nav-tab" data-tab="ahp" id="nav-tab-ahp">
+                <i class="fa-solid fa-calculator"></i> Kriteria & AHP
+            </button>
+            <button class="nav-tab" data-tab="ranking" id="nav-tab-ranking">
+                <i class="fa-solid fa-trophy"></i> Perangkingan
+            </button>
+            <button class="nav-tab" data-tab="comparison" id="nav-tab-comparison">
+                <i class="fa-solid fa-chart-line"></i> Komparasi Metode
+            </button>
+            <button class="nav-tab" data-tab="top10" id="nav-tab-top10">
+                <i class="fa-solid fa-map-location-dot"></i> Peta 10 Lokasi Terbaik
+            </button>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="btn btn-outline btn-sm" onclick="window.app.exportData('csv')" title="Unduh CSV">
+                <i class="fa-solid fa-file-csv"></i> CSV
+            </button>
+            <button class="btn btn-outline btn-sm" onclick="window.app.exportData('json')" title="Unduh JSON">
+                <i class="fa-solid fa-file-code"></i> JSON
+            </button>
+            <button class="btn-icon" id="theme-toggle-btn" title="Ganti Tema Gelap/Terang">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="app-container">
+
+        <!-- KPI Header Statistics Banner -->
+        <section class="kpi-banner-grid" id="kpi-banner">
+            <div class="kpi-card">
+                <div class="kpi-icon slate"><i class="fa-solid fa-map-pin"></i></div>
+                <div class="kpi-info">
+                    <span>Total Kandidat</span>
+                    <h3 id="stat-total-candidates">200</h3>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon blue"><i class="fa-solid fa-medal"></i></div>
+                <div class="kpi-info">
+                    <span>Juara 1 SAW</span>
+                    <h3 id="stat-top-saw">-</h3>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon amber"><i class="fa-solid fa-medal"></i></div>
+                <div class="kpi-info">
+                    <span>Juara 1 TOPSIS</span>
+                    <h3 id="stat-top-topsis">-</h3>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon emerald"><i class="fa-solid fa-medal"></i></div>
+                <div class="kpi-info">
+                    <span>Juara 1 WP</span>
+                    <h3 id="stat-top-wp">-</h3>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon purple"><i class="fa-solid fa-check-double"></i></div>
+                <div class="kpi-info">
+                    <span>Konsistensi AHP (CR)</span>
+                    <h3 id="stat-ahp-cr">-</h3>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon purple"><i class="fa-solid fa-crown"></i></div>
+                <div class="kpi-info">
+                    <span>Konsensus Triple Top-10</span>
+                    <h3 id="stat-triple-winners">-</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================== -->
+        <!-- TAB 1: DATASET OSM 200 KANDIDAT -->
+        <!-- =================================================================== -->
+        <section class="tab-pane active" id="tab-overview">
+            <div class="card-section">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h2>Dataset 200 Kandidat Lokasi Kafe (OpenStreetMap)</h2>
+                        <p>Diekstraksi dari koridor strategis perkotaan Tuban dengan analisis spasial buffer 1.000 meter (UTM Zone 49S)</p>
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <input type="text" id="overview-search" placeholder="Cari kode, nama jalan..." class="saaty-select" style="width: 240px; padding: 8px 12px;">
+                        <span class="badge badge-code" id="overview-count-label">200 Kandidat</span>
+                    </div>
+                </div>
+
+                <!-- Info Box Metodologi OSM -->
+                <div style="background: var(--bg-subtle); padding: 16px; border-radius: var(--radius-md); margin-bottom: 20px; font-size: 0.85rem; border-left: 4px solid var(--primary);">
+                    <div style="display: flex; gap: 12px; align-items: flex-start;">
+                        <i class="fa-solid fa-circle-info" style="color: var(--primary); font-size: 1.2rem; margin-top: 2px;"></i>
+                        <div>
+                            <b>Sumber Data Geospasial:</b> Sebanyak <b>178 titik kafe/restoran</b> nyata dan <b>528 titik POI</b> (sekolah, universitas, bank, mall, kantor) diunduh dari OpenStreetMap (OSM) Kabupaten Tuban. Nilai <b>C4 (Kompetitor)</b> dan <b>C7 (Kedekatan POI)</b> dihitung berdasarkan jumlah fasilitas riil dalam radius buffer lingkaran 1.000 meter dari setiap lokasi.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-responsive" style="max-height: 560px;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Kode</th>
+                                <th>Nama Lokasi</th>
+                                <th>Area / Koridor</th>
+                                <th>Koordinat (Lat, Lon)</th>
+                                <th class="text-center" title="Aksesibilitas Jalan (Benefit)">C1 (Akses)</th>
+                                <th class="text-center" title="Kepadatan Penduduk (Benefit)">C2 (Populasi)</th>
+                                <th class="text-center" title="Infrastruktur (Benefit)">C3 (Infra)</th>
+                                <th class="text-center" title="Kompetitor OSM 1km (Cost)">C4 (Kompetitor)</th>
+                                <th class="text-center" title="Biaya Sewa Jt/thn (Cost)">C5 (Sewa)</th>
+                                <th class="text-center" title="Demografi Usia Produktif % (Benefit)">C6 (Demografi)</th>
+                                <th class="text-center" title="Kedekatan POI OSM 1km (Benefit)">C7 (POI)</th>
+                                <th class="text-center">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="overview-table-body">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================== -->
+        <!-- TAB 2: KRITERIA & ANALISIS AHP -->
+        <!-- =================================================================== -->
+        <section class="tab-pane" id="tab-ahp">
+            <!-- Header Ringkasan CI / CR -->
+            <div class="card-section">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h2>Analytical Hierarchy Process (AHP) - Pengujian Konsistensi</h2>
+                        <p>Penentuan bobot prioritas kriteria menggunakan Matriks Perbandingan Berpasangan Skala Saaty (1-9)</p>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-outline btn-sm" onclick="window.app.resetAHPMatrix()">
+                            <i class="fa-solid fa-rotate-left"></i> Reset Matriks Default
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Rumus & Metrik AHP -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px;">
+                    <div class="correlation-card">
+                        <span>Nilai Eigen Terbesar (&lambda;<sub>max</sub>)</span>
+                        <div class="corr-val" id="ahp-lambda-max">7.02029</div>
+                        <span class="text-muted">Target ideal &approx; n (7.0)</span>
+                    </div>
+                    <div class="correlation-card">
+                        <span>Indeks Konsistensi (CI)</span>
+                        <div class="corr-val" id="ahp-ci">0.00338</div>
+                        <span class="text-muted">Rumus: (&lambda;<sub>max</sub> - n) / (n - 1)</span>
+                    </div>
+                    <div class="correlation-card">
+                        <span>Indeks Acak Saaty (RI, n=7)</span>
+                        <div class="corr-val" id="ahp-ri">1.32</div>
+                        <span class="text-muted">Tabel Saaty Random Index</span>
+                    </div>
+                    <div class="correlation-card">
+                        <span>Rasio Konsistensi (CR = CI / RI)</span>
+                        <div style="margin: 8px 0;">
+                            <span id="ahp-cr-badge" class="status-badge consistent">CR = 0.256% (KONSISTEN)</span>
+                        </div>
+                        <span class="text-muted">Syarat Saaty: CR &le; 0.10 (10%)</span>
+                    </div>
+                </div>
+
+                <!-- Matriks Perbandingan Berpasangan -->
+                <div class="ahp-grid">
+                    <div>
+                        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 12px;">
+                            Matriks Perbandingan Berpasangan Kriteria (Skala Saaty)
+                        </h3>
+                        <p class="text-muted" style="font-size: 0.8rem; margin-bottom: 14px;">
+                            <i class="fa-solid fa-pen-to-square"></i> Anda dapat mengubah nilai perbandingan pada sel di atas diagonal; nilai kebalikan (resiprokal), bobot prioritas, serta nilai CR akan dihitung ulang secara interaktif.
+                        </p>
+                        <div class="table-responsive">
+                            <table class="ahp-matrix-table">
+                                <thead id="ahp-matrix-thead"></thead>
+                                <tbody id="ahp-matrix-tbody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Distribusi Bobot Prioritas -->
+                    <div>
+                        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 14px;">
+                            Bobot Prioritas Kriteria Hasil AHP (w)
+                        </h3>
+                        <div class="weight-bars-list" id="ahp-weights-bars">
+                            <!-- Populated by JS -->
+                        </div>
+
+                        <div style="margin-top: 24px; padding: 14px; background: var(--bg-subtle); border-radius: var(--radius-md); font-size: 0.8rem;">
+                            <b>Interpretasi Pembobotan:</b>
+                            <p class="text-muted" style="margin-top: 4px;">
+                                Kriteria <b>Biaya Sewa (C5)</b> dan <b>Kedekatan POI (C7)</b> masing-masing mendapatkan prioritas tertinggi sebesar <b>24.65%</b>, diikuti oleh <b>Kepadatan Penduduk (C2)</b> dan <b>Kompetitor (C4)</b> masing-masing <b>13.97%</b>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================== -->
+        <!-- TAB 3: HASIL PERANGKINGAN (SAW, TOPSIS, WP) -->
+        <!-- =================================================================== -->
+        <section class="tab-pane" id="tab-ranking">
+            <div class="card-section">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h2>Hasil Perangkingan 200 Kandidat (SAW, TOPSIS, dan WP)</h2>
+                        <p>Perbandingan langsung skor preferensi dan posisi peringkat dari masing-masing metode</p>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <input type="text" id="ranking-search" placeholder="Cari kode atau nama..." class="saaty-select" style="width: 220px; padding: 8px 12px;">
+                        <span class="badge badge-code" id="ranking-count-label">200 Kandidat</span>
+                    </div>
+                </div>
+
+                <!-- Penjelasan 3 Metode -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 20px;">
+                    <div style="background: rgba(79, 70, 229, 0.05); border: 1px solid rgba(79, 70, 229, 0.2); padding: 14px; border-radius: var(--radius-md);">
+                        <h4 style="color: var(--saw-color); font-size: 0.9rem; font-weight: 700; margin-bottom: 4px;">
+                            <i class="fa-solid fa-calculator"></i> 1. Simple Additive Weighting (SAW)
+                        </h4>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary);">
+                            Normalisasi skala linier kriteria benefit (x/max) & cost (min/x), kemudian dijumlahkan dengan bobot AHP. Sifatnya kompensatori linier.
+                        </p>
+                    </div>
+                    <div style="background: rgba(245, 158, 11, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); padding: 14px; border-radius: var(--radius-md);">
+                        <h4 style="color: #d97706; font-size: 0.9rem; font-weight: 700; margin-bottom: 4px;">
+                            <i class="fa-solid fa-shapes"></i> 2. AHP-TOPSIS
+                        </h4>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary);">
+                            Normalisasi vektor Euclidean, menentukan solusi ideal positif (A+) dan negatif (A-), serta menghitung kedekatan relatif (Closeness Coefficient C*).
+                        </p>
+                    </div>
+                    <div style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); padding: 14px; border-radius: var(--radius-md);">
+                        <h4 style="color: var(--wp-color); font-size: 0.9rem; font-weight: 700; margin-bottom: 4px;">
+                            <i class="fa-solid fa-cubes"></i> 3. Weighted Product (WP)
+                        </h4>
+                        <p style="font-size: 0.8rem; color: var(--text-secondary);">
+                            Menggunakan perkalian berpangkat dari nilai kriteria (+w untuk benefit, -w untuk cost) menghasilkan Vektor S, lalu dinormalisasi menjadi Vektor V.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="table-responsive" style="max-height: 560px;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Kode</th>
+                                <th>Nama Lokasi</th>
+                                <th>Area</th>
+                                <th class="text-center" style="color: var(--saw-color);">Rank SAW</th>
+                                <th class="text-center" style="color: var(--saw-color);">Skor SAW</th>
+                                <th class="text-center" style="color: #d97706;">Rank TOPSIS</th>
+                                <th class="text-center" style="color: #d97706;">Skor TOPSIS</th>
+                                <th class="text-center" style="color: var(--wp-color);">Rank WP</th>
+                                <th class="text-center" style="color: var(--wp-color);">Skor WP</th>
+                                <th class="text-center">Konsensus Top 10</th>
+                                <th class="text-center">Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ranking-table-body">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================== -->
+        <!-- TAB 4: KOMPARASI METODE -->
+        <!-- =================================================================== -->
+        <section class="tab-pane" id="tab-comparison">
+            <div class="card-section">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h2>Analisis Komparasi Kinerja SAW, TOPSIS, dan WP</h2>
+                        <p>Evaluasi konsistensi pemeringkatan, koefisien korelasi statistik, dan dinamika pergeseran posisi</p>
+                    </div>
+                </div>
+
+                <!-- Matriks Korelasi Spearman & Pearson -->
+                <div class="comparison-stats-grid">
+                    <div class="correlation-card">
+                        <span>Korelasi Spearman (Rank)</span>
+                        <div class="corr-val" id="corr-spearman-saw-topsis">0.8446</div>
+                        <span class="text-muted">SAW vs TOPSIS (Sangat Kuat)</span>
+                    </div>
+                    <div class="correlation-card">
+                        <span>Korelasi Spearman (Rank)</span>
+                        <div class="corr-val" id="corr-spearman-saw-wp">0.7905</div>
+                        <span class="text-muted">SAW vs WP (Kuat)</span>
+                    </div>
+                    <div class="correlation-card">
+                        <span>Korelasi Spearman (Rank)</span>
+                        <div class="corr-val" id="corr-spearman-topsis-wp">0.8581</div>
+                        <span class="text-muted">TOPSIS vs WP (Sangat Kuat)</span>
+                    </div>
+                    <div class="correlation-card">
+                        <span>Korelasi Pearson (Skor)</span>
+                        <div class="corr-val" id="corr-pearson-saw-topsis">0.8812</div>
+                        <span class="text-muted">SAW vs TOPSIS</span>
+                    </div>
+                    <div class="correlation-card">
+                        <span>Korelasi Pearson (Skor)</span>
+                        <div class="corr-val" id="corr-pearson-saw-wp">0.7420</div>
+                        <span class="text-muted">SAW vs WP</span>
+                    </div>
+                    <div class="correlation-card">
+                        <span>Korelasi Pearson (Skor)</span>
+                        <div class="corr-val" id="corr-pearson-topsis-wp">0.8654</div>
+                        <span class="text-muted">TOPSIS vs WP</span>
+                    </div>
+                </div>
+
+                <!-- Triple Winners Section -->
+                <div style="background: var(--bg-subtle); border-radius: var(--radius-lg); padding: 20px; margin-bottom: 24px; border: 1px solid var(--border-color);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                        <div>
+                            <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-crown" style="color: #f59e0b;"></i> Kandidat Konsensus Terbaik (Triple Winner)
+                            </h3>
+                            <p class="text-muted" style="font-size: 0.8rem; margin-top: 2px;">
+                                Lokasi yang secara simultan berhasil menduduki peringkat Top 10 pada ketiga metode sekaligus (SAW, TOPSIS, dan WP).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="consensus-winners-grid" id="consensus-triple-list">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Grafik Komparasi: Bump Chart & Scatter Plot -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 18px;">
+                        <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 12px;">
+                            <i class="fa-solid fa-arrows-split-up-and-left"></i> Bump Chart: Pergeseran Peringkat Kandidat Unggulan
+                        </h4>
+                        <div class="chart-container-box">
+                            <canvas id="chart-bump"></canvas>
+                        </div>
+                    </div>
+
+                    <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 18px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                            <h4 style="font-size: 0.95rem; font-weight: 700;">
+                                <i class="fa-solid fa-chart-line"></i> Scatter Plot Korelasi Skor Antar Metode
+                            </h4>
+                            <select id="scatter-type-select" class="saaty-select" style="width: 170px;">
+                                <option value="saw_topsis">SAW vs TOPSIS</option>
+                                <option value="saw_wp">SAW vs WP</option>
+                                <option value="topsis_wp">TOPSIS vs WP</option>
+                            </select>
+                        </div>
+                        <div class="chart-container-box">
+                            <canvas id="chart-scatter"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================== -->
+        <!-- TAB 5: PETA 200 KANDIDAT, 178 KAFE, 528 POI & 10 LOKASI TERBAIK -->
+        <!-- =================================================================== -->
+        <section class="tab-pane" id="tab-top10">
+            <div class="card-section" style="padding: 20px;">
+                <div class="card-header" style="margin-bottom: 14px;">
+                    <div class="card-title">
+                        <h2>Visualisasi Spasial Komprehensif: 200 Kandidat, 178 Kafe (OSM), 528 POI (OSM)</h2>
+                        <p>Pemetaan spasial lengkap: 200 titik kandidat, 178 kompetitor riil, 528 fasilitas minat, dan rekomendasi 10 lokasi terbaik di Kabupaten Tuban</p>
+                    </div>
+                </div>
+
+                <!-- Multi-Layer Control Toolbar -->
+                <div class="layer-control-toolbar">
+                    <!-- Layer Checkbox Pills -->
+                    <div class="layer-checkbox-group">
+                        <label class="layer-pill pill-candidates">
+                            <input type="checkbox" id="chk-layer-candidates" checked onchange="window.app.handleLayerToggle('candidates200', this.checked)">
+                            <span class="pill-dot dot-green"></span>
+                            <span class="pill-text">200 Kandidat Kafe</span>
+                            <span class="pill-count">200</span>
+                        </label>
+                        <label class="layer-pill pill-cafes">
+                            <input type="checkbox" id="chk-layer-cafes" checked onchange="window.app.handleLayerToggle('osmCafes', this.checked)">
+                            <span class="pill-dot dot-red"></span>
+                            <span class="pill-text">178 Kafe & Resto (OSM)</span>
+                            <span class="pill-count">178</span>
+                        </label>
+                        <label class="layer-pill pill-pois">
+                            <input type="checkbox" id="chk-layer-pois" checked onchange="window.app.handleLayerToggle('osmPois', this.checked)">
+                            <span class="pill-dot dot-blue"></span>
+                            <span class="pill-text">528 Titik POI (OSM)</span>
+                            <span class="pill-count">528</span>
+                        </label>
+                        <label class="layer-pill pill-top10">
+                            <input type="checkbox" id="chk-layer-top10" checked onchange="window.app.handleLayerToggle('top10', this.checked)">
+                            <span class="pill-dot dot-gold"></span>
+                            <span class="pill-text">Top 10 Pin Rekomendasi</span>
+                            <span class="pill-count">10</span>
+                        </label>
+                    </div>
+
+                    <!-- Preset Shortcut Buttons -->
+                    <div class="layer-presets-group">
+                        <span class="preset-label"><i class="fa-solid fa-wand-magic-sparkles"></i> Preset:</span>
+                        <button class="btn-preset active" onclick="window.app.applyMapPreset('all')">
+                            Semua (906 Titik)
+                        </button>
+                        <button class="btn-preset" onclick="window.app.applyMapPreset('candidates_cafes')">
+                            Kandidat vs Kompetitor (378)
+                        </button>
+                        <button class="btn-preset" onclick="window.app.applyMapPreset('candidates_pois')">
+                            Kandidat vs POI (728)
+                        </button>
+                        <button class="btn-preset" onclick="window.app.applyMapPreset('candidates_only')">
+                            200 Kandidat Saja
+                        </button>
+                        <button class="btn-preset" onclick="window.app.applyMapPreset('top10_only')">
+                            Top 10 Saja
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Top 10 Map & Side-by-Side Cards Layout -->
+                <div class="top10-map-layout">
+                    <!-- Left: Leaflet Map Container -->
+                    <div class="map-wrapper">
+                        <!-- Filter Bar di atas Map -->
+                        <div class="map-filter-bar">
+                            <button class="btn-map-filter active" data-filter="all">
+                                <i class="fa-solid fa-layer-group"></i> Semua Top 10
+                            </button>
+                            <button class="btn-map-filter" data-filter="saw" style="color: var(--saw-color);">
+                                <i class="fa-solid fa-circle" style="font-size: 0.6rem;"></i> Top 10 SAW
+                            </button>
+                            <button class="btn-map-filter" data-filter="topsis" style="color: var(--topsis-color);">
+                                <i class="fa-solid fa-circle" style="font-size: 0.6rem;"></i> Top 10 TOPSIS
+                            </button>
+                            <button class="btn-map-filter" data-filter="wp" style="color: var(--wp-color);">
+                                <i class="fa-solid fa-circle" style="font-size: 0.6rem;"></i> Top 10 WP
+                            </button>
+                            <button class="btn-map-filter" data-filter="consensus" style="color: var(--consensus-color);">
+                                <i class="fa-solid fa-crown" style="font-size: 0.6rem;"></i> Konsensus
+                            </button>
+                        </div>
+
+                        <!-- Map Floating Legend -->
+                        <div class="map-floating-legend">
+                            <div class="legend-title"><i class="fa-solid fa-map"></i> Legenda Peta Spasial</div>
+                            <div class="legend-item"><span class="legend-dot dot-green"></span> <b>200 Kandidat Kafe</b> (Klik &rarr; Buffer 1km)</div>
+                            <div class="legend-item"><span class="legend-dot dot-red"></span> <b>178 Kafe & Restoran (OSM)</b> (C4: Kompetitor)</div>
+                            <div class="legend-item"><span class="legend-dot dot-blue"></span> <b>528 POI Fasilitas (OSM)</b> (C7: Fasilitas)</div>
+                            <div class="legend-item"><span class="legend-dot dot-pin"></span> <b>Pin Angka</b> Top 10 Rekomendasi</div>
+                            <div class="legend-item"><span class="legend-dot dot-buffer"></span> <b>Lingkaran Putus-putus</b> Radius Buffer 1.000m</div>
+                        </div>
+
+                        <div id="leaflet-map"></div>
+                    </div>
+
+                    <!-- Right: Side-by-side Top 10 Ranked Cards -->
+                    <div class="top10-sidebar-scroll">
+                        <div class="top10-grid-3col">
+                            <!-- Kolom SAW -->
+                            <div class="top10-column-card saw">
+                                <div class="column-header">
+                                    <div class="top10-rank-badge badge-saw"><i class="fa-solid fa-calculator"></i></div>
+                                    <div>
+                                        <h3>Top 10 SAW</h3>
+                                        <span class="text-muted" style="font-size: 0.75rem;">Penjumlahan Linier</span>
+                                    </div>
+                                </div>
+                                <div class="top10-items-list" id="top10-saw-container">
+                                    <!-- Populated by JS -->
+                                </div>
+                            </div>
+
+                            <!-- Kolom TOPSIS -->
+                            <div class="top10-column-card topsis">
+                                <div class="column-header">
+                                    <div class="top10-rank-badge badge-topsis"><i class="fa-solid fa-shapes"></i></div>
+                                    <div>
+                                        <h3>Top 10 TOPSIS</h3>
+                                        <span class="text-muted" style="font-size: 0.75rem;">Jarak Solusi Ideal</span>
+                                    </div>
+                                </div>
+                                <div class="top10-items-list" id="top10-topsis-container">
+                                    <!-- Populated by JS -->
+                                </div>
+                            </div>
+
+                            <!-- Kolom WP -->
+                            <div class="top10-column-card wp">
+                                <div class="column-header">
+                                    <div class="top10-rank-badge badge-wp"><i class="fa-solid fa-cubes"></i></div>
+                                    <div>
+                                        <h3>Top 10 WP</h3>
+                                        <span class="text-muted" style="font-size: 0.75rem;">Perkalian Berpangkat</span>
+                                    </div>
+                                </div>
+                                <div class="top10-items-list" id="top10-wp-container">
+                                    <!-- Populated by JS -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom: Top 10 Comparison Bar Chart -->
+                <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-color);">
+                    <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 12px;">
+                        <i class="fa-solid fa-chart-column"></i> Perbandingan Skor Relatif Kandidat 5 Besar per Metode
+                    </h3>
+                    <div style="position: relative; width: 100%; height: 320px;">
+                        <canvas id="chart-top10-comparison"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =================================================================== -->
+    <!-- MODAL DETAIL KANDIDAT & RADAR CHART -->
+    <!-- =================================================================== -->
+    <div class="modal-backdrop" id="candidate-modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div>
+                    <div style="display: flex; gap: 8px; align-items: center;">
+                        <span class="badge badge-code" id="modal-candidate-code">K000</span>
+                        <span class="badge badge-area" id="modal-candidate-area">-</span>
+                    </div>
+                    <h3 style="font-size: 1.15rem; font-weight: 700; margin-top: 4px;" id="modal-candidate-name">Nama Kandidat</h3>
+                    <span class="text-muted" style="font-size: 0.75rem;" id="modal-candidate-coords">Lat, Lon</span>
+                </div>
+                <button class="btn-icon" onclick="window.app.closeModal()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Ranks Grid -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px;">
+                    <div class="rank-badge-item saw" style="padding: 10px;">
+                        <span class="rank-name">METODE SAW</span>
+                        <span class="rank-val" id="modal-rank-saw">#0</span>
+                        <span class="score-val">Skor Preferensi</span>
+                    </div>
+                    <div class="rank-badge-item topsis" style="padding: 10px;">
+                        <span class="rank-name">METODE TOPSIS</span>
+                        <span class="rank-val" id="modal-rank-topsis">#0</span>
+                        <span class="score-val">Kedekatan Relatif C*</span>
+                    </div>
+                    <div class="rank-badge-item wp" style="padding: 10px;">
+                        <span class="rank-name">METODE WP</span>
+                        <span class="rank-val" id="modal-rank-wp">#0</span>
+                        <span class="score-val">Vektor Preferensi V</span>
+                    </div>
+                </div>
+
+                <div class="modal-grid-2col">
+                    <!-- Radar Chart -->
+                    <div>
+                        <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 8px;">
+                            <i class="fa-solid fa-chart-pie"></i> Profil Kriteria vs Benchmark Rata-Rata
+                        </h4>
+                        <div class="modal-radar-wrapper">
+                            <canvas id="chart-radar-modal"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Criteria Table -->
+                    <div>
+                        <h4 style="font-size: 0.9rem; font-weight: 700; margin-bottom: 8px;">
+                            <i class="fa-solid fa-list-check"></i> Rincian Nilai 7 Kriteria
+                        </h4>
+                        <div class="table-responsive" style="max-height: 360px;">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Kode</th>
+                                        <th>Kriteria</th>
+                                        <th>Tipe</th>
+                                        <th class="text-center">Nilai</th>
+                                        <th class="text-center">Satuan</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="modal-criteria-tbody">
+                                    <!-- Populated by JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External Libraries (Leaflet & Chart.js) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <!-- Application Modules -->
+    <script src="js/candidates_embedded.js"></script>
+    <script src="js/osm_layers_embedded.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/ahp.js"></script>
+    <script src="js/mcdm.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
