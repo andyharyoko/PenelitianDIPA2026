@@ -2,7 +2,7 @@
 ### Penelitian Hibah DIPA 2026 
 ### Luaran 
 ### Jurnal Sinta 2 Riemann : Pareto-TSP Decision Support Framework for Cafe Location Selection in Tuban Regency (https://journal.sanagustin.ac.id/index.php/reimann/article/view/210)
-### SnasPPM : On riview
+### SnasPPM : On review
 ### HaKI : Akan di Proses Direncanakan adalah Aplikasi ini atau Arsitektur Sistem 
 (https://andyharyoko.github.io/PenelitianDIPA2026/diagrams/webapp_architecture.html)
 (https://andyharyoko.github.io/PenelitianDIPA2026/diagrams/webapp_dataflow.html)
