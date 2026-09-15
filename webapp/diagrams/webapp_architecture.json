@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "SPK Lokasi Kafe Tuban - Arsitektur WebApp",
+    "quality_profile": "showcase",
+    "viewBox": [1080, 540],
+    "views": [
+      {
+        "id": "ui-and-entry",
+        "label": "Akses & Antarmuka SPA",
+        "focus": ["browser", "gh_pages", "json_store", "app_ui"],
+        "note": "Akses pengguna melalui browser dan pemuatan bundle statis dari GitHub Pages."
+      },
+      {
+        "id": "computation-pipeline",
+        "label": "Pipeline Komputasi SPK",
+        "focus": ["app_ui", "ahp_engine", "mcdm_engine", "consensus_engine"],
+        "note": "Pembobotan AHP dan penyelesaian paralel SAW, TOPSIS, serta WP."
+      },
+      {
+        "id": "visualization-output",
+        "label": "Visualisasi & Peta Spasial",
+        "focus": ["consensus_engine", "map_view", "charts_view", "osm_tiles"],
+        "note": "Rendering hasil perangkingan pada peta interaktif Leaflet dan grafik analitik."
+      }
+    ]
+  },
+  "components": [
+    { "id": "browser", "type": "external", "label": "Web Browser", "sublabel": "Klien Pengguna", "pos": [30, 100], "size": [130, 60] },
+    { "id": "gh_pages", "type": "cloud", "label": "GitHub Pages", "sublabel": "Static Host :443", "brand": "github", "pos": [30, 250], "size": [130, 60] },
+    { "id": "json_store", "type": "database", "label": "GeoJSON Store", "sublabel": "200 Kandidat & POI", "pos": [30, 400], "size": [130, 60] },
+    { "id": "app_ui", "type": "frontend", "label": "Dashboard SPA", "sublabel": "State & Tab Manager", "pos": [240, 250], "size": [140, 60] },
+    { "id": "ahp_engine", "type": "backend", "label": "AHP Weight Engine", "sublabel": "Pairwise, CR < 0.1", "pos": [430, 120], "size": [150, 60] },
+    { "id": "mcdm_engine", "type": "backend", "label": "MCDM Core Solver", "sublabel": "SAW, TOPSIS, WP", "pos": [430, 360], "size": [150, 60] },
+    { "id": "consensus_engine", "type": "backend", "label": "Engine Konsensus", "sublabel": "Spearman & Top 10", "pos": [640, 240], "size": [150, 60] },
+    { "id": "osm_tiles", "type": "cloud", "label": "OSM Tile Server", "sublabel": "Tile CDN", "pos": [870, 10], "size": [150, 50] },
+    { "id": "map_view", "type": "frontend", "label": "Leaflet Controller", "sublabel": "906 Titik & Buffer", "pos": [870, 120], "size": [150, 60] },
+    { "id": "charts_view", "type": "frontend", "label": "Chart.js Visualizer", "sublabel": "Radar & Perangkingan", "pos": [870, 360], "size": [150, 60] }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Client-Side In-Browser Runtime",
+      "wraps": ["app_ui", "ahp_engine", "mcdm_engine", "consensus_engine", "map_view", "charts_view"],
+      "pad": 18
+    },
+    {
+      "kind": "security-group",
+      "label": "Pipeline Komputasi Multi-Kriteria",
+      "wraps": ["ahp_engine", "mcdm_engine", "consensus_engine"],
+      "pad": 14
+    }
+  ],
+  "connections": [
+    { "from": "browser", "to": "app_ui", "label": "interaksi", "variant": "emphasis", "toSide": "top" },
+    { "from": "gh_pages", "to": "app_ui", "label": "load bundle", "variant": "dashed", "toSide": "left" },
+    { "from": "json_store", "to": "app_ui", "label": "fetch GeoJSON", "variant": "dashed", "toSide": "bottom" },
+    { "from": "app_ui", "to": "ahp_engine", "label": "matriks AHP" },
+    { "from": "app_ui", "to": "mcdm_engine", "label": "kandidat C1-C6" },
+    { "from": "ahp_engine", "to": "mcdm_engine", "label": "bobot w", "labelAt": [505, 255] },
+    { "from": "mcdm_engine", "to": "consensus_engine", "label": "skor metode" },
+    { "from": "consensus_engine", "to": "map_view", "label": "top 10", "variant": "emphasis" },
+    { "from": "consensus_engine", "to": "charts_view", "label": "skor akhir" },
+    { "from": "map_view", "to": "osm_tiles", "label": "tile request", "variant": "dashed" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Arsitektur Klien SPA",
+      "items": [
+        "Aplikasi web single-page mandiri tanpa ketergantungan backend server dinamis",
+        "Pemuatan bundle statis HTML/CSS/JS dan data GeoJSON melalui GitHub Pages",
+        "Interaksi pengguna responsif dengan kontrol filter dan parameter bobot"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Pipeline Komputasi MCDM",
+      "items": [
+        "Pembobotan AHP otomatis dengan validasi konsistensi CR < 0.10",
+        "Eksekusi paralel tiga algoritma keputusan: SAW, TOPSIS, dan WP",
+        "Agregasi konsensus dan analisis korelasi Spearman peringkat kandidat"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Visualisasi & Spasial",
+      "items": [
+        "Peta interaktif Leaflet.js menyajikan 200 kandidat, 178 kafe, dan 528 POI",
+        "Visualisasi radar kriteria dan perbandingan peringkat via Chart.js",
+        "Streaming tile peta dasar OpenStreetMap Carto secara asinkron"
+      ]
+    }
+  ]
+}
