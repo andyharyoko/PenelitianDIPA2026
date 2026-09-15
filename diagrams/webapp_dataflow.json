@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "SPK Lokasi Kafe Tuban - Pipeline Spasial & Keputusan",
+    "quality_profile": "showcase",
+    "viewBox": [1080, 520],
+    "views": [
+      {
+        "id": "osm-extraction",
+        "label": "Akuisisi & Ekstraksi OSM",
+        "focus": ["osm_raw", "osm_network", "extractor", "candidate_gen"],
+        "note": "Pengambilan data titik kafe eksisting, fasilitas POI, dan jaringan jalan dari OpenStreetMap."
+      },
+      {
+        "id": "spatial-buffering",
+        "label": "Analisis Buffer Spasial",
+        "focus": ["extractor", "candidate_gen", "buffer_engine"],
+        "note": "Konvergensi data titik ke analisis buffer 1 km UTM 49S untuk menghitung kepadatan C1-C6."
+      },
+      {
+        "id": "mcdm-consensus",
+        "label": "Evaluasi MCDM & Konsensus",
+        "focus": ["ahp_weight", "mcdm_solvers", "consensus_rank", "leaflet_dash"],
+        "note": "Pembobotan AHP, eksekusi paralel tiga metode (SAW, TOPSIS, WP), dan visualisasi peringkat."
+      }
+    ]
+  },
+  "stages": [
+    { "label": "Sumber Data OSM" },
+    { "label": "Ekstraksi Spasial" },
+    { "label": "Analisis Buffer" },
+    { "label": "Komputasi MCDM" },
+    { "label": "Konsensus & Visual" }
+  ],
+  "nodes": [
+    { "id": "osm_raw", "type": "cloud", "label": "OSM Overpass API", "sublabel": "Query Amenity & POI", "stage": 0, "row": 0, "tag": "OSM Data" },
+    { "id": "osm_network", "type": "cloud", "label": "Jaringan Jalan OSM", "sublabel": "Highway LineStrings", "stage": 0, "row": 2, "tag": "Aksesibilitas" },
+    { "id": "extractor", "type": "backend", "label": "Parser Spasial", "sublabel": "178 Kafe & 528 POI", "stage": 1, "row": 0, "tag": "GeoJSON" },
+    { "id": "candidate_gen", "type": "backend", "label": "Generator Kandidat", "sublabel": "Sampling 200 Titik", "stage": 1, "row": 2, "tag": "200 Lokasi" },
+    { "id": "buffer_engine", "type": "backend", "label": "Buffer Spasial 1km", "sublabel": "Proyeksi UTM 49S", "stage": 2, "row": 1, "tag": "Radius 1000m" },
+    { "id": "ahp_weight", "type": "backend", "label": "Pembobotan AHP", "sublabel": "Eigen & CR < 0.10", "stage": 3, "row": 0, "tag": "Bobot w" },
+    { "id": "mcdm_solvers", "type": "backend", "label": "Solver MCDM", "sublabel": "SAW, TOPSIS, WP", "stage": 3, "row": 2, "tag": "3 Algoritma" },
+    { "id": "consensus_rank", "type": "backend", "label": "Evaluasi Konsensus", "sublabel": "Spearman & Kendall", "stage": 4, "row": 0, "tag": "Validasi Silang" },
+    { "id": "leaflet_dash", "type": "frontend", "label": "Dashboard SPA", "sublabel": "Peta & Grafik Interaktif", "stage": 4, "row": 2, "tag": "Top 10 Kafe" }
+  ],
+  "flows": [
+    { "id": "flow-osm-raw", "from": "osm_raw", "to": "extractor", "label": "amenity & POI", "classification": "raw nodes", "variant": "emphasis" },
+    { "id": "flow-osm-road", "from": "osm_network", "to": "candidate_gen", "label": "koridor jalan", "classification": "road lines" },
+    { "id": "flow-ext-buf", "from": "extractor", "to": "buffer_engine", "label": "layer POI & kafe", "classification": "spatial points", "variant": "emphasis" },
+    { "id": "flow-cand-buf", "from": "candidate_gen", "to": "buffer_engine", "label": "200 kandidat", "classification": "koordinat" },
+    { "id": "flow-buf-ahp", "from": "buffer_engine", "to": "ahp_weight", "label": "definisi C1-C6", "classification": "kriteria" },
+    { "id": "flow-buf-solv", "from": "buffer_engine", "to": "mcdm_solvers", "label": "matriks X (200x6)", "classification": "nilai kriteria", "variant": "emphasis" },
+    { "id": "flow-ahp-solv", "from": "ahp_weight", "to": "mcdm_solvers", "label": "vektor bobot w", "classification": "CR < 0.10", "variant": "emphasis", "labelAt": [745, 271] },
+    { "id": "flow-solv-con", "from": "mcdm_solvers", "to": "consensus_rank", "label": "skor 3 metode", "classification": "ranked lists", "variant": "emphasis" },
+    { "id": "flow-con-dash", "from": "consensus_rank", "to": "leaflet_dash", "label": "konsensus top 10", "classification": "rekomendasi final", "variant": "emphasis", "labelAt": [960, 271] }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Ekstraksi Spasial OSM",
+      "items": [
+        "Pengambilan 178 kafe eksisting dan 528 POI pendukung melalui Overpass API",
+        "Pembangkitan 200 kandidat lokasi berbasis koridor jaringan jalan utama",
+        "Konversi geometri ke proyeksi metrik UTM Zona 49S untuk presisi spasial"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Perhitungan Buffer 1 km",
+      "items": [
+        "Analisis buffer lingkaran radius 1.000 meter pada setiap kandidat lokasi",
+        "Penghitungan kepadatan kompetitor (C1), POI (C2-C5), dan jarak jalan (C6)",
+        "Penyusunan matriks keputusan berukuran 200 baris x 6 kolom kriteria"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Evaluasi MCDM & Konsensus",
+      "items": [
+        "Pembobotan hierarki AHP dengan rasio konsistensi konsisten CR < 0.10",
+        "Pemrosesan paralel dengan metode SAW, TOPSIS, dan Weighted Product (WP)",
+        "Uji korelasi peringkat Spearman (r > 0.85) dan penentuan 10 lokasi optimal"
+      ]
+    }
+  ]
+}
