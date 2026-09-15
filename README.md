@@ -6,7 +6,7 @@
 ### HaKI : Akan di Proses Direncanakan adalah Aplikasi ini atau Arsitektur Sistem 
 (https://andyharyoko.github.io/PenelitianDIPA2026/diagrams/webapp_architecture.html)
 (https://andyharyoko.github.io/PenelitianDIPA2026/diagrams/webapp_dataflow.html)
-🌐 **Aplikasi Web Live (GitHub Pages):** [https://andyharyoko.github.io/PenelitianDIPA2026/](https://andyharyoko.github.io/PenelitianDIPA2026/)
+#🌐 **Aplikasi Web Live (GitHub Pages):** [https://andyharyoko.github.io/PenelitianDIPA2026/](https://andyharyoko.github.io/PenelitianDIPA2026/)
 
 Repositori ini berisi kode sumber komputasi spasial, algoritma Sistem Pendukung Keputusan (SPK/DSS), pemodelan rute *Traveling Salesperson Problem* (TSP), serta aplikasi web interaktif (*WebGIS Decision Hub*) untuk optimasi penentuan lokasi strategis kafe di Kabupaten Tuban, Jawa Timur.
 
